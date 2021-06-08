@@ -19,7 +19,8 @@ const Banner = () => {
               Hello, am Maccos and I write code.
             </Heading>
             <Text as="p">
-              I help build and manage computer programs that change the world.
+              I help teach, build and manage computer programs that change the world.
+              My newsletter will be accessible soon, but check out my blog for advanced learning.
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
@@ -28,7 +29,7 @@ const Banner = () => {
               <Input
                 name="subscribe"
                 id="subscribe"
-                placeholder="Subscribe newsletter"
+                placeholder=" Newsletter Coming Soon..."
                 sx={styles.form.input}
               />
               <Button type="submit" sx={styles.form.button}>
@@ -44,12 +45,12 @@ const Banner = () => {
                 <Image src={img2} alt="" />
               </Box>
               <Box as="div">
-                <Image src={img3} alt="" />
+               <Image src={img3} alt=""/>
               </Box>
             </Box>
           </Box>
           <Box sx={styles.image}>
-            <Image src={bannerImg} alt="" />
+            <Image src={bannerImg} alt=""/>
           </Box>
         </Grid>
       </Container>
@@ -77,6 +78,7 @@ const styles = {
   content: {
     h3: {
       color: 'black',
+      fontFamily:'special',
       fontWeight: 'bold',
       lineHeight: [1.39],
       letterSpacing: ['-.7px', '-1.5px'],
@@ -87,6 +89,7 @@ const styles = {
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],
+      fontFamily:'special',
       lineHeight: ['26px', null, null, null, 2.33],
       color: 'text_secondary',
       mb: ['20px', null, null, null, null, '30px'],
@@ -107,12 +110,14 @@ const styles = {
       height: ['45px', null, null, '55px', null, null, '65px'],
       padding: ['0 15px', null, null, '0 25px'],
       fontSize: [1, null, null, 2],
+      fontFamily:'special',
       border: 'none',
       outline: 'none',
       boxShadow: '0px 10px 50px rgba(48, 98, 145, 0.08)',
     },
     button: {
-      fontSize: [1, null, null, null, 2, '20px'],
+      fontSize: [1, null, null, null, 2, '17px'],
+      fontFamily:'special',
       borderRadius: ['4px'],
       padding: ['0 15px'],
       ml: ['10px'],

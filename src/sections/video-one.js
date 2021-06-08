@@ -36,10 +36,11 @@ const VideoOne = () => {
             sx={styles.videoBtn}
           >
             <FaPlay />
-          </Link>
-        </Box>
-      </Container>
-      <ModalVideo
+          </Link> 
+            </Box>
+          </Container>
+
+          <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
         videoId="Cm3U-NgJb9I"

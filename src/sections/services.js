@@ -40,8 +40,8 @@ const Services = () => {
     <Box sx={styles.services} id="services">
       <Container>
         <BlockTitle
-          slogan="Quality features"
-          title="Meet exciting feature of app"
+          slogan="Quality services"
+          title="what I do"
           styles={styles.blockTitle}
         />
         <Grid sx={styles.grid}>

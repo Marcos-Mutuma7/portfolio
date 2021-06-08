@@ -37,7 +37,7 @@ export default function Header({ className }) {
           <Link
             path="/"
             ml={2}
-            label="Register Now"
+            label="Hire Now"
             sx={styles.headerBtn}
             variant="buttons.primary"
           />
@@ -52,8 +52,9 @@ export default function Header({ className }) {
 const styles = {
   headerBtn: {
     backgroundColor: 'rgba(0,0,0,0)',
-    fontSize: '16px',
+    fontSize: '15px',
     fontWeight: 'bold',
+    fontFamily:'special',
     letterSpacing: '-0.16px',
     borderRadius: '5px',
     border: '2px solid',
@@ -102,6 +103,7 @@ const styles = {
       fontSize: '16px',
       color: '#02073E',
       fontWeight: '400',
+      fontFamily:'special',
       cursor: 'pointer',
       lineHeight: '1.2',
       mr: '48px',

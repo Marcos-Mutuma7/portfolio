@@ -1,8 +1,10 @@
 /** @jsx jsx */
-import { jsx, Heading } from 'theme-ui';
+import { jsx ,Image ,Heading} from 'theme-ui';
 import { Link } from 'components/link';
+import logo from 'assets/logo.png';
 
-export default function Logo() {
+
+export default function Logo(props) {
   return (
     <Link
       path="/"
@@ -10,15 +12,14 @@ export default function Logo() {
         variant: 'links.logo',
       }}
     >
-      <Heading as="h1" sx={{
-        display :'flex',
-        color : 'black',
-        ml : '0rem',
-        fontSize:'2rem',
-        fontFamily:'',
-        fontWeight:'500',
-                           
-    }}>Macc   
+      <Heading  as="h1" sx={{
+        fontSize:"2rem",
+        fontFamily:'special',
+        color:'purple',
+        fontWeight:'heading',
+
+      }}>
+      Macc
       </Heading>
     </Link>
   );

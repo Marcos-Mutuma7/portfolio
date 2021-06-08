@@ -13,6 +13,6 @@ export default [
   },
   {
     path: 'news',
-    label: 'News',
+    label: 'Blog',
   },
 ];

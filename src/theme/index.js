@@ -20,8 +20,8 @@ export default {
     body: 'DM Sans',
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'DM Sans',
-    special: 'Playfair Display',
+    heading: 'Comfortaa',
+    special: 'Comfortaa',
     // heading: 'Bree Serif',
     monospace: 'Menlo, monospace',
   },
