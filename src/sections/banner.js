@@ -29,13 +29,14 @@ const Banner = () => {
               <Input
                 name="subscribe"
                 id="subscribe"
-                placeholder=" Newsletter Coming Soon..."
+                placeholder="Coming Soon..."
                 sx={styles.form.input}
               />
               <Button type="submit" sx={styles.form.button}>
                 Subscribe
               </Button>
             </Box>
+            {/*
             <Box sx={styles.partner}>
               <Text as="span">Sponsored by:</Text>
               <Box as="div">
@@ -48,6 +49,7 @@ const Banner = () => {
                <Image src={img3} alt=""/>
               </Box>
             </Box>
+            */}
           </Box>
           <Box sx={styles.image}>
             <Image src={bannerImg} alt=""/>
@@ -106,7 +108,7 @@ const styles = {
     input: {
       borderRadius: ['4px'],
       backgroundColor: '#fff',
-      width: ['240px', null, null, null, '315px', null, '375px'],
+      width: ['200px', null, null, null, '315px', null, '375px'],
       height: ['45px', null, null, '55px', null, null, '65px'],
       padding: ['0 15px', null, null, '0 25px'],
       fontSize: [1, null, null, 2],
