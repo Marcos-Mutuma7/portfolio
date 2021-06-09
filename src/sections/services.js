@@ -11,27 +11,27 @@ import icon4 from 'assets/icons/service-1-4.svg';
 const SERVICES_DATA = [
   {
     icon: icon1,
-    title: 'Unlimited Customization',
+    title: 'Web developopment',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'This is actually my stronghold field in tech. I use Javascript which is a text-based programming language used both on the client-side and server-side that allows to make webpages interactive.',
   },
   {
     icon: icon2,
-    title: 'Vector shape & resizable',
+    title: 'UI & UX design',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'As a Front-end web developer am responsible for applying interactive & visual design elememts such as colors & typography on web applications for a positive and cohesive user experience.',
   },
   {
     icon: icon3,
-    title: 'Editing freedom',
+    title: 'App development',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'I develop my apps with react-native which is a modern technology developed by Facebook,it creates hybrid apps which have a single codebase that will run on both android and IOS.',
   },
   {
     icon: icon4,
-    title: 'Best Award history',
+    title: 'SEO & trafficing',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'If you are looking to improve the quality and quantity of wesite traffic to a webpage,from search engines such as google.There are factors that influence whether a website appears higher in SERP. ',
   },
 ];
 
@@ -41,7 +41,7 @@ const Services = () => {
       <Container>
         <BlockTitle
           slogan="Quality services"
-          title="what I do"
+          title="What I do best"
           styles={styles.blockTitle}
         />
         <Grid sx={styles.grid}>
