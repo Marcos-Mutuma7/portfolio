@@ -86,8 +86,8 @@ const Testimonials = () => {
     <Box as="section" id="testimonials" sx={styles.testimonials}>
       <Container>
         <BlockTitle
-          slogan="Customer Comments"
-          title="Why customers love us"
+          slogan="Developer Community"
+          title="Amazing developers I work with"
           styles={styles.blockTitle}
         />
         <Swiper

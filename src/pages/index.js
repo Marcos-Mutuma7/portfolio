@@ -19,7 +19,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Macc Africa" />
+          <SEO title="Macc app" />
           <Banner />
           <Services />
           <BoostAgencies />

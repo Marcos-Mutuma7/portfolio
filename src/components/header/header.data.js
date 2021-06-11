@@ -9,7 +9,7 @@ export default [
   },
   {
     path: 'testimonials',
-    label: 'Testimonials',
+    label: 'Community',
   },
   {
     path: 'news',

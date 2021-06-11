@@ -23,14 +23,14 @@ export default function Footer() {
           <Logo />
           <Text as="p">
             &copy; {new Date().getFullYear()} All right reserved - Design &
-            Developed by RedQ, Inc
+            Developed by Macc
           </Text>
         </Box>
         <Box sx={styles.right}>
-          <Link path="/" label="Home" />
-          <Link path="/" label="Adversite" />
-          <Link path="/" label="Supports" />
-          <Link path="/" label="Marketing" />
+          <Link path="/" label="facebook" />
+          <Link path="/" label="twiter" />
+          <Link path="/" label="github" />
+          <Link path="/" label="tell" />
           <Link path="/" label="FAQ" />
         </Box>
       </Container>
@@ -51,8 +51,8 @@ const styles = {
     },
   },
   right: {
-    display: ['none', null, null, null, 'flex'],
-    fontSize: 2,
+    display: ['flex', null, null, null, 'flex'],
+    fontSize: [0 ,2],
     alignItems: 'center',
     color: 'black',
     a: {

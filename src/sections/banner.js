@@ -16,12 +16,12 @@ const Banner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-              Hello, am Maccos and I write code.
+              Get your website ready in a week. 
             </Heading>
             <Text as="p">
-              I help teach, build and manage computer programs that change the world.
-              My newsletter will be accessible soon, but check out my blog for advanced learning.
-            </Text>
+              hey,am Maccos a web creator.I build beautiful and user experience websites for everyone across the planet.
+              Hire now to get started..
+                          </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
                 subscribe
@@ -86,7 +86,7 @@ const styles = {
       letterSpacing: ['-.7px', '-1.5px'],
       mb: ['15px', null, null, null, '20px'],
       width: ['100%'],
-      maxWidth: ['100%', null, null, '90%', '100%', '540px'],
+      maxWidth: ['100%', null, null, '90%', '100%', '590px'],
       fontSize: [6, null, null, '36px', null, '55px', 9],
     },
     p: {
