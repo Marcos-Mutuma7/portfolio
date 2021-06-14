@@ -21,31 +21,31 @@ const TESTIMONIALS_DATA = [
   },
   {
     image: img2,
-    heading: 'Natalia Sanz',
-    designation: 'Head of Technology',
+    heading: 'Jack Forge',
+    designation: 'web developer',
     content:
-      'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster.',
+      "Macco is more than just a web designer. He's someone that specializes in branding, digital marketing, web development, app development, and website maintenance. You can trust him with a wide range of website needs.",
   },
   {
     image: img3,
     heading: 'Ece Akman',
     designation: 'Senior Marketer',
     content:
-      'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal.',
+      'His work blends web design with brand strategy and development. He uses sustainability best practices to meet the long-term growth of your organization.',
   },
   {
     image: img2,
     heading: 'Natalia Sanz',
-    designation: 'Head of Technology',
+    designation: 'Digital creator',
     content:
-      'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional.',
+      'I’d recommend Macc to anyone that needs brand strategy assistance. The team he works with goes above and beyond just designing your website. They take it one step further by making sure your brand message is clearly portrayed to the right audience.',
   },
   {
     image: img3,
     heading: 'Ece Akman',
-    designation: 'Senior Marketer',
+    designation: 'Software engineer',
     content:
-      'Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base.',
+      ' His work blends web design with brand strategy and development. He uses sustainability best practices to meet the long-term growth of your organization.',
   },
 ];
 
@@ -87,7 +87,7 @@ const Testimonials = () => {
       <Container>
         <BlockTitle
           slogan="Developer Community"
-          title="Amazing developers I work with"
+          title="Working with amazing developers"
           styles={styles.blockTitle}
         />
         <Swiper

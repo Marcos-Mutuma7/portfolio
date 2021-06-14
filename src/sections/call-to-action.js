@@ -8,11 +8,10 @@ const CallToAction = () => {
       <Container sx={styles.container}>
         <Box sx={styles.inner}>
           <Heading as="h3">
-            Hire the world’s best developers <br />
-            and designers around!
+            Build your audience & grow  <br/>your business online smarter.
           </Heading>
           <Box sx={styles.btnWrapper}>
-            <Button sx={styles.btn}>HIRE DEVELOPERS</Button>
+            <Button sx={styles.btn}>HIRE NOW</Button>
           </Box>
         </Box>
       </Container>
@@ -55,7 +54,7 @@ const styles = {
     backgroundColor: '#fff',
     color: 'primary',
     borderRadius: '5px',
-    fontSize: [0, 1, null, null, null, null, '17px'],
+    fontSize: [0, 2, null, null, null, null, '30px'],
     fontWeight: '700',
     letterSpacing: '0.1em',
     fontFamily: 'body',

@@ -2,30 +2,30 @@ import React, { useRef } from 'react';
 import { Box, Container } from 'theme-ui';
 import BlockTitle from 'components/block-title';
 import Swiper from 'react-id-swiper';
-
+import { Link } from 'components/link';
 import FeatureCard from 'components/feature-card';
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
-import featureImage1 from 'assets/tutorial-1-1.png';
-import featureImage2 from 'assets/tutorial-1-2.png';
-import featureImage3 from 'assets/tutorial-1-3.png';
+import featureImage1 from 'assets/blog-1.jpg';
+import featureImage2 from 'assets/blog-2.jpg';
+import featureImage3 from 'assets/blog-3.jpg';
 
 const FeatureData = [
   {
     image: featureImage1,
-    title: 'How to work with prototype design with adobe xd featuring tools',
+    title: 'How to get started with Python and Machine Learning.',
     comments: '22 Comments',
     path: '/',
   },
   {
     image: featureImage2,
-    title: 'Create multiple artboard by using figma prototyping development',
+    title: 'React js basics for begginers: A step-by-step guide to get you started. ',
     comments: '15 Comments',
     path: '/',
   },
   {
     image: featureImage3,
     title:
-      'Convert your web layout theming easily with sketch zeplin extension',
+      'What is Supervised Learning? understand the building blocks of  Machine Learning.  ',
     comments: '12 Comments',
     path: '/',
   },
@@ -93,12 +93,16 @@ const Feature = () => {
         <Swiper {...params} ref={ref}>
           {FeatureData.map((feature, index) => (
             <div className="swiper-slider" key={`feature-card-key${index}`}>
-              <FeatureCard
+              
+              
+                   <FeatureCard
                 image={feature.image}
                 title={feature.title}
                 commentCount={feature.comments}
                 path={feature.path}
               />
+                  
+                  
             </div>
           ))}
         </Swiper>
@@ -116,6 +120,8 @@ const Feature = () => {
 };
 
 export default Feature;
+
+
 
 const styles = {
   blockTitle: {

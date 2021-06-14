@@ -16,11 +16,11 @@ const Banner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-              Get your website ready in a week. 
+            Get Platinum websites for your Franchise
             </Heading>
             <Text as="p">
-              hey,am Maccos a web creator.I build beautiful and user experience websites for everyone across the planet.
-              Hire now to get started..
+              hello,am Maccos a web developer.I build modern, fast, beautiful and user experience websites for existing companies and 
+              startup businesses.Hire now to go digital in a week.Newsletter coming soon.
                           </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
@@ -79,7 +79,7 @@ const styles = {
   },
   content: {
     h3: {
-      color: 'black',
+      color:'lighblack',
       fontFamily:'special',
       fontWeight: 'bold',
       lineHeight: [1.39],
@@ -87,7 +87,18 @@ const styles = {
       mb: ['15px', null, null, null, '20px'],
       width: ['100%'],
       maxWidth: ['100%', null, null, '90%', '100%', '590px'],
-      fontSize: [6, null, null, '36px', null, '55px', 9],
+      fontSize: [6, null, null, '36px', null, '49px', 9],
+    },
+    h2:{
+      color:'purple',
+      fontFamily:'special',
+      fontWeight: 'bold',
+      lineHeight: [1.39],
+      letterSpacing: ['-.7px', '-1.5px'],
+      mb: ['15px', null, null, null, '20px'],
+      width: ['100%'],
+      maxWidth: ['100%', null, null, '90%', '100%', '590px'],
+      fontSize: [6, null, null, '36px', null, '49px', 9],
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],

@@ -30,7 +30,7 @@ export default function Footer() {
           <Link path="/" label="facebook" />
           <Link path="/" label="twiter" />
           <Link path="/" label="github" />
-          <Link path="/" label="tell" />
+          <Link path="/" label="phone" />
           <Link path="/" label="FAQ" />
         </Box>
       </Container>
