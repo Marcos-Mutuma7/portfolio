@@ -139,6 +139,7 @@ export default {
       display: [null, null, 'none'],
     }, // default variant for MenuButton
     // you can reference other values defined in the theme
+    
     primary: {
       fontWeight: 'bold',
       color: 'white',
@@ -150,6 +151,7 @@ export default {
         bg: 'secondary',
       },
     },
+    
   },
   blockTitle: {
     marginBottom: [45, null, null, null, 70],

@@ -5,29 +5,29 @@ import Swiper from 'react-id-swiper';
 import { Link } from 'components/link';
 import FeatureCard from 'components/feature-card';
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
-import featureImage1 from 'assets/blog-1.jpg';
+import featureImage1 from 'assets/blog-3.jpg';
 import featureImage2 from 'assets/blog-2.jpg';
-import featureImage3 from 'assets/blog-3.jpg';
+import featureImage3 from 'assets/blog-1.jpg';
 
 const FeatureData = [
   {
     image: featureImage1,
-    title: 'How to get started with Python and Machine Learning.',
+    title: 'Getting started with Artificial Intellengence: Inductive learning in AI.',
     comments: '22 Comments',
-    path: '/',
+    path: '/blog',
   },
   {
     image: featureImage2,
     title: 'React js basics for begginers: A step-by-step guide to get you started. ',
     comments: '15 Comments',
-    path: '/',
+    path: '/blog1',
   },
   {
     image: featureImage3,
     title:
-      'What is Supervised Learning? understand the building blocks of  Machine Learning.  ',
+      'What is Machine Learning? understand the building blocks of  Machine Learning.  ',
     comments: '12 Comments',
-    path: '/',
+    path: '/blog2',
   },
 ];
 

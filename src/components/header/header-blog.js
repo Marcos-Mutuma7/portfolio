@@ -18,32 +18,11 @@ export default function Header({ className }) {
         <Container sx={styles.container}>
           <Logo />
 
-          <Flex as="nav" sx={styles.nav}>
-            {menuItems.map(({ path, label }, i) => (
-              <ScrollLink
-                activeClass="active"
-                sx={styles.nav.navLink}
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                key={i}
-              >
-                {label}
-              </ScrollLink>
-            ))}
-          </Flex>
+        
 
-          <Link
-            path="/hire"
-            ml={2}
-            label="Hire Now"
-            sx={styles.headerBtn}
-            variant="buttons.primary"
-          />
+          
 
-          <MobileDrawer />
+          
         </Container>
       </header>
     </DrawerProvider>

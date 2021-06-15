@@ -21,7 +21,7 @@ const VideoOne = () => {
         </Heading>
         <Text as="p">
         Although 54% of small businesses have websites, many of them are outdated. <br/> Others are not designed to take advantage of the proliferation of smartphones, social media<br/> and e-commerce driving consumer engagement today.
-        if your company’s website fits in either of these groups, <br/> you’re practically leaving money on the table for your business
+        If your company’s website fits in either of these groups, <br/> you’re practically leaving money on the table for your business.
         </Text>
         <Link path="/" sx={styles.link}>
           Get started <FaAngleRight />
