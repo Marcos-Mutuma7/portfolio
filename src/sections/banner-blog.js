@@ -4,7 +4,9 @@ import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 
-import blogImage from 'assets/blog-3.jpg'
+import blogImage from 'assets/blog-3.jpg';
+import aiImage from 'assets/Ai-pic.png';
+import { IoIosCheckmarkCircle } from 'react-icons/io';
 
 
 export default function BannerBlog() {
@@ -21,7 +23,7 @@ export default function BannerBlog() {
           </Heading>
           <br/>
           <Text as="p" >
-          This tutorial provides introductory knowledge on Artificial Intelligence. It would come to a great help if you are about to select Artificial Intelligence as a course subject. You can briefly know about the areas of AI in which research is prospering.
+          This blog provides introductory knowledge on Artificial Intelligence. It would come to a great help if you are about to select Artificial Intelligence as a course subject. You can briefly know about the areas of AI in which research is prospering.
           </Text>
           <br/>
           <Heading as="h1" >
@@ -60,8 +62,68 @@ AI is accomplished by studying how human brain thinks, and how humans learn, dec
            </Text>
            <br/>
            <Box sx={styles.image}>
-            <Image src={blogImage} alt=""/>
+            <Image src={aiImage} alt=""/>
           </Box>
+          <br/>
+           <Heading as="h1">
+           Applications of AI
+           </Heading>
+           <br/>
+           <Text as="p">
+           AI has been dominant in various fields such as :
+           <Text as="li">
+                  <IoIosCheckmarkCircle />
+                  Gaming − AI plays crucial role in strategic games such as chess, poker, tic-tac-toe, etc., where machine can think of large number of possible positions based on heuristic knowledge.
+                 </Text>
+    
+       <Text as="li">
+  <IoIosCheckmarkCircle />
+    Natural Language Processing − It is possible to interact with the computer that understands natural language spoken by humans.
+   </Text>
+
+   <Text as="li">
+   <IoIosCheckmarkCircle/>
+
+    Expert Systems − There are some applications which integrate machine, software, and special information to impart reasoning and advising. They provide explanation and advice to the users.
+   
+   </Text>
+
+   <Text as="li">
+     <IoIosCheckmarkCircle/>
+    Vision Systems − These systems understand, interpret, and comprehend visual input on the computer. For example,
+
+        A spying aeroplane takes photographs, which are used to figure out spatial information or map of the areas.
+
+        Doctors use clinical expert system to diagnose the patient.
+
+        Police use computer software that can recognize the face of criminal with the stored portrait made by forensic artist.
+</Text>
+   <Text as="li">
+     <IoIosCheckmarkCircle/>
+    Speech Recognition − Some intelligent systems are capable of hearing and comprehending the language in terms of sentences and their meanings while a human talks to it. It can handle different accents, slang words, noise in the background, change in human’s noise due to cold, etc.
+  </Text>
+  <Text as="li">
+    <IoIosCheckmarkCircle/>
+    Handwriting Recognition − The handwriting recognition software reads the text written on paper by a pen or on screen by a stylus. It can recognize the shapes of the letters and convert it into editable text.
+</Text>
+   <Text as="li">
+     <IoIosCheckmarkCircle/>
+    Intelligent Robots − Robots are able to perform the tasks given by a human. They have sensors to detect physical data from the real world such as light, heat, temperature, movement, sound, bump, and pressure. They have efficient processors, multiple sensors and huge memory, to exhibit intelligence. In addition, they are capable of learning from their mistakes and they can adapt to the new environment.
+  </Text>
+           </Text>
+           <br/>
+          <Text as="p">
+          While studying artificially intelligence, you need to know what intelligence is. This section covers Idea of intelligence, types, and components of intelligence.
+          </Text>
+          <br/>
+          <Heading as="h1">
+           What is Intellengence?
+           </Heading>
+           <br/>
+           <Text as="p">
+           The ability of a system to calculate, reason, perceive relationships and analogies, learn from experience, store and retrieve information from memory, solve problems, comprehend complex ideas, use natural language fluently, classify, generalize, and adapt new situations.
+             </Text>
+          <br/>
         </Box>
 
       </Container>

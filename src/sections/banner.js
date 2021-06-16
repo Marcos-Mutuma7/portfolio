@@ -16,7 +16,7 @@ const Banner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-            Get Platinum websites for your Franchise
+            Platinum websites for your Franchise
             </Heading>
             <Text as="p">
               hello,am Maccos a web developer.I build modern, fast, beautiful and user experience websites for existing companies and 

@@ -169,6 +169,41 @@ export default {
       letterSpacing: ['-1px', null, null, null, '-1.5px'],
     },
   },
+  
+    forms: {
+      label: {
+        fontSize: 1,
+        fontWeight: 'bold',
+      },
+      input: {
+        borderColor: 'gray',
+        '&:focus': {
+          borderColor: 'primary',
+          boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+          outline: 'none',
+        },
+      },
+      select: {
+        borderColor: 'gray',
+        '&:focus': {
+          borderColor: 'primary',
+          boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+          outline: 'none',
+        },
+      },
+      textarea: {
+        borderColor: 'gray',
+        '&:focus': {
+          borderColor: 'primary',
+          boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+          outline: 'none',
+        },
+      },
+      slider: {
+        bg: 'muted',
+      },
+    },
+  
   styles: {
     // To add base, top-level styles to the <body> element, use theme.styles.root.
     root: {
@@ -215,6 +250,39 @@ export default {
       position: 'absolute !important',
       width: '1px !important',
       whiteSpace: 'nowrap !important',
+    },
+  },
+  forms: {
+    label: {
+      fontSize: 1,
+      fontWeight: 'bold',
+    },
+    input: {
+      borderColor: 'gray',
+      '&:focus': {
+        borderColor: 'primary',
+        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        outline: 'none',
+      },
+    },
+    select: {
+      borderColor: 'gray',
+      '&:focus': {
+        borderColor: 'primary',
+        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        outline: 'none',
+      },
+    },
+    textarea: {
+      borderColor: 'gray',
+      '&:focus': {
+        borderColor: 'primary',
+        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        outline: 'none',
+      },
+    },
+    slider: {
+      bg: 'muted',
     },
   },
 };

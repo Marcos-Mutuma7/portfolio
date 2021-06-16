@@ -1,6 +1,6 @@
+import React from 'react'
 
-
-function Hire() {
+function hire() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Hire() {
     )
 }
 
-export default Hire
+export default hire

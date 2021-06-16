@@ -3,7 +3,7 @@ import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 
-import blogImage from 'assets/blog-3.jpg'
+import blogImage from 'assets/blog-1.jpg'
 
 
 export default function BannerBlogTwo() {
@@ -14,13 +14,13 @@ export default function BannerBlogTwo() {
         <Box sx={styles.image}>
             <Image src={blogImage} alt=""/>
           </Box>
+          <br/>
           <Heading as="h1" >
             Getting started with Machine learning.
           </Heading>
           <br/>
           <Text as="p" >
-          Machine Learning (ML) is basically that field of computer science with the help of which computer systems can provide sense to data in much the same way as human beings do. In simple words, ML is a type of artificial intelligence that extract patterns out of raw data by using an algorithm or method. 
-          The key focus of ML is to allow computer systems to learn from experience without being explicitly programmed or human intervention.
+          Today’s Artificial Intelligence (AI) has far surpassed the hype of blockchain and quantum computing. The developers now take advantage of this in creating new Machine Learning models and to re-train the existing models for better performance and results. This tutorial will give an introduction to machine learning and its implementation in Artificial Intelligence.
           </Text>
           <br/>
           <Heading as="h1" >
@@ -28,13 +28,18 @@ export default function BannerBlogTwo() {
           </Heading>
           <br/>
            <Text as="p" >
-           This blog will be useful for graduates, postgraduates, and research students who either have an interest in this subject or have this subject as a part of their curriculum. The reader can be a beginner or an advanced learner. This blog has been prepared for the students as well as professionals to ramp up quickly. This blog is a stepping stone to your Machine Learning journey.
-           </Text>
+           This blog has been prepared for professionals aspiring to learn the complete picture of machine learning and artificial intelligence. This tutorial caters the learning needs of both the novice learners and experts, to help them understand the concepts and implementation of artificial intelligence.
+
+             </Text>
+           <br/>
            <Heading as="h1">
            Prerequisites
            </Heading>
+           <br/>
            <Text as="p">
-           The reader must have basic knowledge of artificial intelligence. He/she should also be aware of Python, NumPy, Scikit-learn, Scipy, Matplotlib. If you are new to any of these concepts, we recommend you to take up tutorials concerning these topics, before you dig further into this tutorial.
+           The learners of this blog are expected to know the basics of Python programming. Besides, they need to have a solid understanding of computer programing and fundamentals.
+
+If you are new to this arena, we suggest you pick up tutorials based on these concepts first, before you embark on with Machine Learning.
            </Text>
         </Box>
 

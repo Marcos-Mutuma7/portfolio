@@ -3,7 +3,8 @@ import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 
-import blogImage from 'assets/blog-3.jpg'
+import blogImage from 'assets/blog-2.jpg'
+import { IoIosCheckmarkCircle } from 'react-icons/io';
 
 
 export default function BannerBlogOne() {
@@ -14,13 +15,14 @@ export default function BannerBlogOne() {
         <Box sx={styles.image}>
             <Image src={blogImage} alt=""/>
           </Box>
+          <br/>
           <Heading as="h1" >
-            Getting started with Machine learning.
+            React Js basics for begginers.
           </Heading>
           <br/>
           <Text as="p" >
-          Machine Learning (ML) is basically that field of computer science with the help of which computer systems can provide sense to data in much the same way as human beings do. In simple words, ML is a type of artificial intelligence that extract patterns out of raw data by using an algorithm or method. 
-          The key focus of ML is to allow computer systems to learn from experience without being explicitly programmed or human intervention.
+          React is a front-end library developed by Facebook. It is used for handling the view layer for web and mobile apps. ReactJS allows us to create reusable UI components. It is currently one of the most popular JavaScript libraries and has a strong foundation and large community behind it.
+
           </Text>
           <br/>
           <Heading as="h1" >
@@ -28,14 +30,58 @@ export default function BannerBlogOne() {
           </Heading>
           <br/>
            <Text as="p" >
-           This blog will be useful for graduates, postgraduates, and research students who either have an interest in this subject or have this subject as a part of their curriculum. The reader can be a beginner or an advanced learner. This blog has been prepared for the students as well as professionals to ramp up quickly. This blog is a stepping stone to your Machine Learning journey.
+This blog will help JavaScript developers who look ahead to deal with ReactJS for the first time. I will try to introduce every concept by showing simple code examples that can be easily understood. After finishing all the chapters, you will feel confident working with ReactJS.
+
            </Text>
+           <br/>
            <Heading as="h1">
            Prerequisites
            </Heading>
+           <br/>
            <Text as="p">
-           The reader must have basic knowledge of artificial intelligence. He/she should also be aware of Python, NumPy, Scikit-learn, Scipy, Matplotlib. If you are new to any of these concepts, we recommend you to take up tutorials concerning these topics, before you dig further into this tutorial.
+           If you want to work with ReactJS, you need to have solid knowledge of JavaScript, HTML5, and CSS. Even though ReactJS doesn't use HTML, the JSX is similar so your HTML knowledge will be very helpful.
            </Text>
+           <br/>
+           <Heading as="h1">
+           React Features
+           </Heading>
+           <br/>
+
+   <Text as="li">
+     <IoIosCheckmarkCircle/>
+    JSX − JSX is JavaScript syntax extension. It isn't necessary to use JSX in React development, but it is recommended.
+  </Text>
+  <Text as="li">
+    <IoIosCheckmarkCircle/>
+Components − React is all about components. You need to think of everything as a component. This will help you maintain the code when working on larger scale projects.
+  </Text>
+  <Text as="li">
+    <IoIosCheckmarkCircle/>
+Unidirectional data flow and Flux − React implements one-way data flow which makes it easy to reason about your app. Flux is a pattern that helps keeping your data unidirectional.
+ </Text>
+ <Text as="li">
+   <IoIosCheckmarkCircle/>
+   License − React is licensed under the Facebook Inc. Documentation is licensed under CC BY 4.0.
+</Text>
+<br/>
+<Heading as="h1">
+React Advantages
+</Heading>
+<br/>
+<Text as="li">
+  <IoIosCheckmarkCircle/>
+Uses virtual DOM which is a JavaScript object. This will improve apps performance, since JavaScript virtual DOM is faster than the regular DOM.
+</Text>
+<br/>
+<Text as="li">
+  <IoIosCheckmarkCircle/>
+Can be used on client and server side as well as with other frameworks.
+</Text>
+<br/>
+<Text as="li">
+  <IoIosCheckmarkCircle/>
+Component and data patterns improve readability, which helps to maintain larger apps.
+</Text>
         </Box>
 
       </Container>

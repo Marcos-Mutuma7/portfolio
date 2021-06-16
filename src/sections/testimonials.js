@@ -17,7 +17,7 @@ const TESTIMONIALS_DATA = [
     heading: 'Pierre Hackett',
     designation: 'VP of Engineering',
     content:
-      'They are doing amazing job with hundred percent customer satisfaction, Love their work and would like to work with them again',
+      'I’d recommend Macc to anyone that needs brand strategy assistance. The team he works with goes above and beyond just designing your website. They take it one step further by making sure your brand message is clearly portrayed to the right audience.',
   },
   {
     image: img2,

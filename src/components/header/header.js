@@ -36,7 +36,7 @@ export default function Header({ className }) {
           </Flex>
 
           <Link
-            path="/hire"
+            path="/footer"
             ml={2}
             label="Hire Now"
             sx={styles.headerBtn}
