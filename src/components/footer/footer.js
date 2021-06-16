@@ -28,7 +28,7 @@ export default function Footer() {
         </Box>
         <Box sx={styles.right}>
           <Link path="/" label="facebook" />
-          <Link path="/" />
+          <Link path="/" label="twitter"/>
           <Link path="/" label="github" />
           <Link path="/" label="phone" />
           <Link path="/" label="FAQ" />
