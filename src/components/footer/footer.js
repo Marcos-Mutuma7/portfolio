@@ -27,11 +27,11 @@ export default function Footer() {
           </Text>
         </Box>
         <Box sx={styles.right}>
-          <Link path="/" label="facebook" />
-          <Link path="/" label="twitter"/>
-          <Link path="/" label="github" />
-          <Link path="/" label="phone" />
-          <Link path="/" label="FAQ" />
+         <a href="https://twitter.com/MarcosMutuma">twitter</a>
+         <a href="https://www.facebook.com/maccosmutuma.muriungi.3">facebook</a>
+        <a href="https://github.com/Marcos-Mutuma7">github</a>
+         <a href="tel+2547929917">phone</a>
+      
         </Box>
       </Container>
     </footer>
