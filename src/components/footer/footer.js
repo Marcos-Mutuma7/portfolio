@@ -30,7 +30,7 @@ export default function Footer() {
          <a href="https://twitter.com/MarcosMutuma">twitter</a>
          <a href="https://www.facebook.com/maccosmutuma.muriungi.3">facebook</a>
         <a href="https://github.com/Marcos-Mutuma7">github</a>
-         <a href="tel+2547929917">phone</a>
+         <a href="https://www.linkedin.com/in/maccos-mutuma-31700b1ba/">linkedin</a>
       
         </Box>
       </Container>
