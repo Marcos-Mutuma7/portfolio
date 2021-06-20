@@ -23,7 +23,7 @@ export default function Footer() {
           <Logo />
           <Text as="p">
             &copy; {new Date().getFullYear()} All right reserved - Design &
-            Developed by Macc
+            <a href="tel:+254757929917">  +2547-5792-9917</a>
           </Text>
         </Box>
         <Box sx={styles.right}>
