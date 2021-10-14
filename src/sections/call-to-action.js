@@ -11,11 +11,11 @@ const CallToAction = () => {
         <Heading as="h3">
            
         Our Expertise and Services<br />
-        <Text>
+      
             and designers around!<br/>
             Hire the world’s best developers <br />
             and designers around!
-            </Text>
+            
           </Heading>
           
           <Box sx={styles.btnWrapper}>
@@ -58,6 +58,9 @@ const styles = {
         display: ['none', null, null, 'inherit'],
       },
     },
+    p:{
+      
+    }
   },
   btn: {
     backgroundColor: '#fff',
