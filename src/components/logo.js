@@ -1,26 +1,29 @@
 /** @jsx jsx */
-import { jsx ,Image ,Heading} from 'theme-ui';
+import { jsx, Image } from 'theme-ui';
 import { Link } from 'components/link';
 import logo from 'assets/logo.png';
 
-
-export default function Logo(props) {
+export default function Logo() {
   return (
     <Link
       path="/"
       sx={{
         variant: 'links.logo',
       }}
+      sx={styles.logo}
     >
-      <Heading  as="h1" sx={{
-        fontSize:"2rem",
-        fontFamily:'special',
-        color:'purple',
-        fontWeight:'heading',
-
-      }}>
-      Macc
-      </Heading>
+      <Image src={logo} sx={{ display: 'flex' }} alt="startup landing logo" />
     </Link>
   );
 }
+
+const styles = {
+  logo: {
+    alignItems: 'center',
+    cursor: 'pointer',
+    display: 'inline-flex',
+    width:[120, 170],
+    
+
+  },
+};

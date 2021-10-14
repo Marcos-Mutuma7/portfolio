@@ -1,4 +1,3 @@
-
 /** @jsx jsx */
 import { jsx, Container, Flex, Button, Box } from 'theme-ui';
 import { keyframes } from '@emotion/core';
@@ -38,7 +37,7 @@ export default function Header({ className }) {
           <Link
             path="/"
             ml={2}
-            label="Hire Now"
+            label="Contact us"
             sx={styles.headerBtn}
             variant="buttons.primary"
           />
@@ -53,9 +52,8 @@ export default function Header({ className }) {
 const styles = {
   headerBtn: {
     backgroundColor: 'rgba(0,0,0,0)',
-    fontSize: '15px',
+    fontSize: '16px',
     fontWeight: 'bold',
-    fontFamily:'special',
     letterSpacing: '-0.16px',
     borderRadius: '5px',
     border: '2px solid',
@@ -72,7 +70,7 @@ const styles = {
   header: {
     color: 'text_white',
     fontWeight: 'normal',
-    py: '25px',
+    py: '10px',
     width: '100%',
     position: 'fixed',
     top: 0,
@@ -83,7 +81,7 @@ const styles = {
     '&.sticky': {
       backgroundColor: 'background',
       color: 'text',
-      py: '15px',
+      py: '3px',
       boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
     },
   },
@@ -104,7 +102,6 @@ const styles = {
       fontSize: '16px',
       color: '#02073E',
       fontWeight: '400',
-      fontFamily:'special',
       cursor: 'pointer',
       lineHeight: '1.2',
       mr: '48px',

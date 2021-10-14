@@ -17,14 +17,15 @@ const VideoOne = () => {
     <Box as="section" sx={styles.video}>
       <Container>
         <Heading as="h3">
-        Website design is increasing  <br/>in importance for businesses <br/> of all sizes.
+          Leading companies trust us <br /> to develop software
         </Heading>
         <Text as="p">
-        Although 54% of small businesses have websites, many of them are outdated. <br/> Others are not designed to take advantage of the proliferation of smartphones, social media<br/> and e-commerce driving consumer engagement today.
-        If your company’s website fits in either of these groups, <br/> you’re practically leaving money on the table for your business.
+          We believe it’s important for everyone to have access to software{' '}
+          <br />
+          especially when it comes to digital learning be navigate.
         </Text>
         <Link path="/" sx={styles.link}>
-          Get started <FaAngleRight />
+          Explore Details <FaAngleRight />
         </Link>
         <Box sx={styles.videoBox}>
           <Image src={videoImg} alt="" />
@@ -35,11 +36,10 @@ const VideoOne = () => {
             sx={styles.videoBtn}
           >
             <FaPlay />
-          </Link> 
-            </Box>
-          </Container>
-
-          <ModalVideo
+          </Link>
+        </Box>
+      </Container>
+      <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
         videoId="Cm3U-NgJb9I"
@@ -58,7 +58,7 @@ const styles = {
     h3: {
       margin: 0,
       color: 'black',
-      fontSize: [5, null, null, '21px', '36px', '34px', 8],
+      fontSize: [5, null, null, '21px', '36px', '32px', 8],
       letterSpacing: ['-0.5px', null, null, null, null, '-1.5px'],
       fontWeight: 'bold',
       lineHeight: [1.6, null, null, 1.25],

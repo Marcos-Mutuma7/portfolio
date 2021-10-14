@@ -17,35 +17,35 @@ const TESTIMONIALS_DATA = [
     heading: 'Pierre Hackett',
     designation: 'VP of Engineering',
     content:
-      'I’d recommend Macc to anyone that needs brand strategy assistance. The team he works with goes above and beyond just designing your website. They take it one step further by making sure your brand message is clearly portrayed to the right audience.',
+      'They are doing amazing job with hundred percent customer satisfaction, Love their work and would like to work with them again',
   },
   {
     image: img2,
-    heading: 'Jack Forge',
-    designation: 'web developer',
+    heading: 'Natalia Sanz',
+    designation: 'Head of Technology',
     content:
-      "Macco is more than just a web designer. He's someone that specializes in branding, digital marketing, web development, app development, and website maintenance. You can trust him with a wide range of website needs.",
+      'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster.',
   },
   {
     image: img3,
     heading: 'Ece Akman',
     designation: 'Senior Marketer',
     content:
-      'His work blends web design with brand strategy and development. He uses sustainability best practices to meet the long-term growth of your organization.',
+      'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal.',
   },
   {
     image: img2,
     heading: 'Natalia Sanz',
-    designation: 'Digital creator',
+    designation: 'Head of Technology',
     content:
-      'I’d recommend Macc to anyone that needs brand strategy assistance. The team he works with goes above and beyond just designing your website. They take it one step further by making sure your brand message is clearly portrayed to the right audience.',
+      'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional.',
   },
   {
     image: img3,
     heading: 'Ece Akman',
-    designation: 'Software engineer',
+    designation: 'Senior Marketer',
     content:
-      ' His work blends web design with brand strategy and development. He uses sustainability best practices to meet the long-term growth of your organization.',
+      'Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base.',
   },
 ];
 
@@ -86,8 +86,8 @@ const Testimonials = () => {
     <Box as="section" id="testimonials" sx={styles.testimonials}>
       <Container>
         <BlockTitle
-          slogan="Developer Community"
-          title="Working with amazing developers"
+          slogan="Customer Comments"
+          title="Why customers love us"
           styles={styles.blockTitle}
         />
         <Swiper

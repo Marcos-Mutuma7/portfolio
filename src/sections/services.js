@@ -11,27 +11,27 @@ import icon4 from 'assets/icons/service-1-4.svg';
 const SERVICES_DATA = [
   {
     icon: icon1,
-    title: 'Web developopment',
+    title: 'Unlimited Customization',
     text:
-      'This is actually my stronghold field in tech. I use Javascript which is a text-based programming language used both on the client-side and server-side that allows to make webpages interactive.',
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
     icon: icon2,
-    title: 'UI & UX design',
+    title: 'Vector shape & resizable',
     text:
-      'As a Front-end web developer am responsible for applying interactive & visual design elememts such as colors & typography on web applications for a positive and cohesive user experience.',
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
     icon: icon3,
-    title: 'App development',
+    title: 'Editing freedom',
     text:
-      'I develop my apps with react-native which is a modern technology developed by Facebook,it creates hybrid apps which have a single codebase that will run on both android and IOS.',
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
     icon: icon4,
-    title: 'SEO & trafficing',
+    title: 'Best Award history',
     text:
-      'If you are looking to improve the quality and quantity of wesite traffic to a webpage,from search engines such as google.There are factors that influence whether a website appears higher in SERP. ',
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
 ];
 
@@ -40,8 +40,8 @@ const Services = () => {
     <Box sx={styles.services} id="services">
       <Container>
         <BlockTitle
-          slogan="Quality services"
-          title="What I do best"
+          slogan="Quality features"
+          title="Meet exciting feature of app"
           styles={styles.blockTitle}
         />
         <Grid sx={styles.grid}>

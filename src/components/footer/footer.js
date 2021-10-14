@@ -23,15 +23,15 @@ export default function Footer() {
           <Logo />
           <Text as="p">
             &copy; {new Date().getFullYear()} All right reserved - Design &
-            <a href="tel:+254757929917">  +2547-5792-9917</a>
+            Developed by RedQ, Inc
           </Text>
         </Box>
         <Box sx={styles.right}>
-         <a href="https://twitter.com/MarcosMutuma">twitter</a>
-         <a href="https://www.facebook.com/maccosmutuma.muriungi.3">facebook</a>
-        <a href="https://github.com/Marcos-Mutuma7">github</a>
-         <a href="https://www.linkedin.com/in/maccos-mutuma-31700b1ba/">linkedin</a>
-      
+          <Link path="/" label="Home" />
+          <Link path="/" label="Adversite" />
+          <Link path="/" label="Supports" />
+          <Link path="/" label="Marketing" />
+          <Link path="/" label="FAQ" />
         </Box>
       </Container>
     </footer>
@@ -51,8 +51,8 @@ const styles = {
     },
   },
   right: {
-    display: ['flex', null, null, null, 'flex'],
-    fontSize: [0 ,2],
+    display: ['none', null, null, null, 'flex'],
+    fontSize: 2,
     alignItems: 'center',
     color: 'black',
     a: {

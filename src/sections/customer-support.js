@@ -17,13 +17,15 @@ const CustomerSupport = () => {
                 Free Customer Support to ensure what you like to expect
               </Heading>
               <Text as="p">
-                I offer a risk-free trial period of up to two days. You will
-                only have to pay if you are happy with the design and wish to
-                continue.
+                We offer a risk-free trial period of up to two weeks. You will
+                only have to pay if you are happy with the developer and wish to
+                continue. If you are unsatisfied, we’ll refund payment or fix
+                issues on our dime period customers.
               </Text>
               <Text as="p" sx={styles.specialText}>
-              If you are happy with the prototype I continue with the build process and your website is done within a weeks time.
-           </Text>
+                If you are happy with the developer and wish to continue. If you
+                are unsatisfied, we’ll refund payment or fix issues.
+              </Text>
               <Link path="/" sx={styles.link}>
                 Learn more <FaAngleRight />
               </Link>

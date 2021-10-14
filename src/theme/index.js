@@ -9,7 +9,7 @@ export default {
     background: '#FFFFFF', // body background color
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E9EDF5', // border color
-    primary: '#8D448B', // primary button and link color
+    primary: '#2800FF', // primary button and link color
     secondary: '#793677', // secondary color - can be used for hover states
     black: '#0F2137', // black color
     gray: '#F8FAFC',
@@ -17,11 +17,11 @@ export default {
     accent: '#609', // a contrast color for emphasizing UI
   },
   fonts: {
-    body: 'DM Sans',
+    body: 'Playfair Display',
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'Comfortaa',
-    special: 'Comfortaa',
+    heading:'Playfair Display',
+    special: 'Cinzel',
     // heading: 'Bree Serif',
     monospace: 'Menlo, monospace',
   },
@@ -139,11 +139,10 @@ export default {
       display: [null, null, 'none'],
     }, // default variant for MenuButton
     // you can reference other values defined in the theme
-    
     primary: {
       fontWeight: 'bold',
       color: 'white',
-      bg: 'primary',
+      bg: '#2800FF',
       cursor: 'pointer',
       transition: '500ms',
       fontSize: 2,
@@ -151,7 +150,6 @@ export default {
         bg: 'secondary',
       },
     },
-    
   },
   blockTitle: {
     marginBottom: [45, null, null, null, 70],
@@ -169,41 +167,6 @@ export default {
       letterSpacing: ['-1px', null, null, null, '-1.5px'],
     },
   },
-  
-    forms: {
-      label: {
-        fontSize: 1,
-        fontWeight: 'bold',
-      },
-      input: {
-        borderColor: 'gray',
-        '&:focus': {
-          borderColor: 'primary',
-          boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
-          outline: 'none',
-        },
-      },
-      select: {
-        borderColor: 'gray',
-        '&:focus': {
-          borderColor: 'primary',
-          boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
-          outline: 'none',
-        },
-      },
-      textarea: {
-        borderColor: 'gray',
-        '&:focus': {
-          borderColor: 'primary',
-          boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
-          outline: 'none',
-        },
-      },
-      slider: {
-        bg: 'muted',
-      },
-    },
-  
   styles: {
     // To add base, top-level styles to the <body> element, use theme.styles.root.
     root: {
@@ -250,39 +213,6 @@ export default {
       position: 'absolute !important',
       width: '1px !important',
       whiteSpace: 'nowrap !important',
-    },
-  },
-  forms: {
-    label: {
-      fontSize: 1,
-      fontWeight: 'bold',
-    },
-    input: {
-      borderColor: 'gray',
-      '&:focus': {
-        borderColor: 'primary',
-        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
-        outline: 'none',
-      },
-    },
-    select: {
-      borderColor: 'gray',
-      '&:focus': {
-        borderColor: 'primary',
-        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
-        outline: 'none',
-      },
-    },
-    textarea: {
-      borderColor: 'gray',
-      '&:focus': {
-        borderColor: 'primary',
-        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
-        outline: 'none',
-      },
-    },
-    slider: {
-      bg: 'muted',
     },
   },
 };

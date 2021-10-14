@@ -16,24 +16,25 @@ const BoostAgencies = () => {
             <Box sx={styles.content}>
               <Box sx={styles.titleBox}>
                 <Heading as="h3">
-                  How an updated website design can increase your customers
+                  Boost your agencies by choosing Ninja Developers
                 </Heading>
                 <Text as="p">
-                Updating your website design  provides an opportunity to feature eye-catching calls-to-action (CTAs) that turn passive visitors into active customers. 
-                  </Text>
+                  Create custom landing pages with Shades that convert more
+                  visitors than any website, no coding required.
+                </Text>
               </Box>
               <Box as="ul" sx={styles.list}>
                 <Text as="li">
                   <IoIosCheckmarkCircle />
-                  Leverage Responsive Design
+                  Unlimited design possibility
                 </Text>
                 <Text as="li">
                   <IoIosCheckmarkCircle />
-                  Enhance User Experience
+                  Completely responsive features
                 </Text>
                 <Text as="li">
                   <IoIosCheckmarkCircle />
-                  Activate New and Returning Customers
+                  Easy to customize plugins
                 </Text>
               </Box>
               <Link path="/" sx={styles.link}>
@@ -100,7 +101,7 @@ const styles = {
     textAlign: ['center', null, null, 'left'],
     h3: {
       color: 'black',
-      fontSize: [5, null, null, '21px', '36px', '34px', 9],
+      fontSize: [5, null, null, '21px', '36px', '32px', 8],
       lineHeight: [1.6, null, null, '1.5'],
       fontWeight: 'bold',
       letterSpacing: ['-0.5px', null, null, null, null, null, '-1.5px'],

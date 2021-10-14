@@ -7,11 +7,19 @@ const CallToAction = () => {
     <Box sx={styles.wrapper}>
       <Container sx={styles.container}>
         <Box sx={styles.inner}>
-          <Heading as="h3">
-            Build your audience & grow  <br/>your business online smarter.
+         
+        <Heading as="h3">
+           
+        Our Expertise and Services<br />
+        <Text>
+            and designers around!<br/>
+            Hire the world’s best developers <br />
+            and designers around!
+            </Text>
           </Heading>
+          
           <Box sx={styles.btnWrapper}>
-            <Button sx={styles.btn}>HIRE NOW</Button>
+            <Button sx={styles.btn}>HIRE DEVELOPERS</Button>
           </Box>
         </Box>
       </Container>
@@ -24,8 +32,9 @@ export default CallToAction;
 const styles = {
   wrapper: {},
   inner: {
-    padding: ['45px 30px 50px', null, null, '45px 50px', null, '45px 70px'],
-    mt: [0, null, null, null, '-80px'],
+    padding: ['45px 30px 50px', null, null, '45px 50px', null, '40px 70px'],
+  
+    mt: [0, null, null, null, '-50px'],
     position: 'relative',
     zIndex: '10',
     backgroundColor: 'primary',
@@ -54,7 +63,7 @@ const styles = {
     backgroundColor: '#fff',
     color: 'primary',
     borderRadius: '5px',
-    fontSize: [0, 2, null, null, null, null, '30px'],
+    fontSize: [0, 1, null, null, null, null, '17px'],
     fontWeight: '700',
     letterSpacing: '0.1em',
     fontFamily: 'body',

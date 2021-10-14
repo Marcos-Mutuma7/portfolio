@@ -5,7 +5,6 @@ import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
 
-
 import Banner from 'sections/banner';
 import Services from 'sections/services';
 import Testimonials from 'sections/testimonials';
@@ -20,8 +19,9 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Macc app" />
+          <SEO title="Startup Landing 006" />
           <Banner />
+          <CallToAction/>
           <Services />
           <BoostAgencies />
           <VideoOne />
