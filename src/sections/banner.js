@@ -7,7 +7,7 @@ import img1 from 'assets/partner-1-1.png';
 import img2 from 'assets/partner-1-2.png';
 import img3 from 'assets/partner-1-3.png';
 
-import bannerImg from 'assets/banner-bk.png';
+import bannerImg from 'assets/bannner.png';
 
 const Banner = () => {
   return (
