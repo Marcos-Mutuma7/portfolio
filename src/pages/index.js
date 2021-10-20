@@ -28,7 +28,6 @@ export default function IndexPage() {
           <Testimonials />
           <CustomerSupport />
           <Feature />
-          <CallToAction />
         </Layout>
       </StickyProvider>
     </ThemeProvider>
