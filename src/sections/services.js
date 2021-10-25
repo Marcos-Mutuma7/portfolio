@@ -3,7 +3,7 @@
 import { jsx, Box, Flex, Container } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Image from 'components/image';
-import privacy from 'assets/privacy.png';
+import privacy from 'assets/service.png';
 
 const Services = () => {
   return (
@@ -15,8 +15,9 @@ const Services = () => {
           </Flex>
           <SectionHeading
             sx={styles.heading}
-            title="Unbeatable privacy &amp; secure data storage subscription"
-            description="Our data centers have top-notch security and surveillance, with a reliable 99.9% uptime. Secure email hosting with encryption both at rest and end-to-end, along with S/MIME message encryption."
+            sx={styles.heading}
+            sx={styles.heading}
+            sx={styles.heading}
             learnMore="Secure data storage"
           />
         </Box>
@@ -50,6 +51,7 @@ const styles = {
   illustration: {
     alignItems: 'center',
     mt: [8, null, 10],
+     maxWidth: ['100%', null, null, '60%', '100%', 'none'],
   
   },
 };

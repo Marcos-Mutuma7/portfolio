@@ -11,16 +11,9 @@ class CustomDocument extends Document {
       <Html lang="en-US">
         <Head>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"/> 
-
-          <link
-          href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" 
-          rel="stylesheet"
-          />
-
-<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&display=swap" rel="stylesheet"/> 
-<link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet"/> 
-<link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Cinzel&family=Playfair+Display&display=swap" rel="stylesheet"/> 
-        </Head>
+       
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"/>   
+         </Head>
         <body>
           <Main />
           <NextScript />

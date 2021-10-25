@@ -1,205 +1,150 @@
-    /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import { Container, Grid, Box, Heading, Text } from 'theme-ui';
-import SectionHeader from 'components/section-header';
+import React, { useRef } from 'react';
+import { Box, Container } from 'theme-ui';
+import BlockTitle from 'components/block-title';
+import Swiper from 'react-id-swiper';
 
-import PatternBG from 'assets/patternBG.png';
-import ArrowOdd from 'assets/arrowOdd.png';
-import ArrowEven from 'assets/arrowEven.png';
+import FeatureCard from 'components/feature-card';
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
+import featureImage1 from 'assets/image 21.png';
+import featureImage2 from 'assets/image 22(2).png';
+import featureImage3 from 'assets/image 26.png';
 
-const data = [
-  {
-    id: 1,
-    title: 'Set disbursement Instructions',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-  },
-  {
-    id: 2,
-    title: 'Assembly retrieves funds from your account',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-  },
-  {
-    id: 3,
-    title: 'Assembly initiates disbursement',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-  },
- 
-  {
-    id: 4,
-    title: 'Customer receives funds payment',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-  },
+const FeatureData = [
   
   {
-    id: 5,
-    title: 'Customer receives funds payment',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    image: featureImage1,
+    title: 'Cloud Computing',
+    comments: '22 Comments',
+    path: '/',
   },
   {
-    id: 6,
-    title: 'Customer receives funds payment',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-  },{
-    id: 7,
-    title: 'Customer receives funds payment',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    image: featureImage2,
+    title: 'Database Management Systems ',
+    comments: '15 Comments',
+    path: '/',
   },
   {
-    id: 8,
-    title: 'Customer receives funds payment',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    image: featureImage3,
+    title:
+      'Machine Learning',
+    comments: '12 Comments',
+    path: '/',
   },
+  
 ];
 
-export default function CallToAction() {
-  return (
-    <section sx={styles.workflow}>
-      <Container>
-        <SectionHeader
-          slogan="Whats the function"
-          title="Let’s see how it works"
-          isWhite={true}
-        />
+const Feature = () => {
+  const ref = useRef(null);
+  const goNext = () => {
+    if (ref.current !== null && ref.current.swiper !== null) {
+      ref.current.swiper.slideNext();
+    }
+  };
 
-        <Grid sx={styles.grid}>
-          {data.map((item) => (
-            <Box sx={styles.card} key={item.id}>
-              <Box sx={styles.iconBox}>{`0${item.id}`}</Box>
-              <Box sx={styles.wrapper}>
-                <Heading sx={styles.wrapper.title}>{item.title}</Heading>
-                <Text sx={styles.wrapper.subTitle}>{item.text}</Text>
-              </Box>
-            </Box>
-          ))}
-        </Grid>
-
-
-        
-      </Container>
-    </section>
-  );
-}
-
-const styles = {
-  workflow: {
-    backgroundColor: '#1F3E76',
-    backgroundImage: `url(${PatternBG})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'center center',
-    backgroundSize: 'cover',
-    position: 'relative',
-    py: [8, null, 9, null, null, 10],
-    '&::before': {
-      position: 'absolute',
-      content: '""',
-      top: 0,
-      right:0,
-      background:
-        'linear-gradient(-45deg, rgba(42,72,125, 0.3) 25%, transparent 25%, transparent 50%, rgba(42,72,125, 0.3) 50%, rgba(42,72,125, 0.3) 75%, transparent 75%, transparent)',
-      width: '100%',
-      backgroundSize: '350px 350px',
-      height: '100%',
-      opacity: 0.3,
-      zIndex: 0,
-    },
-  },
-  grid: {
-    mb: -1,
-    pt: 0,
-    gridGap: [
-      '35px 0',
-      null,
-      '45px 50px',
-      null,
-      '50px 25px',
-      null,
-      null,
-      '50px 65px',
-    ],
-    gridTemplateColumns: [
-      'repeat(1,1fr)',
-      null,
-      'repeat(2,1fr)',
-      null,
-      'repeat(4,1fr)',
-    ],
-  },
-  card: {
-    display: 'flex',
-    flexDirection: 'column',
-    position: 'relative',
-    textAlign: ['center', null, 'left'],
-    width: ['100%', '80%', '100%'],
-    mx: 'auto',
-    '&::before': {
-      position: 'absolute',
-      content: '""',
-      top: 0,
-      left: [0, null, null, null, null, 75, null, 100],
-      backgroundRepeat: `no-repeat`,
-      backgroundPosition: 'center center',
-      width: 215,
-      height: 60,
-      opacity: 0.3,
-      '@media screen and (max-width:1220px)': {
-        display: 'none',
+  const goPrev = () => {
+    if (ref.current !== null && ref.current.swiper !== null) {
+      ref.current.swiper.slidePrev();
+    }
+  };
+  const params = {
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    spaceBetween: 30,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+      },
+      376: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+      },
+      576: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 30,
       },
     },
-    '&:nth-of-type(2n-1)::before': {
-      backgroundImage: `url(${ArrowOdd})`,
-    },
-    '&:nth-of-type(2n)::before': {
-      backgroundImage: `url(${ArrowEven})`,
-      top: 17,
-    },
-    '&:last-child::before': {
-      display: 'none',
+  };
+  return (
+    <Box sx={styles.features} id="news">
+      <Container>
+       
+        <Swiper {...params} ref={ref}>
+          {FeatureData.map((feature, index) => (
+            <div className="swiper-slider" key={`feature-card-key${index}`}>
+              <FeatureCard
+                image={feature.image}
+                title={feature.title}
+                commentCount={feature.comments}
+                path={feature.path}
+              />
+            </div>
+          ))}
+        </Swiper>
+        <Box sx={styles.carouselBtns}>
+          <button aria-label="left btn" onClick={goPrev}>
+            <FaLongArrowAltLeft />
+          </button>
+          <button onClick={goNext} aria-label="right btn">
+            <FaLongArrowAltRight />
+          </button>
+        </Box>
+      </Container>
+    </Box>
+  );
+};
+
+export default Feature;
+
+const styles = {
+  blockTitle: {
+    textAlign: 'center',
+  },
+  features: {
+    pt: ['80px', null, null, null, null, null, '0px'],
+    pb: ['80px', null, null, null, '0px'],
+    backgroundColor: '#F8FAFC',
+    '.swiper-slider': {
+      overflowY: 'visible',
+      overflowX: 'hidden',
     },
   },
-
-  iconBox: {
-    width: ['50px', null, '60px', null, null, '70px'],
-    height: ['50px', null, '60px', null, null, '70px'],
-    flexShrink: 0,
-    borderRadius: [15, null, 23, null, null, 30],
-    backgroundColor: 'white',
-    display: 'flex',
-    alignItems: 'center',
-    mb: [5, null, null, null, null, 6],
-    mx: ['auto', null, 0],
-    fontSize: [6, null, 7, null, null, '30px'],
-    fontWeight: 700,
+  carouselBtns: {
+    display: ['flex', null, null, null, null, 'none'],
     justifyContent: 'center',
-    color: '#234582',
-  },
-  wrapper: {
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    mt: '-5px',
-    title: {
-      fontSize: [3, null, 4, null, null, 5],
-      color: 'white',
-      lineHeight: [1.4, null, null, null, null, 1.55],
-      pr: [0, null, null, null, null, 2],
-      mb: [2, 3],
-    },
-
-    subTitle: {
-      fontSize: 1,
-      fontWeight: 400,
-      lineHeight: [1.85, null, null, 1.9, 2],
-      color: 'white',
-      opacity: 0.65,
-      pr: [0, null, null, null, null, 5],
+    alignItems: 'center',
+    button: {
+      border: 'none',
+      outline: 'none',
+      backgroundColor: 'transparent',
+      fontSize: [2, null, 4, null, 5],
+      color: '#BBC7D7',
+      width: 'auto',
+      padding: [0],
+      margin: '0 5px',
+      mt: '15px',
+      transition: '500ms',
+      '&:hover, &:active, &:focus': {
+        color: 'primary',
+      },
     },
   },
 };

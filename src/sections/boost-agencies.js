@@ -84,6 +84,7 @@ export default BoostAgencies;
 const styles = {
   boostAgencies: {
     pt: ['70px', null, null, '80px', '120px', null, '0'],
+    backgroundColor: '#F6F8FB',
   },
   row: {
     display: 'flex',

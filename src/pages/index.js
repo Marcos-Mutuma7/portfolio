@@ -6,6 +6,7 @@ import SEO from 'components/seo';
 import Layout from 'components/layout';
 
 import Banner from 'sections/banner';
+import Count from 'sections/count'
 import Services from 'sections/services';
 import Testimonials from 'sections/testimonials';
 import CustomerSupport from 'sections/customer-support';
@@ -19,15 +20,20 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 006" />
+          <SEO title="software development company" />
           <Banner />
+          <Count/>
+          <Feature/>
           <CallToAction/>
-          <Services />
+          
+          <CustomerSupport/>
           <BoostAgencies />
-          <VideoOne />
           <Testimonials />
-          <CustomerSupport />
-          <Feature />
+        
+
+          <VideoOne />
+          
+          
         </Layout>
       </StickyProvider>
     </ThemeProvider>

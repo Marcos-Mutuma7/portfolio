@@ -8,17 +8,17 @@ import img1 from 'assets/partner-1-1.png';
 import img2 from 'assets/partner-1-2.png';
 import img3 from 'assets/partner-1-3.png';
 
-import bannerImg from 'assets/banner.png';
+import bannerImg from 'assets/image 38.png';
 import { Autoplay } from 'swiper';
 
-const Banner = () => {
+const SoftwareBanner = () => {
   return (
     <Box sx={styles.banner} id="banner">
       <Container sx={styles.container}>
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-              Software development company
+              Sofware development
             </Heading>
             <Text as="p">
             We help build and manage a team of world-class developers to bring
@@ -63,7 +63,7 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default SoftwareBanner;
 
 const styles = {
   banner: {

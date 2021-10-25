@@ -5,30 +5,32 @@ import Swiper from 'react-id-swiper';
 
 import FeatureCard from 'components/feature-card';
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
-import featureImage1 from 'assets/tutorial-1-1.png';
-import featureImage2 from 'assets/tutorial-1-2.png';
-import featureImage3 from 'assets/tutorial-1-3.png';
+import featureImage1 from 'assets/image 17(1).png';
+import featureImage2 from 'assets/image 18.png';
+import featureImage3 from 'assets/image 19(1).png';
 
 const FeatureData = [
+  
   {
     image: featureImage1,
-    title: 'How to work with prototype design with adobe xd featuring tools',
+    title: 'Sofware development',
     comments: '22 Comments',
-    path: '/',
+    path: '/software',
   },
   {
     image: featureImage2,
-    title: 'Create multiple artboard by using figma prototyping development',
+    title: 'Data Analytics',
     comments: '15 Comments',
     path: '/',
   },
   {
     image: featureImage3,
     title:
-      'Convert your web layout theming easily with sketch zeplin extension',
+      'Blockchain Technology',
     comments: '12 Comments',
     path: '/',
   },
+  
 ];
 
 const Feature = () => {
@@ -120,10 +122,11 @@ export default Feature;
 const styles = {
   blockTitle: {
     textAlign: 'center',
+    pb:'60px',
   },
   features: {
-    pt: ['80px', null, null, null, null, null, '120px'],
-    pb: ['80px', null, null, null, '170px'],
+    pt: ['20px', null, null, null, null, null, '20px'],
+    pb: ['10px', null, null, null, '10px'],
     backgroundColor: '#F8FAFC',
     '.swiper-slider': {
       overflowY: 'visible',

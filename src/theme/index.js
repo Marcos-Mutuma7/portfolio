@@ -1,3 +1,6 @@
+
+import { rgba } from 'polished';
+
 export default {
   // example colors with dark mode
   colors: {
@@ -8,8 +11,9 @@ export default {
     background: '#FFFFFF', // body background color
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E5ECF4', // border color
-    primary: '#1F3E76', // primary button and link color
-    secondary: '#25CB9E', // secondary color - can be used for hover states
+    primary: 'rgba(1, 50, 67, 1)', // primary button and link color
+    secondary: rgba('#0F2137', 0.6),
+                                        // secondary color - can be used for hover states
     muted: '#7B8188', // muted color
     accent: '#609', // a contrast color for emphasizing UI
     yellow: '#F6C416',
@@ -35,8 +39,8 @@ export default {
     '1620px',
   ],
   fonts: {
-    body: "'DM Sans', sans-serif",
-    heading: "'DM Sans', sans-serif",
+    body: "'Raleway', sans-serif",
+    heading: "'Raleway', sans-serif",
   },
   fontSizes: [12, 15, 16, 18, 20, 22, 24, 28, 32, 36, 42, 48, 52, 64],
   fontWeights: {
@@ -65,7 +69,7 @@ export default {
         '1020px',
         '1200px',
         null,
-        '1310px',
+        '1380px',
       ],
       px: [4, 6],
     },
