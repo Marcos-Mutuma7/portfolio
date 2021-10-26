@@ -24,6 +24,7 @@ export default function IndexPage() {
           <Banner />
           {/*
           <Count/>
+          */}
           <Services/>
           <Service/>
           
@@ -34,7 +35,7 @@ export default function IndexPage() {
 
           <VideoOne />
           <CallToAction/>
-*/}
+
         </Layout>
       </StickyProvider>
     </ThemeProvider>
