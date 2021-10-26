@@ -24,7 +24,7 @@ const styles = {
   },
   value: {
     color: 'primary',
-    fontSize: [4, null, null, 10, null, 12],
+    fontSize: [4, null, null, 10, null, '42px'],
     display: 'flex',
     justifyContent: 'center',
     lineHeight: 1.38,

@@ -1,150 +1,88 @@
-import React, { useRef } from 'react';
-import { Box, Container } from 'theme-ui';
-import BlockTitle from 'components/block-title';
-import Swiper from 'react-id-swiper';
-
-import FeatureCard from 'components/feature-card';
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
-import featureImage1 from 'assets/image 21.png';
-import featureImage2 from 'assets/image 22(2).png';
-import featureImage3 from 'assets/image 26.png';
-
-const FeatureData = [
-  
-  {
-    image: featureImage1,
-    title: 'Cloud Computing',
-    comments: '22 Comments',
-    path: '/',
-  },
-  {
-    image: featureImage2,
-    title: 'Database Management Systems ',
-    comments: '15 Comments',
-    path: '/',
-  },
-  {
-    image: featureImage3,
-    title:
-      'Machine Learning',
-    comments: '12 Comments',
-    path: '/',
-  },
-  
-];
-
-const Feature = () => {
-  const ref = useRef(null);
-  const goNext = () => {
-    if (ref.current !== null && ref.current.swiper !== null) {
-      ref.current.swiper.slideNext();
-    }
-  };
-
-  const goPrev = () => {
-    if (ref.current !== null && ref.current.swiper !== null) {
-      ref.current.swiper.slidePrev();
-    }
-  };
-  const params = {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    spaceBetween: 30,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 0,
-      },
-      376: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 0,
-      },
-      576: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 0,
-      },
-      768: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 30,
-      },
-      992: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 30,
-      },
-      1200: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 30,
-      },
-    },
-  };
+import React from 'react';
+import { Box, Container, Heading, Button } from 'theme-ui';
+import BgShape from 'assets/cta-shape-1.svg';
+import btnShape from 'assets/cta-btn-shape-1.svg';
+const CallToAction = () => {
   return (
-    <Box sx={styles.features} id="news">
-      <Container>
-       
-        <Swiper {...params} ref={ref}>
-          {FeatureData.map((feature, index) => (
-            <div className="swiper-slider" key={`feature-card-key${index}`}>
-              <FeatureCard
-                image={feature.image}
-                title={feature.title}
-                commentCount={feature.comments}
-                path={feature.path}
-              />
-            </div>
-          ))}
-        </Swiper>
-        <Box sx={styles.carouselBtns}>
-          <button aria-label="left btn" onClick={goPrev}>
-            <FaLongArrowAltLeft />
-          </button>
-          <button onClick={goNext} aria-label="right btn">
-            <FaLongArrowAltRight />
-          </button>
+    <Box sx={styles.wrapper}>
+      <Container sx={styles.container}>
+        <Box sx={styles.inner}>
+          <Heading as="h3">
+            Hire the world’s best developers <br />
+            and designers around!
+          </Heading>
+          <Box sx={styles.btnWrapper}>
+            <Button sx={styles.btn}>HIRE DEVELOPERS</Button>
+          </Box>
         </Box>
       </Container>
     </Box>
   );
 };
 
-export default Feature;
+export default CallToAction;
 
 const styles = {
-  blockTitle: {
-    textAlign: 'center',
-  },
-  features: {
-    pt: ['80px', null, null, null, null, null, '0px'],
-    pb: ['80px', null, null, null, '0px'],
-    backgroundColor: '#F8FAFC',
-    '.swiper-slider': {
-      overflowY: 'visible',
-      overflowX: 'hidden',
+  wrapper: {},
+  inner: {
+    padding: ['45px 30px 50px', null, null, '45px 50px', null, '45px 70px'],
+    mt: [0, null, null, null, '-80px'],
+    position: 'relative',
+    zIndex: '10',
+    backgroundColor: 'primary',
+    backgroundImage: ['none', null, null, null, null, `url(${BgShape})`],
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: '60% center',
+    borderRadius: '10px',
+    display: 'flex',
+    alignItems: 'center',
+    textAlign: ['center', null, null, 'left'],
+    flexDirection: ['column', null, null, 'row'],
+    justifyContent: ['center', null, null, 'space-between'],
+    h3: {
+      color: '#fff',
+      fontWeight: 'bold',
+      fontSize: [5, null, 4, null, null, 6, 7],
+      lineHeight: [1.24, null, 1.53],
+      padding: ['0 15px', '0'],
+      marginBottom: ['50px', null, null, '0'],
+      br: {
+        display: ['none', null, null, 'inherit'],
+      },
     },
   },
-  carouselBtns: {
-    display: ['flex', null, null, null, null, 'none'],
-    justifyContent: 'center',
-    alignItems: 'center',
-    button: {
-      border: 'none',
-      outline: 'none',
-      backgroundColor: 'transparent',
-      fontSize: [2, null, 4, null, 5],
-      color: '#BBC7D7',
-      width: 'auto',
-      padding: [0],
-      margin: '0 5px',
-      mt: '15px',
-      transition: '500ms',
-      '&:hover, &:active, &:focus': {
-        color: 'primary',
-      },
+  btn: {
+    backgroundColor: '#fff',
+    color: 'primary',
+    borderRadius: '5px',
+    fontSize: [0, 1, null, null, null, null, '17px'],
+    fontWeight: '700',
+    letterSpacing: '0.1em',
+    fontFamily: 'body',
+    padding: ['10px 24px', null, null, null, null, '15px 44px'],
+    position: 'relative',
+    outline: 'none',
+    webkitAppearance: 'none',
+    '&:before, &:after': {
+      content: '""',
+      position: 'absolute',
+      width: '73px',
+      height: '26px',
+      backgroundImage: `url(${btnShape})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      bottom: 'calc(100% + 10px)',
+      left: '50%',
+      transform: 'translateX(-50%)',
+    },
+    '&:after': {
+      bottom: 'auto',
+      top: 'calc(100% + 10px)',
+      transform: 'translateX(-50%) rotate(180deg)',
+    },
+    '&:hover': {
+      backgroundColor: 'black',
+      color: '#fff',
     },
   },
 };

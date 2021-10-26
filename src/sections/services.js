@@ -1,57 +1,155 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { jsx, Box, Flex, Container } from 'theme-ui';
-import SectionHeading from 'components/section-heading';
-import Image from 'components/image';
-import privacy from 'assets/service.png';
+import React, { useRef } from 'react';
+import { Box, Container } from 'theme-ui';
+import BlockTitle from 'components/block-title';
+import Swiper from 'react-id-swiper';
+
+import FeatureCard from 'components/feature-card';
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
+import featureImage1 from 'assets/image 17(1).png';
+import featureImage2 from 'assets/image 18.png';
+import featureImage3 from 'assets/image 21.png';
+
+const FeatureData = [
+  
+  {
+    image: featureImage2,
+    title: 'Data Analytics',
+    comments: '22 Comments',
+    path: '/data',
+  },
+  {
+    image: featureImage1,
+    title: 'Software Development',
+    comments: '15 Comments',
+    path: '/software',
+  },
+  {
+    image: featureImage3,
+    title:'Cloud computing services',
+    comments: '12 Comments',
+    path: '/cloud',
+  },
+  
+];
 
 const Services = () => {
+  const ref = useRef(null);
+  const goNext = () => {
+    if (ref.current !== null && ref.current.swiper !== null) {
+      ref.current.swiper.slideNext();
+    }
+  };
+
+  const goPrev = () => {
+    if (ref.current !== null && ref.current.swiper !== null) {
+      ref.current.swiper.slidePrev();
+    }
+  };
+  const params = {
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    spaceBetween: 30,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+      },
+      376: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+      },
+      576: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 30,
+      },
+    },
+  };
   return (
-    <section sx={styles.section} id="features">
+    <Box sx={styles.features} id="news">
       <Container>
-        <Box sx={styles.grid}>
-          <Flex sx={styles.illustration}>
-            <Image src={privacy} alt="privacy" />
-          </Flex>
-          <SectionHeading
-            sx={styles.heading}
-            sx={styles.heading}
-            sx={styles.heading}
-            sx={styles.heading}
-            learnMore="Secure data storage"
-          />
+        <BlockTitle
+          slogan="Quality features"
+          title="Tutorials that people love most"
+          styles={styles.blockTitle}
+        />
+
+        <Swiper {...params} ref={ref}>
+          {FeatureData.map((feature, index) => (
+            <div className="swiper-slider" key={`feature-card-key${index}`}>
+              <FeatureCard
+                image={feature.image}
+                title={feature.title}
+                commentCount={feature.comments}
+                path={feature.path}
+              />
+            </div>
+          ))}
+        </Swiper>
+        <Box sx={styles.carouselBtns}>
+          <button aria-label="left btn" onClick={goPrev}>
+            <FaLongArrowAltLeft />
+          </button>
+          <button onClick={goNext} aria-label="right btn">
+            <FaLongArrowAltRight />
+          </button>
         </Box>
       </Container>
-    </section>
+    </Box>
   );
 };
 
 export default Services;
 
 const styles = {
-  section: {
-    pt: [6, null, null, null, 0, 0],
-    pb: [6, null, null, 0, 0, 0],
+  blockTitle: {
+    textAlign: 'center',
+    pb:'60px',
   },
-  grid: {
-    display: ['flex', null, null, 'grid'],
-    alignItems: 'center',
-    gap: [null, null, null, 1, 1],
-    flexDirection: ['column-reverse', null, null, 'unset'],
-    gridTemplateColumns: ['1fr', null, null, 'repeat(2, 1fr)', '1fr 470px'],
-  },
-  heading: {
-    textAlign: ['center', null, null, 'left'],
-    
-    h3: {
-      fontSize: [3, null, null, 8, 8],
-      lineHeight: 1.53,
+  features: {
+    pt: ['20px', null, null, null, null, null, '20px'],
+    pb: ['10px', null, null, null, '10px'],
+    backgroundColor: '#F8FAFC',
+    '.swiper-slider': {
+      overflowY: 'visible',
+      overflowX: 'hidden',
     },
   },
-  illustration: {
+  carouselBtns: {
+    display: ['flex', null, null, null, null, 'none'],
+    justifyContent: 'center',
     alignItems: 'center',
-    mt: [8, null, 10],
-     maxWidth: ['100%', null, null, '60%', '100%', 'none'],
-  
+    button: {
+      border: 'none',
+      outline: 'none',
+      backgroundColor: 'transparent',
+      fontSize: [2, null, 4, null, 5],
+      color: '#BBC7D7',
+      width: 'auto',
+      padding: [0],
+      margin: '0 5px',
+      mt: '15px',
+      transition: '500ms',
+      '&:hover, &:active, &:focus': {
+        color: 'primary',
+      },
+    },
   },
 };

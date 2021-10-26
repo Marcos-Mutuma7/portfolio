@@ -10,10 +10,10 @@ import Count from 'sections/count'
 import Services from 'sections/services';
 import Testimonials from 'sections/testimonials';
 import CustomerSupport from 'sections/customer-support';
-import Feature from 'sections/feature';
 import VideoOne from 'sections/video-one';
-import CallToAction from 'sections/call-to-action';
+import Service from 'sections/service';
 import BoostAgencies from 'sections/boost-agencies';
+import CallToAction from 'sections/call-to-action';
 
 export default function IndexPage() {
   return (
@@ -23,8 +23,8 @@ export default function IndexPage() {
           <SEO title="software development company" />
           <Banner />
           <Count/>
-          <Feature/>
-          <CallToAction/>
+          <Services/>
+          <Service/>
           
           <CustomerSupport/>
           <BoostAgencies />
@@ -32,7 +32,7 @@ export default function IndexPage() {
         
 
           <VideoOne />
-          
+          <CallToAction/>
           
         </Layout>
       </StickyProvider>

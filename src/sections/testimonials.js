@@ -2,6 +2,8 @@ import React from 'react';
 import { Box, Container, Grid, Heading, Text } from 'theme-ui';
 import BlockTitle from 'components/block-title';
 import Image from 'components/image';
+import { Link } from 'components/link';
+
 
 
 import icon1 from 'assets/icons/image 25(4).png';
@@ -20,13 +22,15 @@ const SERVICES_DATA = [
     title: 'Healthcare',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      path:'/data'
   },
   {
     icon: icon2,
    title:'Retail',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-  },
+     'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    
+    },
   {
     icon: icon3,
     title: 'Education',
@@ -65,7 +69,7 @@ const SERVICES_DATA = [
   },
 ];
 
-const Services = () => {
+const Services = (props) => {
   return (
     <Box sx={styles.services} id="services">
       <Container>
@@ -84,11 +88,14 @@ const Services = () => {
               <Box className="service-icon" sx={styles.icon}>
                 <Image src={service.icon} alt="" />
               </Box>
+              
               <Heading as="h3">{service.title}</Heading>
+              
               <Text as="p">{service.text}</Text>
             </Box>
           ))}
         </Grid>
+      
       </Container>
     </Box>
   );
