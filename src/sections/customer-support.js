@@ -4,25 +4,14 @@ import { FaAngleRight } from 'react-icons/fa';
 import { Link } from 'components/link';
 import Image from 'components/image';
 
-import img1 from 'assets/image 24.png';
-
-import BlockTitle from 'components/block-title';
+import img1 from 'assets/cta-2-1.png';
 
 const CustomerSupport = () => {
   return (
     <Box as="section" sx={styles.customerSupport}>
       <Container>
-      <BlockTitle
-          slogan="Quality features"
-          title="Meet exciting feature of app"
-          styles={styles.blockTitle}
-        />
         <Grid sx={styles.row}>
-        <Box sx={styles.col}>
-            <Image src={img1} alt="" />
-          </Box>
-       
-        <Box sx={styles.col}>
+          <Box sx={styles.col}>
             <Box sx={styles.content}>
               <Heading as="h3">
                 Free Customer Support to ensure what you like to expect
@@ -42,7 +31,9 @@ const CustomerSupport = () => {
               </Link>
             </Box>
           </Box>
-         
+          <Box sx={styles.col}>
+            <Image src={img1} alt="" />
+          </Box>
         </Grid>
       </Container>
     </Box>
@@ -54,12 +45,8 @@ export default CustomerSupport;
 const styles = {
   customerSupport: {
     overflow: 'hidden',
-    pt: ['5px', null, null, null, '0', '80px'],
-    pb: ['5px', null, null, null, null, '0px', '5px'],
-    backgroundColor: '#F6F8FB',
-  },
-  blockTitle: {
-    textAlign: 'center',
+    pt: ['75px', null, null, null, '0', '80px'],
+    pb: ['75px', null, null, null, null, '120px', '210px'],
   },
   row: {
     display: 'grid',
@@ -68,26 +55,26 @@ const styles = {
   },
   col: {
     img: {
-      maxWidth: ['100%', null, null, '60%', '90%', '90%'],
+      maxWidth: ['100%', null, null, '60%', '100%', 'none'],
       mx: [null, null, null, 'auto', '0'],
       display: [null, null, null, 'block'],
-      mt: [null, null, null, null, '40px', '5'],
+      mt: [null, null, null, null, '40px', '0'],
     },
   },
   content: {
-    pt: [0, null, null, null, '160px', '15px'],
+    pt: [0, null, null, null, '160px', '210px'],
     mb: [null, null, null, '-40px', '0'],
     position: 'relative',
     zIndex: 10,
     paddingLeft: ['12px', null, null, null, '0'],
-    paddingRight: ['12px', null, null, null, '0', '0', '0'],
+    paddingRight: ['12px', null, null, null, '0', '75px', '0'],
     pb: ['10px'],
-    maxWidth: [null, null, null, '590px', null, '90%'],
+    maxWidth: [null, null, null, '590px', null, '100%'],
     width: ['100%'],
     mx: [null, null, null, 'auto', null, '0'],
     textAlign: ['center', null, null, null, 'left'],
     h3: {
-      fontSize: [5, null, '21px', null, 7, '28px', 8],
+      fontSize: [5, null, '21px', null, 7, '32px', 8],
       maxWidth: [null, null, null, '400px', 'none'],
       mx: [null, null, null, 'auto', '0'],
       color: 'black',

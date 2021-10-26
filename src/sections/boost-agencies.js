@@ -43,35 +43,7 @@ const BoostAgencies = () => {
             </Box>
           </Flex>
           <Flex sx={styles.col}>
-          <Box sx={styles.content}>
-              <Box sx={styles.titleBox}>
-                <Heading as="h3">
-                  Boost your agencies by choosing Ninja Developers
-                </Heading>
-                <Text as="p">
-                  Create custom landing pages with Shades that convert more
-                  visitors than any website, no coding required.
-                </Text>
-              </Box>
-              <Box as="ul" sx={styles.list}>
-                <Text as="li">
-                  <IoIosCheckmarkCircle />
-                  Unlimited design possibility
-                </Text>
-                <Text as="li">
-                  <IoIosCheckmarkCircle />
-                  Completely responsive features
-                </Text>
-                <Text as="li">
-                  <IoIosCheckmarkCircle />
-                  Easy to customize plugins
-                </Text>
-              </Box>
-              <Link path="/" sx={styles.link}>
-                Learn more <FaAngleRight />
-              </Link>
-            </Box>
-            
+            <Image src={image1} sx={styles.image} alt="" />
           </Flex>
         </Box>
       </Container>
@@ -83,8 +55,7 @@ export default BoostAgencies;
 
 const styles = {
   boostAgencies: {
-    pt: ['70px', null, null, '80px', '120px', null, '0'],
-    backgroundColor: '#F6F8FB',
+    pt: ['70px', null, null, '80px', '120px', null, '130px'],
   },
   row: {
     display: 'flex',
@@ -115,7 +86,7 @@ const styles = {
       alignItems: 'center',
       justifyContent: ['flex-start', null, null, null, null, 'flex-start'],
       fontSize: [1, null, 2, null, '18px'],
-      color: 'primary',
+      color: 'text_secondary',
       lineHeight: [2.56],
       svg: {
         width: [17, null, null, 23],
@@ -129,16 +100,16 @@ const styles = {
   titleBox: {
     textAlign: ['center', null, null, 'left'],
     h3: {
-      color: 'primary',
+      color: 'black',
       fontSize: [5, null, null, '21px', '36px', '32px', 8],
       lineHeight: [1.6, null, null, '1.5'],
       fontWeight: 'bold',
       letterSpacing: ['-0.5px', null, null, null, null, null, '-1.5px'],
     },
     p: {
-      fontSize: ['15px', null, 2, null, '17px'],
-      color: 'primary',
-      opacity: '.9',
+      fontSize: [0, null, 2, null, '17px'],
+      color: 'text_secondary',
+      opacity: '.6',
       lineHeight: ['26px', null, null, 1.8, null, 2.06],
       padding: ['0 20px', null, null, '0'],
       mt: ['15px'],
@@ -160,7 +131,7 @@ const styles = {
   content: {
     width: '100%',
     textAlign: ['left', null, null, null, 'left'],
-    pt: [null, null, null, null, null, '0'],
+    pt: [null, null, null, null, null, '100px'],
     pl: [null, null, null, null, null, '60px', '140px'],
   },
 };

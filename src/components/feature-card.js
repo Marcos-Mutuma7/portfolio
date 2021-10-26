@@ -57,7 +57,6 @@ const styles = {
       fontWeight: 'bold',
       fontSize: ['18px', null, '17px', null, 3],
       lineHeight: [1.55],
-      color:'primary',
       a: {
         transition: '500ms',
         '&:hover': {
@@ -70,7 +69,7 @@ const styles = {
       alignItems: 'center',
       fontSize: [1, null, 2],
       lineHeight: [2],
-      color: 'primary',
+      color: 'text',
       opacity: 0.8,
       mt: ['4px'],
       img: {

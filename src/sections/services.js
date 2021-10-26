@@ -1,116 +1,64 @@
-import React, { useRef } from 'react';
-import { Box, Container } from 'theme-ui';
+import React from 'react';
+import { Box, Container, Grid, Heading, Text } from 'theme-ui';
 import BlockTitle from 'components/block-title';
-import Swiper from 'react-id-swiper';
+import Image from 'components/image';
 
-import FeatureCard from 'components/feature-card';
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
-import featureImage1 from 'assets/image 17(1).png';
-import featureImage2 from 'assets/image 18.png';
-import featureImage3 from 'assets/image 21.png';
+import icon1 from 'assets/icons/service-1-1.svg';
+import icon2 from 'assets/icons/service-1-2.svg';
+import icon3 from 'assets/icons/service-1-3.svg';
+import icon4 from 'assets/icons/service-1-4.svg';
 
-const FeatureData = [
-  
+const SERVICES_DATA = [
   {
-    image: featureImage2,
-    title: 'Data Analytics',
-    comments: '22 Comments',
-    path: '/data',
+    icon: icon1,
+    title: 'Unlimited Customization',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
-    image: featureImage1,
-    title: 'Software Development',
-    comments: '15 Comments',
-    path: '/software',
+    icon: icon2,
+    title: 'Vector shape & resizable',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
-    image: featureImage3,
-    title:'Cloud computing services',
-    comments: '12 Comments',
-    path: '/cloud',
+    icon: icon3,
+    title: 'Editing freedom',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
-  
+  {
+    icon: icon4,
+    title: 'Best Award history',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+  },
 ];
 
 const Services = () => {
-  const ref = useRef(null);
-  const goNext = () => {
-    if (ref.current !== null && ref.current.swiper !== null) {
-      ref.current.swiper.slideNext();
-    }
-  };
-
-  const goPrev = () => {
-    if (ref.current !== null && ref.current.swiper !== null) {
-      ref.current.swiper.slidePrev();
-    }
-  };
-  const params = {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    spaceBetween: 30,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 0,
-      },
-      376: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 0,
-      },
-      576: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 0,
-      },
-      768: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 30,
-      },
-      992: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 30,
-      },
-      1200: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 30,
-      },
-    },
-  };
   return (
-    <Box sx={styles.features} id="news">
+    <Box sx={styles.services} id="services">
       <Container>
         <BlockTitle
           slogan="Quality features"
-          title="Tutorials that people love most"
+          title="Meet exciting feature of app"
           styles={styles.blockTitle}
         />
-
-        <Swiper {...params} ref={ref}>
-          {FeatureData.map((feature, index) => (
-            <div className="swiper-slider" key={`feature-card-key${index}`}>
-              <FeatureCard
-                image={feature.image}
-                title={feature.title}
-                commentCount={feature.comments}
-                path={feature.path}
-              />
-            </div>
+        <Grid sx={styles.grid}>
+          {SERVICES_DATA.map((service, index) => (
+            <Box
+              className="service-card"
+              sx={styles.serviceCard}
+              key={`service-post-${index}`}
+            >
+              <Box className="service-icon" sx={styles.icon}>
+                <Image src={service.icon} alt="" />
+              </Box>
+              <Heading as="h3">{service.title}</Heading>
+              <Text as="p">{service.text}</Text>
+            </Box>
           ))}
-        </Swiper>
-        <Box sx={styles.carouselBtns}>
-          <button aria-label="left btn" onClick={goPrev}>
-            <FaLongArrowAltLeft />
-          </button>
-          <button onClick={goNext} aria-label="right btn">
-            <FaLongArrowAltRight />
-          </button>
-        </Box>
+        </Grid>
       </Container>
     </Box>
   );
@@ -119,37 +67,72 @@ const Services = () => {
 export default Services;
 
 const styles = {
-  blockTitle: {
-    textAlign: 'center',
-    pb:'60px',
-  },
-  features: {
-    pt: ['20px', null, null, null, null, null, '20px'],
-    pb: ['10px', null, null, null, '10px'],
-    backgroundColor: '#F8FAFC',
-    '.swiper-slider': {
-      overflowY: 'visible',
-      overflowX: 'hidden',
+  services: {
+    pt: ['80px', null, null, null, null, null, '140px'],
+    '.service-card:nth-of-type(2)': {
+      '.service-icon': {
+        backgroundImage:
+          'linear-gradient(320.89deg, #25D9D9 10.83%, rgba(37, 217, 217, 0.5) 88.7%)',
+      },
+    },
+    '.service-card:nth-of-type(3)': {
+      '.service-icon': {
+        backgroundImage:
+          'linear-gradient(319.4deg, #0898E7 5.17%, rgba(8, 152, 231, 0.5) 94.34%)',
+      },
+    },
+    '.service-card:nth-of-type(4)': {
+      '.service-icon': {
+        backgroundImage:
+          'linear-gradient(322.63deg, #FF9066 9.94%, rgba(255, 144, 102, 0.5) 91.14%)',
+      },
     },
   },
-  carouselBtns: {
-    display: ['flex', null, null, null, null, 'none'],
+  blockTitle: {
+    textAlign: 'center',
+  },
+  grid: {
+    display: 'grid',
+    gridGap: ['30px', null, null, null, null, '60px'],
+    gridTemplateColumns: [
+      '1fr',
+      null,
+      null,
+      '1fr 1fr',
+      null,
+      '1fr 1fr 1fr 1fr',
+    ],
+  },
+  icon: {
+    display: 'flex',
+    ml: 'auto',
+    mr: 'auto',
+    width: ['80px', null, null, '110px'],
+    height: ['80px', null, null, '110px'],
     justifyContent: 'center',
     alignItems: 'center',
-    button: {
-      border: 'none',
-      outline: 'none',
-      backgroundColor: 'transparent',
-      fontSize: [2, null, 4, null, 5],
-      color: '#BBC7D7',
-      width: 'auto',
-      padding: [0],
-      margin: '0 5px',
-      mt: '15px',
-      transition: '500ms',
-      '&:hover, &:active, &:focus': {
-        color: 'primary',
-      },
+    borderRadius: ['20px', null, null, '40px'],
+    backgroundImage:
+      'linear-gradient(323.91deg, #FFCC40 7.09%, rgba(255, 204, 64, 0.5) 88.82%)',
+  },
+  serviceCard: {
+    textAlign: 'center',
+    h3: {
+      margin: 0,
+      fontSize: ['18px', null, null, 3],
+      fontWeight: 'bold',
+      lineHeight: 1,
+      color: 'black',
+      mt: ['30px', null, null],
+      mb: ['20px', null, null],
+    },
+    p: {
+      margin: 0,
+      fontSize: [0, null, null, '15px'],
+      color: 'heading_secondary',
+      width: '100%',
+      maxWidth: [null, null, null, null, '84%', '100%'],
+      mx: [null, null, null, null, 'auto', '0'],
     },
   },
 };
