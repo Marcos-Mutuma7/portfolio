@@ -1,6 +1,6 @@
 export default {
   // example colors with dark mode
-  breakpoints: ['376px', '576px', '768px', '992px', '1200px', '1600px'],
+  breakpoints: ['200px','376px', '576px', '768px', '992px', '1200px', '1600px'],
   colors: {
     text: '#343D48', // body color and primary color
     text_secondary: '#02073E', // secondary body color
@@ -25,7 +25,7 @@ export default {
     // heading: 'Bree Serif',
     monospace: 'Menlo, monospace',
   },
-  fontSizes: [15, 15, 16, 18, 20, 21, 30, 36, 48, 64],
+  fontSizes: [10, 15, 16, 18, 20, 21, 30, 36, 48, 64],
   fontWeights: {
     body: 'normal',
     heading: 500,
@@ -47,7 +47,7 @@ export default {
   // variants can use custom, user-defined names
   layout: {
     container: {
-      px: ['10px', null, null, '30px'],
+      px: ['15px', null, null, '30px'],
     },
     header: {
       color: '#02073E',
