@@ -1,114 +1,50 @@
-/** @jsx jsx */
-import { jsx, Box, Button, Container, Image } from 'theme-ui';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
-import Slider from 'react-slick';
-import SectionHeading from 'components/section-heading';
-import uber from 'assets/clients/uber.png';
-import google from 'assets/clients/google.png';
-import paypal from 'assets/clients/paypal.png';
-import microsoft from 'assets/clients/microsoft.png';
-import dribbble from 'assets/clients/dribbble.png';
-const clients = [
-  {
-    id: 1,
-    name: 'uber',
-    logo: uber,
-  },
-  {
-    id: 2,
-    name: 'Google',
-    logo: google,
-  },
-  {
-    id: 3,
-    name: 'PayPal',
-    logo: paypal,
-  },
-  {
-    id: 4,
-    name: 'Microsoft',
-    logo: microsoft,
-  },
- 
-  {
-    id: 5,
-    name: 'Dribbble',
-    logo: dribbble,
-  },
-  
-];
+import React, { useState } from 'react';
+import { Container, Box, Heading, Text } from 'theme-ui';
+import Image from 'components/image';
+import { Link } from 'components/link';
+import { FaAngleRight, FaPlay } from 'react-icons/fa';
+import ModalVideo from 'react-modal-video';
 
-function SlickArrow({ className, onClick, control }) {
-  return (
-    <Button
-      variant="text"
-      className={className}
-      sx={styles.paginationButton}
-      onClick={onClick}
-    >
-      {control === 'prev' ? (
-        <BsArrowLeft size="32px" />
-      ) : (
-        <BsArrowRight size="32px" />
-      )}
-    </Button>
-  );
-}
+import videoImg from 'assets/video.png';
 
 const VideoOne = () => {
-  const settings = {
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    speed: 500,
-    nextArrow: <SlickArrow control="next" />,
-    prevArrow: <SlickArrow control="prev" />,
-    responsive: [
-      {
-        breakpoint: 100000,
-        settings: 'unslick',
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          infinite: false,
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          infinite: false,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          infinite: false,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+  const [videoOpen, setVideoOpen] = useState(false);
+  const handleClick = (e) => {
+    e.preventDefault();
+    setVideoOpen(true);
   };
-
   return (
-    <Box id="clients" as="section" sx={styles.section}>
+    <Box as="section" sx={styles.video}>
       <Container>
-        <SectionHeading
-          slogan="Meet Our Clients"
-          title="This guys are using our service and they're more than happier ever."
-        />
-        <Slider sx={styles.clients} {...settings}>
-          {clients?.map((client) => (
-            <Box key={client.id} as="figure" sx={styles.logo}>
-              <Image loading="lazy" src={client.logo} alt={client.name} />
-            </Box>
-          ))}
-        </Slider>
+        <Heading as="h3">
+          Leading companies trust us <br /> to develop software
+        </Heading>
+        <Text as="p">
+          We believe it’s important for everyone to have access to software{' '}
+          <br />
+          especially when it comes to digital learning be navigate.
+        </Text>
+        <Link path="/" sx={styles.link}>
+          Explore Details <FaAngleRight />
+        </Link>
+        <Box sx={styles.videoBox}>
+          <Image src={videoImg} alt="" />
+          <Link
+            path="/"
+            aria-label="video btn"
+            onClick={handleClick}
+            sx={styles.videoBtn}
+          >
+            <FaPlay />
+          </Link>
+        </Box>
       </Container>
+      <ModalVideo
+        channel="youtube"
+        isOpen={videoOpen}
+        videoId="Cm3U-NgJb9I"
+        onClose={() => setVideoOpen(false)}
+      />
     </Box>
   );
 };
@@ -116,61 +52,73 @@ const VideoOne = () => {
 export default VideoOne;
 
 const styles = {
-  section: {
-    pt: [50, 50, 50, 70, 60, 80],
-    pb: [30, 40, 50, 60, 50, 80],
-  },
-  clients: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-    pt: [0, 0, 25, 25, 25, 6],
-    '&.slick-slider': {
-      marginBottom: '40px',
+  video: {
+    pt: [80, null, null, null, null, null, 110],
+    textAlign: 'center',
+    h3: {
+      margin: 0,
+      color: 'black',
+      fontSize: [5, null, null, '21px', '36px', '32px', 8],
+      letterSpacing: ['-0.5px', null, null, null, null, '-1.5px'],
+      fontWeight: 'bold',
+      lineHeight: [1.6, null, null, 1.25],
     },
-    '.slick-track': {
+    p: {
+      fontSize: ['15px', null, null, '17px'],
+      lineHeight: ['26px', null, null, 2],
+      mt: ['10px', null, null, null, '25px'],
+      mb: ['0px', null, null, null, '20px'],
+    },
+    br: {
+      display: ['none', null, null, 'inherit'],
+    },
+  },
+  videoBox: {
+    position: 'relative',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    '>img': {
+      borderRadius: '10px',
       display: 'flex',
-      alignItems: 'center',
+      width: ['100%', null, null, null, '80%', null, '100%'],
     },
   },
-  logo: {
-    display: 'flex !important',
-    justifyContent: 'center',
-    mx: '10px',
-    ':focus': {
-      outline: 'none',
-    },
-  },
-  pagination: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 5,
-  },
-  paginationButton: {
-    minHeight: '30px',
-    padding: 0,
-    position: 'absolute',
-    bottom: '-60px',
-    ':focus': {
-      outline: '0 none',
-    },
+  link: {
+    color: 'primary',
+    fontSize: [1, null, 2],
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    fontWeight: 'bold',
+    mt: ['15px', null, null, null, '0px'],
+    mb: ['20px', null, null, '50px'],
     svg: {
-      transition: 'all 0.2s ease-in-out 0s',
+      position: 'relative',
+      top: '3px',
     },
-    '&.slick-disabled': {
-      color: '#BBC7D7',
+  },
+  videoBtn: {
+    width: [44, null, 44, 66, 120],
+    height: [44, null, 44, 66, 120],
+    borderRadius: '50%',
+    backgroundColor: '#fff',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%,-50%)',
+    transition: '500ms ease',
+    svg: {
+      fontSize: ['15px', null, '15px', null, '22px', '35px'],
+      color: ['primary'],
+    },
+    '&:hover': {
+      backgroundColor: 'primary',
       svg: {
-        transform: 'scale(0.8)',
+        color: '#fff',
       },
-    },
-    '&.slick-prev': {
-      left: 'calc(50% - 16px)',
-      transform: 'translateX(-50%)',
-    },
-    '&.slick-next': {
-      transform: 'translateX(50%)',
-      right: 'calc(50% - 16px)',
     },
   },
 };

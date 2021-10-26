@@ -1,6 +1,3 @@
-
-import { rgba } from 'polished';
-
 export default {
   // example colors with dark mode
   breakpoints: ['376px', '576px', '768px', '992px', '1200px', '1600px'],
@@ -12,8 +9,8 @@ export default {
     background: '#FFFFFF', // body background color
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E9EDF5', // border color
-    primary: 'rgba(1, 50, 67, 1)', // primary button and link color
-                                           // secondary color - can be used for hover states
+    primary: '#8D448B', // primary button and link color
+    secondary: '#793677', // secondary color - can be used for hover states
     black: '#0F2137', // black color
     gray: '#F8FAFC',
     muted: '#7B8188', // muted color
@@ -50,7 +47,7 @@ export default {
   // variants can use custom, user-defined names
   layout: {
     container: {
-      px: ['20px', null, null, null, '30px', '20px'],
+      px: ['15px', null, null, '30px'],
     },
     header: {
       color: '#02073E',
