@@ -27,7 +27,7 @@ export default function IndexPage() {
           <BoostAgencies />
           <VideoOne />
           <Testimonials />
-          <CustomerSuppoert/>
+          <CustomerSupport/>
           <CallToAction />
         </Layout>
       </StickyProvider>
