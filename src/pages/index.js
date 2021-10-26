@@ -21,12 +21,13 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Startup Landing 006" />
           <Banner />
+          <Feature/>
+          <Feature/>
           <Services />
           <BoostAgencies />
           <VideoOne />
           <Testimonials />
-          <CustomerSupport />
-          <Feature />
+          <CustomerSuppoert/>
           <CallToAction />
         </Layout>
       </StickyProvider>
