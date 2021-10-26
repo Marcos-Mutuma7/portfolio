@@ -50,7 +50,7 @@ export default {
   // variants can use custom, user-defined names
   layout: {
     container: {
-      px: ['15px', null, null, '30px'],
+      px: ['20px', null, null, null, '30px', '20px'],
     },
     header: {
       color: '#02073E',
