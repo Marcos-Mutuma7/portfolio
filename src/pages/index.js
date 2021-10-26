@@ -22,6 +22,7 @@ export default function IndexPage() {
         <Layout>
           <SEO title="software development company" />
           <Banner />
+          {/*
           <Count/>
           <Services/>
           <Service/>
@@ -33,7 +34,7 @@ export default function IndexPage() {
 
           <VideoOne />
           <CallToAction/>
-          
+*/}
         </Layout>
       </StickyProvider>
     </ThemeProvider>
