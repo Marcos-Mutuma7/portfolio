@@ -1,6 +1,9 @@
+
+import { rgba } from 'polished';
+
 export default {
   // example colors with dark mode
-  breakpoints: ['200px','376px', '576px', '768px', '992px', '1200px', '1600px'],
+  breakpoints: ['376px', '576px', '768px', '992px', '1200px', '1600px'],
   colors: {
     text: '#343D48', // body color and primary color
     text_secondary: '#02073E', // secondary body color
@@ -9,8 +12,8 @@ export default {
     background: '#FFFFFF', // body background color
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E9EDF5', // border color
-    primary: '#8D448B', // primary button and link color
-    secondary: '#793677', // secondary color - can be used for hover states
+    primary: 'rgba(1, 50, 67, 1)', // primary button and link color
+                                           // secondary color - can be used for hover states
     black: '#0F2137', // black color
     gray: '#F8FAFC',
     muted: '#7B8188', // muted color
@@ -25,7 +28,7 @@ export default {
     // heading: 'Bree Serif',
     monospace: 'Menlo, monospace',
   },
-  fontSizes: [10, 15, 16, 18, 20, 21, 30, 36, 48, 64],
+  fontSizes: [15, 15, 16, 18, 20, 21, 30, 36, 48, 64],
   fontWeights: {
     body: 'normal',
     heading: 500,
@@ -47,7 +50,7 @@ export default {
   // variants can use custom, user-defined names
   layout: {
     container: {
-      px: ['15px', null, null, '30px'],
+      px: ['20px', null, null, null, '30px', '20px'],
     },
     header: {
       color: '#02073E',

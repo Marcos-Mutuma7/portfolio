@@ -34,10 +34,11 @@ export default function Header({ className }) {
             ))}
           </Flex>
 
+
           <Link
             path="/"
             ml={2}
-            label="Register Now"
+            label="Contact us"
             sx={styles.headerBtn}
             variant="buttons.primary"
           />
@@ -70,7 +71,7 @@ const styles = {
   header: {
     color: 'text_white',
     fontWeight: 'normal',
-    py: '25px',
+    py: '20px',
     width: '100%',
     position: 'fixed',
     top: 0,
@@ -81,7 +82,7 @@ const styles = {
     '&.sticky': {
       backgroundColor: 'background',
       color: 'text',
-      py: '15px',
+      py: '6px',
       boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
     },
   },

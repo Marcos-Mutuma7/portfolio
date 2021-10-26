@@ -10,11 +10,10 @@ class CustomDocument extends Document {
     return (
       <Html lang="en-US">
         <Head>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
-            rel="stylesheet"
-          />
-        </Head>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"/> 
+       
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"/>   
+         </Head>
         <body>
           <Main />
           <NextScript />

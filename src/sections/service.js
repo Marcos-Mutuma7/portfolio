@@ -5,33 +5,35 @@ import Swiper from 'react-id-swiper';
 
 import FeatureCard from 'components/feature-card';
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
-import featureImage1 from 'assets/tutorial-1-1.png';
-import featureImage2 from 'assets/tutorial-1-2.png';
-import featureImage3 from 'assets/tutorial-1-3.png';
+import featureImage1 from 'assets/image 19(1).png';
+import featureImage2 from 'assets/image 22(2).png';
+import featureImage3 from 'assets/image 26.png';
 
 const FeatureData = [
+  
   {
     image: featureImage1,
-    title: 'How to work with prototype design with adobe xd featuring tools',
+    title: 'Blockchain technology',
     comments: '22 Comments',
-    path: '/',
+    path: '/blockchain',
   },
   {
     image: featureImage2,
-    title: 'Create multiple artboard by using figma prototyping development',
+    title: 'Database Management Systems ',
     comments: '15 Comments',
-    path: '/',
+    path: '/database',
   },
   {
     image: featureImage3,
     title:
-      'Convert your web layout theming easily with sketch zeplin extension',
+      'Machine Learning',
     comments: '12 Comments',
-    path: '/',
+    path: '/machine',
   },
+  
 ];
 
-const Feature = () => {
+const Service = () => {
   const ref = useRef(null);
   const goNext = () => {
     if (ref.current !== null && ref.current.swiper !== null) {
@@ -84,12 +86,7 @@ const Feature = () => {
   return (
     <Box sx={styles.features} id="news">
       <Container>
-        <BlockTitle
-          slogan="Quality features"
-          title="Tutorials that people love most"
-          styles={styles.blockTitle}
-        />
-
+       
         <Swiper {...params} ref={ref}>
           {FeatureData.map((feature, index) => (
             <div className="swiper-slider" key={`feature-card-key${index}`}>
@@ -115,15 +112,15 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default Service;
 
 const styles = {
   blockTitle: {
     textAlign: 'center',
   },
   features: {
-    pt: ['80px', null, null, null, null, null, '120px'],
-    pb: ['80px', null, null, null, '170px'],
+    pt: ['80px', null, null, null, null, null, '0px'],
+    pb: ['80px', null, null, null, '0px'],
     backgroundColor: '#F8FAFC',
     '.swiper-slider': {
       overflowY: 'visible',

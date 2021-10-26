@@ -6,28 +6,36 @@ import SEO from 'components/seo';
 import Layout from 'components/layout';
 
 import Banner from 'sections/banner';
+import Count from 'sections/count'
 import Services from 'sections/services';
 import Testimonials from 'sections/testimonials';
 import CustomerSupport from 'sections/customer-support';
-import Feature from 'sections/feature';
 import VideoOne from 'sections/video-one';
-import CallToAction from 'sections/call-to-action';
+import Service from 'sections/service';
 import BoostAgencies from 'sections/boost-agencies';
+import CallToAction from 'sections/call-to-action';
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 006" />
+          <SEO title="software development company" />
           <Banner />
-          <Services />
+          {/*
+          <Count/>
+          
+          <Services/>
+          <Service/>
+          
+          <CustomerSupport/>
           <BoostAgencies />
-          <VideoOne />
           <Testimonials />
-          <CustomerSupport />
-          <Feature />
-          <CallToAction />
+        
+
+          <VideoOne />
+          <CallToAction/>
+          */}
         </Layout>
       </StickyProvider>
     </ThemeProvider>
