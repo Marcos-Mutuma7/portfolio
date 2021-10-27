@@ -1,15 +1,18 @@
+import { rgba } from 'polished';
+
+
 export default {
   // example colors with dark mode
   breakpoints: ['376px', '576px', '768px', '992px', '1200px', '1600px'],
   colors: {
     text: '#343D48', // body color and primary color
     text_secondary: '#02073E', // secondary body color
-    heading: '#02073E', // primary heading color
+    heading: 'rgb(0,49,83)', // primary heading color
     heading_secondary: '#343D48', // heading color
     background: '#FFFFFF', // body background color
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E9EDF5', // border color
-    primary: '#8D448B', // primary button and link color
+    primary: 'rgb(0,0,57)', // primary button and link color
     secondary: '#793677', // secondary color - can be used for hover states
     black: '#0F2137', // black color
     gray: '#F8FAFC',
@@ -17,13 +20,13 @@ export default {
     accent: '#609', // a contrast color for emphasizing UI
   },
   fonts: {
-    body: 'DM Sans',
+    body: 'Raleway',
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'DM Sans',
-    special: 'Playfair Display',
+    heading: 'Raleway',
+    special: 'Raleway',
     // heading: 'Bree Serif',
-    monospace: 'Menlo, monospace',
+    monospace: 'Raleway',
   },
   fontSizes: [15, 15, 16, 18, 20, 21, 30, 36, 48, 64],
   fontWeights: {

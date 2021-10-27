@@ -7,7 +7,7 @@ import img1 from 'assets/partner-1-1.png';
 import img2 from 'assets/partner-1-2.png';
 import img3 from 'assets/partner-1-3.png';
 
-import bannerImg from 'assets/banner-image-1-1.png';
+import bannerImg from 'assets/image 38(2).png';
 
 const Banner = () => {
   return (
@@ -16,11 +16,10 @@ const Banner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-              Great software is built with amazing developers
+           Software development company
             </Heading>
             <Text as="p">
-              We help build and manage a team of world-class developers to bring
-              your vision to life
+              Optimus is using technology to make small busineses big enterprises.
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
@@ -33,21 +32,10 @@ const Banner = () => {
                 sx={styles.form.input}
               />
               <Button type="submit" sx={styles.form.button}>
-                Subscribe
+                Get started
               </Button>
             </Box>
-            <Box sx={styles.partner}>
-              <Text as="span">Sponsored by:</Text>
-              <Box as="div">
-                <Image src={img1} alt="" />
-              </Box>
-              <Box as="div">
-                <Image src={img2} alt="" />
-              </Box>
-              <Box as="div">
-                <Image src={img3} alt="" />
-              </Box>
-            </Box>
+            
           </Box>
           <Box sx={styles.image}>
             <Image src={bannerImg} alt="" />
@@ -77,20 +65,21 @@ const styles = {
   },
   content: {
     h3: {
-      color: 'black',
+      color: 'heading',
       fontWeight: 'bold',
-      lineHeight: [1.39],
+      lineHeight: [1.19],
       letterSpacing: ['-.7px', '-1.5px'],
-      mb: ['15px', null, null, null, '20px'],
+      mb: ['15px', null, null, null, '10px'],
       width: ['100%'],
       maxWidth: ['100%', null, null, '90%', '100%', '540px'],
-      fontSize: [6, null, null, '36px', null, '55px', 9],
+      fontSize: [6, null, null, '36px', null, '50px', '55px'],
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],
-      lineHeight: ['26px', null, null, null, 2.33],
-      color: 'text_secondary',
-      mb: ['20px', null, null, null, null, '30px'],
+      lineHeight: ['26px', null, null, null, 1.73],
+      opacity:[.7],
+      color: 'heading',
+      mb: ['20px', null, null, null, null, '20px'],
       width: ['100%'],
       maxWidth: ['100%', null, null, null, null, '410px'],
       br: {
@@ -99,7 +88,7 @@ const styles = {
     },
   },
   form: {
-    mb: ['30px', null, null, null, null, '60px'],
+    mb: ['30px', null, null, null, null, '50px'],
     display: ['flex'],
     input: {
       borderRadius: ['4px'],

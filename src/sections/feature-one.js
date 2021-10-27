@@ -5,33 +5,33 @@ import Swiper from 'react-id-swiper';
 
 import FeatureCard from 'components/feature-card';
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
-import featureImage1 from 'assets/image 18(1).png';
-import featureImage2 from 'assets/image 39.png';
-import featureImage3 from 'assets/image 40.png';
+import featureImage1 from 'assets/image 41.png';
+import featureImage2 from 'assets/image 22(3).png';
+import featureImage3 from 'assets/image 42(1).png';
 
 const FeatureData = [
   {
     image: featureImage1,
-    title: 'Data Analytics',
+    title: 'Blockchain technology',
     comments: '22 Comments',
-    path: '/',
+    path: '/blockchain',
   },
   {
     image: featureImage2,
-    title: 'Custom software development ',
+    title: 'Database management systems',
     comments: '15 Comments',
-    path: '/',
+    path: '/database',
   },
   {
     image: featureImage3,
     title:
-      'Cloud computing services',
+      'Artificial intellengence (Ai)',
     comments: '12 Comments',
-    path: '/',
+    path: '/machine',
   },
 ];
 
-const Feature = () => {
+const FeatureOne = () => {
   const ref = useRef(null);
   const goNext = () => {
     if (ref.current !== null && ref.current.swiper !== null) {
@@ -84,10 +84,7 @@ const Feature = () => {
   return (
     <Box sx={styles.features} id="news">
       <Container>
-        <BlockTitle
-          title="Tutorials that people love most"
-          styles={styles.blockTitle}
-        />
+        
 
         <Swiper {...params} ref={ref}>
           {FeatureData.map((feature, index) => (
@@ -114,14 +111,14 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default FeatureOne;
 
 const styles = {
   blockTitle: {
     textAlign: 'center',
   },
   features: {
-    pt: ['80px', null, null, null, null, null, '120px'],
+    pt: ['80px', null, null, null, null, null, '1px'],
     pb: ['80px', null, null, null, '10px'],
     backgroundColor: '#F8FAFC',
     '.swiper-slider': {
