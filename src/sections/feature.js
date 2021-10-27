@@ -14,7 +14,7 @@ const FeatureData = [
     image: featureImage1,
     title: 'Data Analytics',
     comments: '22 Comments',
-    path: '/',
+    path: '/data',
   },
   {
     image: featureImage2,
@@ -85,7 +85,7 @@ const Feature = () => {
     <Box sx={styles.features} id="news">
       <Container>
         <BlockTitle
-          title="Tutorials that people love most"
+          title="Our Platinum Services"
           styles={styles.blockTitle}
         />
 
@@ -95,7 +95,6 @@ const Feature = () => {
               <FeatureCard
                 image={feature.image}
                 title={feature.title}
-                commentCount={feature.comments}
                 path={feature.path}
               />
             </div>

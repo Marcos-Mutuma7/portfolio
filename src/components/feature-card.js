@@ -16,7 +16,6 @@ const FeatureCard = (props) => {
           <Link path={props.path}>{props.title}</Link>
         </Heading>
         <Text as="p">
-          <Image src={CommentIcon} alt="" />
           {props.commentCount}
         </Text>
       </Box>

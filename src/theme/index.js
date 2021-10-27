@@ -72,7 +72,7 @@ export default {
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 4,
+      fontSize: 5,
       letterSpacing: 'heading',
       color: 'heading',
     },
@@ -145,6 +145,7 @@ export default {
     primary: {
       fontWeight: 'bold',
       color: 'white',
+      fontFamily:'Raleway',
       bg: 'primary',
       cursor: 'pointer',
       transition: '500ms',

@@ -92,7 +92,6 @@ const FeatureOne = () => {
               <FeatureCard
                 image={feature.image}
                 title={feature.title}
-                commentCount={feature.comments}
                 path={feature.path}
               />
             </div>
