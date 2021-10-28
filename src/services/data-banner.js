@@ -16,7 +16,7 @@ const DataBanner = () => {
            Big data Analytics
             </Heading>
             <Text as="p">
-            We use advanced computing technologies on huge data sets to discover valuable correlations, patterns, trends, and preferences for companies to make better decisions.
+            We use advanced computing technologies on huge data sets to discover valuable correlations, patterns, trends and preferences for companies to make better decisions.
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">

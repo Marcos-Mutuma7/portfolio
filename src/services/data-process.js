@@ -5,7 +5,7 @@ import { Link } from 'components/link';
 import Image from 'components/image';
 import BlockTitle from 'components/block-title'
 
-import img1 from 'assets/image 47.png';
+import img1 from 'assets/image 48.png';
 
 const DataProcess = () => {
   return (
@@ -103,7 +103,8 @@ const styles = {
       maxWidth: ['100%', null, null, '60%', '100%', '100%'],
       mx: [null, null, null, 'auto', '0'],
       display: [null, null, null, 'block'],
-      mt: [null, null, null, null, '0px', '-60px'],
+      mt: [null, null, null, null, '0px', '-40px'],
+      
     },
   },
   content: {
@@ -122,18 +123,19 @@ const styles = {
       fontSize: [5, null, '21px', null, 7, '32px', 8],
       maxWidth: [null, null, null, '400px', 'none'],
       mx: [null, null, null, 'auto', '0'],
-      color: 'black',
+      color: 'heading',
       fontWeight: 'bold',
       letterSpacing: ['-0.5px', null, null, null, null, null, '-1.5px'],
       lineHeight: [1.5, null, 1.25],
-      mb: ['30px', null, null, null, '30px'],
+      mb: ['30px', null, null, null, '10px'],
     },
     p: {
-      fontSize: [0, null, 2, null, '17px'],
-      color: 'text',
+      fontSize: [0, null, 2, null, '16px'],
+      color: 'heading',
+      opacity:'.6',
       lineHeight: ['26px', null, null, 1.8, null, 2.06],
       '+p': {
-        mt: ['15px', null, null, null, '15px'],
+        mt: ['15px', null, null, null, '10px'],
       },
     },
   },

@@ -28,9 +28,10 @@ export default FeatureCard;
 const styles = {
   fevCard: {
     transition: '500ms',
-    borderRadius: '5px',
+    borderRadius: '10px',
     '&:hover': {
       boxShadow: '0px 15px 50px rgba(69, 88, 157, 0.1)',
+      transform: 'scale(0.95)'
     },
   },
   image: {

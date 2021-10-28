@@ -8,6 +8,8 @@ import Layout from 'components/layout';
 import DataBanner from 'services/data-banner'
 import DataService from 'services/data-service';
 import DataProcess from 'services/data-process';
+import HireData from 'services/hire-data';
+import Features from 'services/features'
 
 
 export default function dataPage() {
@@ -18,7 +20,10 @@ export default function dataPage() {
           <SEO title="Startup Landing 006" />
           <DataBanner/>
           <DataService/>
+          <HireData/>
           <DataProcess/>
+          <Features/>
+          
           
         </Layout>
       </StickyProvider>

@@ -3,7 +3,7 @@ import { Box, Container, Flex, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 import { Link } from 'components/link';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
-
+import BlockTitle from 'components/block-title'
 import { FaAngleRight } from 'react-icons/fa';
 import image1 from 'assets/boost-1-1.png';
 
@@ -11,6 +11,10 @@ const BoostAgencies = () => {
   return (
     <Box sx={styles.boostAgencies}>
       <Container>
+      <BlockTitle
+          title="Why choose Optimus for your business?"
+          styles={styles.blockTitle}
+        />
         <Box sx={styles.row}>
           <Flex sx={styles.col}>
             <Box sx={styles.content}>
@@ -23,28 +27,39 @@ const BoostAgencies = () => {
                   visitors than any website, no coding required.
                 </Text>
               </Box>
-              <Box as="ul" sx={styles.list}>
-                <Text as="li">
-                  <IoIosCheckmarkCircle />
-                  Unlimited design possibility
-                </Text>
-                <Text as="li">
-                  <IoIosCheckmarkCircle />
-                  Completely responsive features
-                </Text>
-                <Text as="li">
-                  <IoIosCheckmarkCircle />
-                  Easy to customize plugins
-                </Text>
               </Box>
-              <Link path="/" sx={styles.link}>
-                Learn more <FaAngleRight />
-              </Link>
-            </Box>
           </Flex>
           <Flex sx={styles.col}>
             <Image src={image1} sx={styles.image} alt="" />
           </Flex>
+
+          <Flex sx={styles.col}>
+            <Box sx={styles.content}>
+              <Box sx={styles.titleBox}>
+                <Heading as="h3">
+                  Boost your agencies by choosing Ninja Developers
+                </Heading>
+                <Text as="p">
+                  Create custom landing pages with Shades that convert more
+                  visitors than any website, no coding required.
+                </Text>
+              </Box>
+              </Box>
+          </Flex>
+          <Flex sx={styles.col}>
+            <Box sx={styles.content}>
+              <Box sx={styles.titleBox}>
+                <Heading as="h3">
+                  Boost your agencies by choosing Ninja Developers
+                </Heading>
+                <Text as="p">
+                  Create custom landing pages with Shades that convert more
+                  visitors than any website, no coding required.
+                </Text>
+              </Box>
+              </Box>
+          </Flex>
+
         </Box>
       </Container>
     </Box>
@@ -65,6 +80,9 @@ const styles = {
   col: {
     flex: ['0 0 100%', null, null, '0 0 50%'],
   },
+  blockTitle:{
+   textAlign:'center'
+ },
   image: {
     mt: ['25px', null, null, '0'],
     display: 'flex',

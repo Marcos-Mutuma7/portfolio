@@ -156,7 +156,7 @@ export default {
     },
   },
   blockTitle: {
-    marginBottom: [45, null, null, null, 70],
+    marginBottom: [25, null, null, null, 40],
     p: {
       color: 'primary',
       fontSize: [0, null, null, null, 3],
@@ -164,9 +164,9 @@ export default {
       marginBottom: [10, null, null, null, 10],
     },
     h2: {
-      color: 'black',
+      color: 'primary',
       fontWeight: 'bold',
-      fontSize: [5, null, null, null, '32px', null, 7],
+      fontSize: [5, null, null, null, '32px', '10', '14px',],
       lineHeight: [1.24, null, null, null, 1.83],
       letterSpacing: ['-1px', null, null, null, '-1.5px'],
     },
@@ -200,7 +200,8 @@ export default {
     hr: {
       border: 0,
       borderBottom: '1px solid',
-      borderColor: '#D9E0E7',
+      borderColor: 'blue',
+    
     },
     // also you can use other HTML elements style here
     ul: {
