@@ -25,6 +25,7 @@ export default function IndexPage() {
           <Feature/>
           <FeatureOne/>
           <BoostAgencies/>
+          <CallToAction/>
           <Services />
           <VideoOne />
           <Testimonials />

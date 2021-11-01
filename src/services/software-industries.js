@@ -1,52 +1,55 @@
 import React from 'react';
 import Image from 'next/image';
 import { Box, Container, Flex, Heading, Text } from 'theme-ui';
-import image1 from 'assets/features-1.svg';
-import image2 from 'assets/features-2.svg';
-import image3 from 'assets/features-3.svg';
+import image1 from 'assets/image 25(6).png';
+import image2 from 'assets/image 51.png';
+import image3 from 'assets/image 27(2).png';
+import image4 from 'assets/1.png'
+import image5 from 'assets/image 52.png'
+import image6 from 'assets/image 53.png'
 const FEATURES_DATA = {
-  title: 'Go beyond ultimate features',
+  title: 'Industries we serve',
   text: '',
   posts: [
    
     {
       image: image3,
-      title: 'For Individuals',
+      title: 'Retail',
       text:
         'Get your info tests delivered at home collect a sample from the your pogress tests.',
     },
     {
       image: image2,
-      title: 'For Small Team',
+      title: 'Finance',
       text:
         'Get your info tests delivered at home collect a sample from the your pogress tests.',
     },
     {
       image: image1,
-      title: 'For Organization',
+      title: 'Healthcare',
       text:
         'Get your info tests delivered at home collect a sample from the your pogress tests.',
     }, {
-      image: image3,
-      title: 'For Individuals',
+      image: image4,
+      title: 'Real estate',
       text:
         'Get your info tests delivered at home collect a sample from the your pogress tests.',
     },
     {
-      image: image2,
-      title: 'For Small Team',
+      image: image5,
+      title: 'Media & entertainment',
       text:
         'Get your info tests delivered at home collect a sample from the your pogress tests.',
     },
     {
-      image: image1,
-      title: 'For Organization',
+      image: image6,
+      title: 'Agriculture',
       text:
         'Get your info tests delivered at home collect a sample from the your pogress tests.',
     },
   ],
 };
-const Features = () => {
+const SoftwareIndustries = () => {
   const { title, text, posts } = FEATURES_DATA;
   return (
     <Box as="section" id="features" sx={styles.section}>
@@ -73,13 +76,15 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default SoftwareIndustries;
 
 const styles = {
   section: {
     overflow: 'hidden',
     pt: ['70px', null, null, '10px'],
     pb: ['40px', null, null, '70px'],
+    backgroundColor: '#F6F8FB',
+  
   },
   container: {},
   flex: {
@@ -91,9 +96,9 @@ const styles = {
     textAlign: 'center',
     mb: ['40px', null, null, '70px'],
     h2: {
-      color: '#0F2137',
+      color: 'primary',
       fontWeight: 500,
-      fontSize: ['22px', null, null, '24px'],
+      fontSize: ['22px', null, null, '30px'],
       lineHeight: 1,
       letterSpacing: '-0.5px',
       mt: '15px',
@@ -123,14 +128,15 @@ const styles = {
     ml: ['0', null, null, null, '30px'],
     mt: ['20px', null, null, null, '0'],
     h3: {
-      fontSize: '18px',
+      fontSize: '22px',
       fontWeight: 700,
       lineHeight: 1,
-      color: '#0F2137',
+      color: 'heading',
       mb: '15px',
     },
     p: {
-      color: '#343D48',
+      color: 'heading',
+      opacity:'.7',
       lineHeight: 1.87,
       fontSize: ['14px', null, null, '16px'],
       maxWidth: ['100%', '300px', null, '100%'],

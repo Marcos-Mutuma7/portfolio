@@ -23,10 +23,13 @@ const HireData = () => {
 export default HireData;
 
 const styles = {
-  wrapper: {},
+  wrapper: {
+    backgroundColor: '#F6F8FB',
+  
+  },
   inner: {
     padding: ['45px 30px 50px', null, null, '45px 50px', null, '45px 70px'],
-    mt: [0, null, null, null, '80px'],
+    mt: [0, null, null, null, '0'],
     position: 'relative',
     zIndex: '10',
     backgroundColor: 'primary',

@@ -2,17 +2,17 @@ import React from 'react';
 import { Box, Container, Heading, Button } from 'theme-ui';
 import BgShape from 'assets/cta-shape-1.svg';
 import btnShape from 'assets/cta-btn-shape-1.svg';
-const CallToAction = () => {
+const HireSoftware = () => {
   return (
     <Box sx={styles.wrapper}>
       <Container sx={styles.container}>
         <Box sx={styles.inner}>
           <Heading as="h3">
-            24/7 customer service worldwide <br />
-            Contact us now!
+            Optimus is hiring Data Analysts <br />
+            and scincentists
           </Heading>
           <Box sx={styles.btnWrapper}>
-            <Button sx={styles.btn}>CONTACT US</Button>
+            <Button sx={styles.btn}>Apply Now</Button>
           </Box>
         </Box>
       </Container>
@@ -20,13 +20,16 @@ const CallToAction = () => {
   );
 };
 
-export default CallToAction;
+export default HireSoftware;
 
 const styles = {
-  wrapper: {},
+  wrapper: {
+    backgroundColor: '#F6F8FB',
+  
+  },
   inner: {
     padding: ['45px 30px 50px', null, null, '45px 50px', null, '45px 70px'],
-    mt: [0, null, null, null, '50px'],
+    mt: [0, null, null, null, '0'],
     position: 'relative',
     zIndex: '10',
     backgroundColor: 'primary',
@@ -58,7 +61,7 @@ const styles = {
     fontSize: [0, 1, null, null, null, null, '17px'],
     fontWeight: '700',
     letterSpacing: '0.1em',
-    fontFamily: 'heading',
+    fontFamily: 'body',
     padding: ['10px 24px', null, null, null, null, '15px 44px'],
     position: 'relative',
     outline: 'none',
@@ -86,3 +89,4 @@ const styles = {
     },
   },
 };
+

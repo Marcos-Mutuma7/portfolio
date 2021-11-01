@@ -117,8 +117,8 @@ const styles = {
     textAlign: 'center',
   },
   features: {
-    pt: ['80px', null, null, null, null, null, '1px'],
-    pb: ['80px', null, null, null, '10px'],
+    pt: ['8px', null, null, null, null, null, '1px'],
+    pb: ['8px', null, null, null, '10px'],
     backgroundColor: '#F8FAFC',
     '.swiper-slider': {
       overflowY: 'visible',

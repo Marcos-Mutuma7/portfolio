@@ -13,7 +13,7 @@ import DataIndustries from 'services/data-industries'
 import Blog from 'services/data-blog'
 
 
-export default function dataPage() {
+export default function databasePage() {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>

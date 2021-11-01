@@ -20,14 +20,14 @@ const FeatureData = [
     image: featureImage2,
     title: 'Custom software development ',
     comments: '15 Comments',
-    path: '/',
+    path: '/software',
   },
   {
     image: featureImage3,
     title:
       'Cloud computing services',
     comments: '12 Comments',
-    path: '/',
+    path: '/cloud',
   },
 ];
 
@@ -85,6 +85,7 @@ const Feature = () => {
     <Box sx={styles.features} id="news">
       <Container>
         <BlockTitle
+        slogan="What do we do?"
           title="Our Platinum Services"
           styles={styles.blockTitle}
         />
@@ -121,7 +122,7 @@ const styles = {
   },
   features: {
     pt: ['80px', null, null, null, null, null, '120px'],
-    pb: ['80px', null, null, null, '10px'],
+    pb: ['8px', null, null, null, '10px'],
     backgroundColor: '#F8FAFC',
     '.swiper-slider': {
       overflowY: 'visible',

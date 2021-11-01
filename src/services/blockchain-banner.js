@@ -4,19 +4,19 @@ import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 
 
-import bannerImg from 'assets/image 44.png';
+import bannerImg from 'assets/image 43.png';
 
-const Banner = () => {
+const BlockchainBanner = () => {
   return (
     <Box sx={styles.banner} id="banner">
       <Container sx={styles.container}>
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-           Software development company
+           Big data Analytics
             </Heading>
             <Text as="p">
-              Optimus is using technology to make small busineses big enterprises.
+            We use advanced computing technologies on huge data sets to discover valuable correlations, patterns, trends and preferences for companies to make better decisions.
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
@@ -25,11 +25,11 @@ const Banner = () => {
               <Input
                 name="subscribe"
                 id="subscribe"
-                placeholder="Send a message"
+                placeholder="Subscribe newsletter"
                 sx={styles.form.input}
               />
               <Button type="submit" sx={styles.form.button}>
-                Contact us
+                Message
               </Button>
             </Box>
             
@@ -43,7 +43,7 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default BlockchainBanner;
 
 const styles = {
   banner: {
