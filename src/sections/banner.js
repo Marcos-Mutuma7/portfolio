@@ -69,7 +69,7 @@ const styles = {
       mb: ['15px', null, null, null, '10px'],
       width: ['100%'],
       maxWidth: ['100%', null, null, '90%', '100%', '540px'],
-      fontSize: [6, null, null, '36px', null, '50px', '55px'],
+      fontSize: [ 4,6, null, null, '36px', null, '50px', '55px'],
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],
