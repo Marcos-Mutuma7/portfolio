@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Container, Heading, Button } from 'theme-ui';
+import { NavLink, Link } from 'components/link';
 import BgShape from 'assets/cta-shape-1.svg';
 import btnShape from 'assets/cta-btn-shape-1.svg';
 const CallToAction = () => {
@@ -8,11 +9,13 @@ const CallToAction = () => {
       <Container sx={styles.container}>
         <Box sx={styles.inner}>
           <Heading as="h3">
-            24/7 customer service worldwide <br />
-            Contact us now!
+          We help business teams be more productive <br />
+         ,creative & successful
           </Heading>
           <Box sx={styles.btnWrapper}>
-            <Button sx={styles.btn}>CONTACT US</Button>
+            <Link path='/contacts'>
+            <Button sx={styles.btn}>START NOW</Button>
+            </Link>
           </Box>
         </Box>
       </Container>
@@ -23,10 +26,13 @@ const CallToAction = () => {
 export default CallToAction;
 
 const styles = {
-  wrapper: {},
+  wrapper: {
+    backgroundColor: '#F6F8FB',
+    overflow: 'hidden',
+  },
   inner: {
     padding: ['45px 30px 50px', null, null, '45px 50px', null, '45px 70px'],
-    mt: [0, null, null, null, '50px'],
+    mt: [3, null, null, null, '50px'],
     position: 'relative',
     zIndex: '10',
     backgroundColor: 'primary',

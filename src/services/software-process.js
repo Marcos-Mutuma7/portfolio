@@ -12,7 +12,7 @@ const SoftwareProcess = () => {
     <Box as="section" sx={styles.customerSupport}>
       <Container>
       <BlockTitle
-          title="Our Data Analyst Consultation Process"
+          title="Why is Custom Software Development Important?"
           styles={styles.blockTitle}
         />
         <Grid sx={styles.row}>
@@ -22,50 +22,50 @@ const SoftwareProcess = () => {
           <Box sx={styles.col}>
             <Box sx={styles.content}>
               <Heading as="h3">
-                Data Science Consulting
+                Scalability
               </Heading>
               <Text as="p">
-              This initial stage involves a brief exploration of the topic with our data science team. We’ll explore the data, ask the big questions, and establish any goals for the project. We’ll also take the time to help you understand what opportunities exist and the pitfalls of machine learning implementation.
+              Custom software can grow as an organization or business grows and changes. Designers and developers can assess future needs as part of their requirements gathering. These factors can then be incorporated into the application, rather than incurring costs by purchasing additional licenses or subscriptions of packaged applications.
               </Text>
             </Box>
           </Box>
           <Box sx={styles.col}>
             <Box sx={styles.content}>
               <Heading as="h3">
-                Data Analysis and Preparation
+                Efficiency
               </Heading>
               <Text as="p">
-              Once we’ve laid the framework, our data engineers will carefully examine the data sets you’ve provided to ensure they choose the right one. They’ll clean the data and engage in feature engineering to prepare a dataset for the future model. We combine classic Agile principles with the CRISP-DM model for data mining and analysis. A typical cycle focuses on one hypothesis to ensure the precision of tasks and results.
+              Custom software is purpose-built to support processes swiftly and productively, without the need to tinker with or adjust COTS applications.
               </Text>
             </Box>
           </Box>
           <Box sx={styles.col}>
             <Box sx={styles.content}>
               <Heading as="h3">
-                Modeling and Training
+                Profitablity
               </Heading>
               <Text as="p">
-              During this stage, the data science team will start to build and train models using prepared data to verify the hypothesis. The team will run several experiments to achieve a balance between accuracy and computer resource consumption. The goal of this stage is to get tangible results in the shortest period of time possible to prove the hypothesis.
+              It’s possible to make money with custom software development. Depending on the terms and conditions of the project, businesses that develop their own software may own the software and therefore be able to license or sell it to other organizations.
               </Text>
             </Box>
           </Box>
           <Box sx={styles.col}>
             <Box sx={styles.content}>
               <Heading as="h3">
-                Evaluation and Adjustments
+                Lower Intergration Costs
               </Heading>
               <Text as="p">
-              After we’ve proved the hypothesis through raw modeling, our data engineers will continue to adjust and optimize the selected model. This stage will improve the overall accuracy and lower the amount of power and time it consumes.
+              One of the chief considerations of commercial software is: will it work with existing and legacy applications? If the answer is no, organizations face a further investment in getting commercial software to communicate and operate with their existing infrastructure. Custom software can be built to integrate with its intended environment.
               </Text>
             </Box>
           </Box>
           <Box sx={styles.col}>
             <Box sx={styles.content}>
               <Heading as="h3">
-                Integration and Deployment
+                Independence
               </Heading>
               <Text as="p">
-              After verifying the model, we’ll deploy it on a test server where it can start to work with real data so we can monitor the results. If the model successfully achieves your business objectives in the test environment, we will deploy it in production.
+              The benefits of being free of a commercial software vendor cut both ways. On the plus side, organizations can avoid price hikes for licensing and support — and getting stuck maintaining packaged software should the vendor go out of business or terminate a product.On the negative side, the cost of supporting and maintaining custom software falls to the organization that created it or had it developed. How the equation works out requires each organization to look carefully at whether it’s better to build or buy.
               </Text>
             </Box>
           </Box>

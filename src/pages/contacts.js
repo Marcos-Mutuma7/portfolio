@@ -6,12 +6,7 @@ import SEO from 'components/seo';
 import Layout from 'components/layout';
 
 import DataBanner from 'services/data-banner'
-import DataService from 'services/data-service';
-import DataProcess from 'services/data-process';
-import HireData from 'services/hire-data';
-import DataIndustries from 'services/data-industries'
-import Blog from 'services/data-blog'
-import Count from 'sections/count';
+
 
 
 export default function dataPage() {
@@ -21,12 +16,7 @@ export default function dataPage() {
         <Layout>
           <SEO title="Top software development company" />
           <DataBanner/>
-          <DataService/>
-          <HireData/>
-          <DataProcess/>
-          <DataIndustries/>
-          <HireData/>
-          <Blog/>
+        
           
         </Layout>
       </StickyProvider>

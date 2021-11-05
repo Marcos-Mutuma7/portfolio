@@ -14,6 +14,8 @@ import FeatureOne from 'sections/feature-one'
 import VideoOne from 'sections/video-one';
 import CallToAction from 'sections/call-to-action';
 import BoostAgencies from 'sections/boost-agencies';
+import Count from 'sections/count';
+import Blog from 'sections/blog'
 
 export default function IndexPage() {
   return (
@@ -22,14 +24,13 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Startup Landing 006" />
           <Banner />
+          <Count/>
           <Feature/>
           <FeatureOne/>
           <BoostAgencies/>
           <CallToAction/>
           <Services />
-          <VideoOne />
-          <Testimonials />
-          <CustomerSupport/>
+          <Blog/>
           <CallToAction />
         </Layout>
       </StickyProvider>

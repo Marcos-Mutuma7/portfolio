@@ -49,7 +49,7 @@ const FEATURES_DATA = {
     },
   ],
 };
-const Features = () => {
+const DatabaseIndustries = () => {
   const { title, text, posts } = FEATURES_DATA;
   return (
     <Box as="section" id="features" sx={styles.section}>

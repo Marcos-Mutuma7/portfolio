@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Button, Box } from 'theme-ui';
+import { jsx, Container, Flex, Button, Box ,Select} from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { IoIosUnlock } from 'react-icons/io';
 import { NavLink, Link } from 'components/link';
@@ -35,7 +35,7 @@ export default function Header({ className }) {
           </Flex>
 
           <Link
-            path="/"
+            path="/contacts"
             ml={2}
             label="Contact us"
             sx={styles.headerBtn}

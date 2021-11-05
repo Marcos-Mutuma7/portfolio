@@ -5,11 +5,11 @@ import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
 
-import DataBanner from 'services/data-banner'
-import DataService from 'services/data-service';
-import DataProcess from 'services/data-process';
-import HireData from 'services/hire-data';
-import DataIndustries from 'services/data-industries'
+import DatabaseBanner from 'services/database-banner'
+import DatabaseService from 'services/database-service';
+import DatabaseProcess from 'services/database-process';
+import HireDatabase from 'services/hire-database';
+import DatabaseIndustries from 'services/database-industries'
 import Blog from 'services/data-blog'
 
 
@@ -19,12 +19,12 @@ export default function databasePage() {
       <StickyProvider>
         <Layout>
           <SEO title="Startup Landing 006" />
-          <DataBanner/>
-          <DataService/>
-          <HireData/>
-          <DataProcess/>
-          <DataIndustries/>
-          <HireData/>
+          <DatabaseBanner/>
+          <DatabaseService/>
+          <HireDatabase/>
+          <DatabaseProcess/>
+          <DatabaseIndustries/>
+          <HireDatabase/>
           <Blog/>
           
         </Layout>

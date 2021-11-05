@@ -5,9 +5,9 @@ import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import SectionHeading from 'components/section-heading';
 import BlogPost from 'components/cards/blog-card';
 
-import thumb1 from 'assets/images/blog/1.png';
-import thumb2 from 'assets/images/blog/2.png';
-import thumb3 from 'assets/images/blog/3.png';
+import thumb1 from 'assets/blog/1.png';
+import thumb2 from 'assets/blog/2.png';
+import thumb3 from 'assets/blog/3.png';
 
 const data = [
   {
@@ -101,6 +101,8 @@ const styles = {
   section: {
     pt: [30, 30, 6],
     pb: [50, 50, 50, 100, 8, 9],
+    backgroundColor: '#F6F8FB',
+    overflow: 'hidden',
   },
   heading: {
     mb: [30, 30, 30, 50, 60],

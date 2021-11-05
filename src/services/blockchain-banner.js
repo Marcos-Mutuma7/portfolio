@@ -13,7 +13,7 @@ const BlockchainBanner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-           Big data Analytics
+           Blockchain Technology
             </Heading>
             <Text as="p">
             We use advanced computing technologies on huge data sets to discover valuable correlations, patterns, trends and preferences for companies to make better decisions.

@@ -4,9 +4,9 @@ import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 
 
-import bannerImg from 'assets/image 43.png';
+import bannerImg from 'assets/image 48.png';
 
-const DataBanner = () => {
+const DevelopmentBanner = () => {
   return (
     <Box sx={styles.banner} id="banner">
       <Container sx={styles.container}>
@@ -43,7 +43,7 @@ const DataBanner = () => {
   );
 };
 
-export default DataBanner;
+export default DevelopmentBanner;
 
 const styles = {
   banner: {

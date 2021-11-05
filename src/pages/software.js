@@ -18,7 +18,7 @@ export default function softwarePage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 006" />
+          <SEO title="Top website and app development company" />
           <SoftwareBanner/>
           <SoftwareService/>
           <HireSoftware/>

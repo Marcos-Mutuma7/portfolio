@@ -9,9 +9,15 @@ const FeatureCard = (props) => {
   return (
     <Box sx={styles.fevCard}>
       <Box className="image" sx={styles.image}>
-        <Image src={props.image} alt="" />
+       
+    
+        <Image src={props.image} alt=""/>
+       
+          
+
       </Box>
       <Box sx={styles.content}>
+
         <Heading as="h3">
           <Link path={props.path}>{props.title}</Link>
         </Heading>

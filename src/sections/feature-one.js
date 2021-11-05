@@ -18,7 +18,7 @@ const FeatureData = [
   },
   {
     image: featureImage2,
-    title: 'Database management systems',
+    title: 'Web & App Development',
     comments: '15 Comments',
     path: '/database',
   },

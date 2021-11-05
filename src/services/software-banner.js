@@ -13,10 +13,10 @@ const SoftwareBanner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-           Big data Analytics
+           Custom Development
             </Heading>
             <Text as="p">
-            We use advanced computing technologies on huge data sets to discover valuable correlations, patterns, trends and preferences for companies to make better decisions.
+            Custom software development is the process of designing, creating, deploying and maintaining software for a specific set of users, functions or organization.
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">

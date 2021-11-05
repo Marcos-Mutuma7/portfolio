@@ -5,12 +5,13 @@ import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
 
-import DataBanner from 'services/data-banner'
-import DataService from 'services/data-service';
-import DataProcess from 'services/data-process';
-import HireData from 'services/hire-data';
-import DataIndustries from 'services/data-industries'
+import MachineBanner from 'services/machine-banner'
+
 import Blog from 'services/data-blog'
+import MachineService from 'services/machine-service';
+import MachineProcess from 'services/machine-process';
+import HireMachine from 'services/hire-machine';
+import MachineIndustries from 'services/machine-industries';
 
 
 export default function MachinePage() {
@@ -19,12 +20,13 @@ export default function MachinePage() {
       <StickyProvider>
         <Layout>
           <SEO title="Startup Landing 006" />
-          <DataBanner/>
-          <DataService/>
-          <HireData/>
-          <DataProcess/>
-          <DataIndustries/>
-          <HireData/>
+          <MachineBanner/>
+          <MachineService/>
+          <MachineProcess/>
+          <HireMachine/>
+          <MachineIndustries/>
+          <HireMachine/>
+
           <Blog/>
           
         </Layout>

@@ -13,10 +13,10 @@ const Banner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-           Software development company
+           The Digital Revolution
             </Heading>
             <Text as="p">
-              Optimus is using technology to make small busineses big enterprises.
+              Our mission is to make your business better through technology
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
@@ -25,11 +25,11 @@ const Banner = () => {
               <Input
                 name="subscribe"
                 id="subscribe"
-                placeholder="Send a message"
+                placeholder='Send an Enquiry'
                 sx={styles.form.input}
               />
               <Button type="submit" sx={styles.form.button}>
-                Contact us
+                Start Now
               </Button>
             </Box>
             
@@ -47,7 +47,7 @@ export default Banner;
 
 const styles = {
   banner: {
-    pt: ['110px', null, null, null, '150px', '200px'],
+    pt: ['110px', null, null, null, '150px', '240px'],
     pb: ['50px', null, null, null, '60px', null, '0'],
     backgroundColor: '#F6F8FB',
     overflow: 'hidden',

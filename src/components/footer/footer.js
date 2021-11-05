@@ -23,15 +23,15 @@ export default function Footer() {
           <Logo />
           <Text as="p">
             &copy; {new Date().getFullYear()} All right reserved - Design &
-            Developed by RedQ, Inc
+            Developed by TechPulse
           </Text>
         </Box>
         <Box sx={styles.right}>
           <Link path="/" label="Home" />
-          <Link path="/" label="Adversite" />
-          <Link path="/" label="Supports" />
-          <Link path="/" label="Marketing" />
-          <Link path="/" label="FAQ" />
+          <Link path="/" label="Services" />
+          <Link path="/" label="Development" />
+          <Link path="/" label="Industries" />
+          <Link path="/" label="About" />
         </Box>
       </Container>
     </footer>

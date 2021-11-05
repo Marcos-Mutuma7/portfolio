@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Image } from 'theme-ui';
 import { Link } from 'components/link';
-import logo from 'assets/logo.svg';
+import logo from 'assets/Group 6(2).png';
 
 export default function Logo() {
   return (
@@ -11,7 +11,13 @@ export default function Logo() {
         variant: 'links.logo',
       }}
     >
-      <Image src={logo} sx={{ display: 'flex' }} alt="startup landing logo" />
+      <Image src={logo} sx={{ display: 'flex' }} sx={styles.logo} alt="startup landing logo" />
     </Link>
   );
+}
+const styles ={
+  logo :{
+    width:['60%' ,'null','null' ,'null', '240px']
+  }
+
 }

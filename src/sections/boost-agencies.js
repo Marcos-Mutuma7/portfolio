@@ -5,15 +5,15 @@ import { Link } from 'components/link';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
 import BlockTitle from 'components/block-title'
 import { FaAngleRight } from 'react-icons/fa';
-import image1 from 'assets/Group 5.png';
+import image1 from 'assets/image 48.png';
 
 const BoostAgencies = () => {
   return (
     <Box sx={styles.boostAgencies}>
       <Container>
       <BlockTitle
-      slogan="Why choose Optimus?"
-          title="What we provide for our clients"
+      slogan="Why choose TechPulse?"
+          title="Our Software Development Lifecycle"
           styles={styles.blockTitle}
         />
         <Box sx={styles.row}>
@@ -51,7 +51,7 @@ const BoostAgencies = () => {
                Software requirements specification establishes the basis for an agreement between customers and contractors or suppliers on how the software product should function
                 </Text>
               </Box>
-              <Link path="/" sx={styles.link}>
+              <Link path="/development" sx={styles.link}>
                 Learn more <FaAngleRight />
               </Link>
               </Box>
@@ -160,7 +160,7 @@ const styles = {
   content: {
     width: '100%',
     textAlign: ['left', null, null, null, 'left'],
-    pt: [null, null, null, null, null, '100px'],
+    pt: ['10px', null, null, null, null, '100px'],
     pl: [null, null, null, null, null, '60px', '140px'],
   },
 };

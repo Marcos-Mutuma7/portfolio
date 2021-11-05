@@ -5,22 +5,22 @@ import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
 
-import DataBanner from 'services/data-banner'
+import DevelopmentBanner from 'services/development-banner'
 import DataService from 'services/data-service';
 import DataProcess from 'services/data-process';
 import HireData from 'services/hire-data';
 import DataIndustries from 'services/data-industries'
 import Blog from 'services/data-blog'
-import Count from 'sections/count';
 
 
-export default function dataPage() {
+
+export default function developmentPage() {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
           <SEO title="Top software development company" />
-          <DataBanner/>
+          <DevelopmentBanner/>
           <DataService/>
           <HireData/>
           <DataProcess/>
