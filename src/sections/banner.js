@@ -69,7 +69,7 @@ const styles = {
       mb: ['15px', null, null, null, '10px'],
       width: ['100%'],
       maxWidth: ['100%', null, null, '90%', '100%', '540px'],
-      fontSize: [ 5 ,6, null, null, '36px', null, '50px', '55px'],
+      fontSize: [ '25px' ,6, null, null, '36px', null, '50px', '55px'],
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],
@@ -103,7 +103,7 @@ const styles = {
       borderRadius: ['4px'],
       padding: ['0 15px'],
       ml: ['10px'],
-      width: ['auto', null, null, null, '180px'],
+      width: ['30px', null, null, null, '180px'],
     },
   },
   image: {
