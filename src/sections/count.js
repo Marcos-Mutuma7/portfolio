@@ -83,7 +83,7 @@ const styles = {
       pb: [8, null, null, 15],
     },
     statsGrid: {
-      gap: [6, null, null, '60px 30px', '60px 80px', '60px 110px'],
+      gap: [4, null, null, '60px 30px', '60px 80px', '60px 110px'],
       justifyContent: 'center',
       gridTemplateColumns: [
         'repeat(2, 120px)',
