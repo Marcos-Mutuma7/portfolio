@@ -29,7 +29,7 @@ const Banner = () => {
                 sx={styles.form.input}
               />
               <Button type="submit" sx={styles.form.button}>
-                Start Now
+                Message
               </Button>
             </Box>
             
@@ -101,9 +101,9 @@ const styles = {
     button: {
       fontSize: [1, null, null, null, 2, '20px'],
       borderRadius: ['4px'],
-      padding: ['0 15px'],
+      padding: ['0 16px'],
       ml: ['10px'],
-      width: ['30px', null, null, null, '180px'],
+      width: ['auto', null, null, null, '180px'],
     },
   },
   image: {
