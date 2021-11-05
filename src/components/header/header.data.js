@@ -3,7 +3,7 @@
 export default [
   {
     path: 'banner',
-    label: 'Home',
+    label: 'Blog',
   },
 
   {

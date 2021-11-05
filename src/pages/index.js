@@ -22,7 +22,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 006" />
+          <SEO title="Top software development company" />
           <Banner />
           <Count/>
           <Feature/>
@@ -37,3 +37,4 @@ export default function IndexPage() {
     </ThemeProvider>
   );
 }
+

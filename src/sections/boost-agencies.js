@@ -5,7 +5,9 @@ import { Link } from 'components/link';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
 import BlockTitle from 'components/block-title'
 import { FaAngleRight } from 'react-icons/fa';
-import image1 from 'assets/image 48.png';
+import image1 from 'assets/image 56.png';
+import image2 from 'assets/image 57.png';
+
 
 const BoostAgencies = () => {
   return (
@@ -13,7 +15,7 @@ const BoostAgencies = () => {
       <Container>
       <BlockTitle
       slogan="Why choose TechPulse?"
-          title="Our Software Development Lifecycle"
+          title="Our Software Development Process"
           styles={styles.blockTitle}
         />
         <Box sx={styles.row}>
@@ -26,11 +28,10 @@ const BoostAgencies = () => {
             <Box sx={styles.content}>
               <Box sx={styles.titleBox}>
                 <Heading as="h3">
-                Software  Quality Assurance
+              Analysis
                 </Heading>
                 <Text as="p">
-                Software quality assurance (SQA) is a means and practice of monitoring the software engineering processes and methods used in a project to ensure proper quality of the software.At Optimus we make sure standards and procedures that our managers, administrators and Engineers may use to review and audit software products and activities to verify that the software meets quality criteria which link to standards.
-                SQA encompasses the entire software development process.
+                Software quality assurance (SQA) is a means and practice of monitoring the software engineering processes and methods used in a project to ensure 
                 </Text>
               </Box>
               <Link path="/" sx={styles.link}>
@@ -39,38 +40,31 @@ const BoostAgencies = () => {
               </Box>
           </Flex>
          
+          
 
           <Flex sx={styles.col}>
             <Box sx={styles.content}>
               <Box sx={styles.titleBox}>
                 <Heading as="h3">
-                   Requirements and Specifications
+              Design
                 </Heading>
                 <Text as="p">
-                A software requirements specification (SRS) is a description of a software system to be developed. It is modeled after business requirements specification (CONOPS). The software requirements specification lays out functional and non-functional requirements, and it may include a set of use cases that describe user interactions that the software must provide to the user for perfect interaction. 
-               Software requirements specification establishes the basis for an agreement between customers and contractors or suppliers on how the software product should function
+                Software quality assurance (SQA) is a means and practice of monitoring the software engineering processes and methods used in a project to ensure
                 </Text>
-              </Box>
-              <Link path="/development" sx={styles.link}>
-                Learn more <FaAngleRight />
-              </Link>
-              </Box>
-          </Flex>
-          <Flex sx={styles.col}>
-            <Box sx={styles.content}>
-              <Box sx={styles.titleBox}>
-                <Heading as="h3">
-                  Verification and Validation
-                </Heading>
-                <Text as="p">
-                In software project management, software testing, and software engineering, verification and validation (V&V) is the process of checking that a software system meets specifications and requirements so that it fulfills its intended purpose. It may also be referred to as software quality control. It is normally the responsibility of software testers as part of the software development lifecycle.               </Text>
               </Box>
               <Link path="/" sx={styles.link}>
                 Learn more <FaAngleRight />
               </Link>
               </Box>
           </Flex>
+         
+          <Flex sx={styles.col}>
+            <Image src={image2} sx={styles.image} alt="" />
+          </Flex>
 
+         
+
+        
         </Box>
       </Container>
     </Box>
@@ -86,10 +80,11 @@ const styles = {
   row: {
     display: 'flex',
     flexWrap: 'wrap',
-    flexDirection: ['column', null, null, 'row'],
+    flexDirection: ['column-reverse', null, null,null, null, 'row'],
   },
   col: {
     flex: ['0 0 100%', null, null, '0 0 50%'],
+    flexDirection: ['column-reverse', null, null, 'row'],
   },
   blockTitle:{
    textAlign:'center'

@@ -5,6 +5,8 @@ import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import SectionHeading from 'components/section-heading';
 import BlogPost from 'components/cards/blog-card';
 
+
+
 import thumb1 from 'assets/blog/1.png';
 import thumb2 from 'assets/blog/2.png';
 import thumb3 from 'assets/blog/3.png';
@@ -14,7 +16,7 @@ const data = [
     id: 1,
     thumb: thumb1,
     commentCount: 22,
-    link: '#!',
+    link: '/blog',
     title: `How to work with prototype design with adobe xd featuring tools`,
   },
   {
@@ -146,3 +148,6 @@ const styles = {
     },
   },
 };
+
+
+

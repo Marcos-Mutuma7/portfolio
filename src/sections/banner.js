@@ -29,7 +29,7 @@ const Banner = () => {
                 sx={styles.form.input}
               />
               <Button type="submit" sx={styles.form.button}>
-                Message
+              Message
               </Button>
             </Box>
             
@@ -104,6 +104,7 @@ const styles = {
       padding: ['0 16px'],
       ml: ['10px'],
       width: ['auto', null, null, null, '180px'],
+      alignItems:'center'
     },
   },
   image: {
