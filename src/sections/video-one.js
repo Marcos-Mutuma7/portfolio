@@ -17,7 +17,7 @@ const VideoOne = () => {
     <Box as="section" sx={styles.video}>
       <Container>
       <BlockTitle
-          slogan="Who have we worked with"
+          slogan="A Software with Trust"
           title="Our Most Trusted Clients"
           styles={styles.blockTitle}
         />
@@ -41,7 +41,7 @@ export default VideoOne;
 
 const styles = {
   video: {
-    pt: [10, null, null, null, null, null, 1],
+    pt: [10, null, null, null, null, null, 'null'],
     textAlign: 'center',
     h3: {
       margin: 0,

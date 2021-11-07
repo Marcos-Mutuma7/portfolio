@@ -89,10 +89,11 @@ const Services = (props) => {
               <Box className="service-icon" sx={styles.icon}>
                 <Image src={service.icon} alt="" />
               </Box>
-              
+              <Box sx={styles.card}>
               <Heading as="h3">{service.title}</Heading>
               
               <Text as="p">{service.text}</Text>
+              </Box>
             </Box>
           ))}
         </Grid>
@@ -115,6 +116,17 @@ const styles = {
   },
   blockTitle: {
     textAlign: 'center',
+  },
+  card:{
+    paddingTop:'20px',
+    backgroundColor:'white',
+    borderRadius:'15px',
+    padding:'20px' ,
+    transition: '500ms',
+    '&:hover': {
+      boxShadow: '0px 15px 50px rgba(69, 88, 157, 0.1)',
+      transform: 'scale(0.95)'
+    },
   },
   grid: {
     display: 'grid',

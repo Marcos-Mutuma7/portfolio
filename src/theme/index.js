@@ -149,9 +149,9 @@ export default {
       bg: 'primary',
       cursor: 'pointer',
       transition: '500ms',
-      fontSize: 2,
+      fontSize: 3,
       '&:hover': {
-        bg: 'secondary',
+        bg: 'black',
       },
     },
   },

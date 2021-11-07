@@ -78,8 +78,16 @@ textAlign:'center'
   },
   heading: {
     textAlign: ['center', null, null, 'left'],
+    backgroundColor:'white',
+    borderRadius:'15px',
+    padding:'30px' ,
+    transition: '500ms',
+    '&:hover': {
+      boxShadow: '0px 15px 50px rgba(69, 88, 157, 0.1)',
+      transform: 'scale(0.95)'
+    },
     h3: {
-      fontSize: [3, null, null, 8, 11],
+      fontSize: [2, null, null, 8, 10],
       lineHeight: 1.53,
       color:'heading'
     },

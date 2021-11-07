@@ -9,8 +9,7 @@ const CallToAction = () => {
       <Container sx={styles.container}>
         <Box sx={styles.inner}>
           <Heading as="h3">
-          We help business teams be more productive <br />
-         ,creative & successful
+          Grow your Business From Today
           </Heading>
           <Box sx={styles.btnWrapper}>
             <Link path='/contacts'>

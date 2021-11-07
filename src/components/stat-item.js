@@ -21,6 +21,16 @@ export default StatItem;
 const styles = {
   item: {
     textAlign: 'center',
+    boXShadow:'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+    backgroundColor:'white',
+    borderRadius:'15px',
+    padding:'20px' ,
+    margin:'-5px',
+    transition: '500ms',
+    '&:hover': {
+      boxShadow: '0px 15px 50px rgba(69, 88, 157, 0.1)',
+      transform: 'scale(0.95)'
+    },
   },
   value: {
     color: 'heading',

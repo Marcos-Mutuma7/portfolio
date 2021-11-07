@@ -16,8 +16,8 @@ const BoostAgencies2 = () => {
       <Container>
      
       <BlockTitle
-          slogan="Who are we ?"
-          title="Words From The Founder"
+          slogan="We try best, and we make sure we deliver best"
+          title="About TechPulse"
           styles={styles.blockTitle}
         />
         <Box sx={styles.grid}>
@@ -26,7 +26,7 @@ const BoostAgencies2 = () => {
           </Flex>
           <SectionHeading
             sx={styles.heading}
-            title="Spiral development"
+            title="Maccos Mutuma"
             description="The spiral model is a systems development lifecycle (SDLC) method used for risk management that combines the iterative development process model with elements of the Waterfall model. The spiral model is favored for large, expensive and complicated projects."
             learnMore="Secure data storage"
           />
@@ -48,8 +48,8 @@ export default BoostAgencies2;
 
 const styles = {
   section: {
-    pt: [0, null, null, null, 70, 10],
-    pb: [6, null, null, 8, 10, 11],
+    pt: ['10px', null, null, null, '20px', '70px'],
+    pb: [2, null, null, 8, 10, 11],
   },
   blockTitle:{
 textAlign:'center'

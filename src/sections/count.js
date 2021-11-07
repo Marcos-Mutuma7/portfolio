@@ -69,7 +69,7 @@ const styles = {
       backgroundColor: 'white',
       boxShadow: '0px 0px 25px rgba(54, 91, 125, 0.04)',
       borderRadius: 10,
-      gap: [2, null, null, '60px 40px', '50px 30px', '60px 40px'],
+      gap: [2, null, null, '60px 40px', '60px 30px', '70px 40px'],
       justifyContent: 'center',
       gridTemplateColumns: [
         'repeat(1, 250px)',
@@ -83,7 +83,9 @@ const styles = {
       pb: [8, null, null, 15],
     },
     statsGrid: {
-      gap: [4, 5, null, null, '60px 30px', '60px 80px', '60px 110px'],
+      gap: [4, 5, null, null, '60px 30px', '70px 90px', '70px 120px'],
+    
+    
       justifyContent: 'center',
       gridTemplateColumns: [
         'repeat(2, 120px)',

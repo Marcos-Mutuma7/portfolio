@@ -15,7 +15,7 @@ const BoostAgencies = () => {
 
       <Container>
       <BlockTitle
-          slogan="Why choose TechPulse ?"
+          slogan="Listening to you, and answering with software"
           title="Our Software Development Process"
           styles={styles.blockTitle}
         />
@@ -59,7 +59,7 @@ export default BoostAgencies;
 
 const styles = {
   section: {
-    pt: [6, null, null, null, 1, 1],
+    pt: [2, null, null, null, 1, 1],
     pb: [0, null, null, 8, 10, 11],
   },
   blockTitle:{
@@ -82,6 +82,14 @@ textAlign:'center'
   },
   heading: {
     textAlign: ['center', null, null, 'left'],
+    backgroundColor:'white',
+    borderRadius:'15px',
+    padding:'30px' ,
+    transition: '500ms',
+    '&:hover': {
+      boxShadow: '0px 15px 50px rgba(69, 88, 157, 0.1)',
+      transform: 'scale(0.95)'
+    },
     h3: {
       fontSize: [3, null, null, 8, 11],
       lineHeight: 1.53,

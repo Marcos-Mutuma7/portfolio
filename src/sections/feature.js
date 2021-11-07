@@ -85,7 +85,7 @@ const Feature = () => {
     <Box sx={styles.features} id="news">
       <Container>
         <BlockTitle
-        slogan="What do we do?"
+        slogan="Providing the simplest solution for the most complex problem"
           title="Our Platinum Services"
           styles={styles.blockTitle}
         />
@@ -131,6 +131,7 @@ const styles = {
   },
   carouselBtns: {
     display: ['flex', null, null, null, null, 'none'],
+
     justifyContent: 'center',
     alignItems: 'center',
     button: {

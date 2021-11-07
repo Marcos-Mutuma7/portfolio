@@ -4,16 +4,20 @@ import { jsx, Box, Heading, Text } from 'theme-ui';
 const SectionHeading = ({ slogan, title, description, ...props }) => {
   return (
     <Box sx={styles.headingWrapper} {...props}>
-      {slogan && (
-        <Text sx={styles.slogan} as="p">
-          {slogan}
-        </Text>
-      )}
+      
+      
+      
       <Heading sx={styles.title}>{title}</Heading>
       {description && (
         <Text sx={styles.description} as="p">
           {description}
         </Text>
+      )}
+      {slogan && (
+        <Text sx={styles.slogan} as="p">
+          {slogan}
+        </Text>
+        
       )}
     </Box>
   );
