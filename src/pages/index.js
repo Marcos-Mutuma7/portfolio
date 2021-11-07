@@ -17,6 +17,7 @@ import BoostAgencies from 'sections/boost-agencies';
 import Count from 'sections/count';
 import Blog from 'sections/blog'
 import BoostAgencies1 from 'sections/boost-agencies1'
+import BoostAgencies2 from 'sections/boost-agencies2'
 
 export default function IndexPage() {
   return (
@@ -32,7 +33,8 @@ export default function IndexPage() {
           <BoostAgencies1/>
           <CallToAction/>
           <Services />
-      
+          <VideoOne/>
+          <BoostAgencies2/>
           <CallToAction />
         </Layout>
       </StickyProvider>

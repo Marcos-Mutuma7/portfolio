@@ -4,8 +4,8 @@ import Image from 'components/image';
 import { Link } from 'components/link';
 import { FaAngleRight, FaPlay } from 'react-icons/fa';
 import ModalVideo from 'react-modal-video';
-
-import videoImg from 'assets/video.png';
+import BlockTitle from 'components/block-title';
+import videoImg from 'assets/image 62(2).png';
 
 const VideoOne = () => {
   const [videoOpen, setVideoOpen] = useState(false);
@@ -16,28 +16,16 @@ const VideoOne = () => {
   return (
     <Box as="section" sx={styles.video}>
       <Container>
-        <Heading as="h3">
-          Leading companies trust us <br /> to develop software
-        </Heading>
-        <Text as="p">
-          We believe it’s important for everyone to have access to software{' '}
-          <br />
-          especially when it comes to digital learning be navigate.
-        </Text>
-        <Link path="/" sx={styles.link}>
-          Explore Details <FaAngleRight />
-        </Link>
+      <BlockTitle
+          slogan="Who have we worked with"
+          title="Our Most Trusted Clients"
+          styles={styles.blockTitle}
+        />
         <Box sx={styles.videoBox}>
           <Image src={videoImg} alt="" />
-          <Link
-            path="/"
-            aria-label="video btn"
-            onClick={handleClick}
-            sx={styles.videoBtn}
-          >
-            <FaPlay />
-          </Link>
-        </Box>
+          
+            
+               </Box>
       </Container>
       <ModalVideo
         channel="youtube"
@@ -53,7 +41,7 @@ export default VideoOne;
 
 const styles = {
   video: {
-    pt: [80, null, null, null, null, null, 110],
+    pt: [10, null, null, null, null, null, 1],
     textAlign: 'center',
     h3: {
       margin: 0,
@@ -81,7 +69,7 @@ const styles = {
     '>img': {
       borderRadius: '10px',
       display: 'flex',
-      width: ['100%', null, null, null, '80%', null, '100%'],
+      width: ['90%', null, null, null, '70%', null, '80%'],
     },
   },
   link: {
