@@ -105,6 +105,8 @@ const FeatureOne = () => {
             <FaLongArrowAltRight />
           </button>
         </Box>
+
+       
       </Container>
     </Box>
   );
@@ -116,9 +118,10 @@ const styles = {
   blockTitle: {
     textAlign: 'center',
   },
+  
   features: {
     pt: ['8px', null, null, null, null, null, '1px'],
-    pb: ['8px', null, null, null, '10px'],
+    pb: ['8px', null, null, null, '30px'],
     backgroundColor: '#F8FAFC',
     '.swiper-slider': {
       overflowY: 'visible',

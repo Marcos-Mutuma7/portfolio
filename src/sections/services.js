@@ -9,10 +9,10 @@ import { Link } from 'components/link';
 import icon1 from 'assets/icons/image 25(4).png';
 import icon2 from 'assets/icons/image 27(1).png';
 import icon3 from 'assets/icons/image 28(1).png';
-import icon4 from 'assets/icons/image 31(3).png';
+import icon4 from 'assets/icons/image 51.png';
 import icon5 from 'assets/icons/image 32.png';
-import icon6 from 'assets/icons/image 33.png';
-import icon7 from 'assets/icons/image 34.png';
+import icon6 from 'assets/icons/image 52.png';
+import icon7 from 'assets/icons/image 53.png';
 import icon8 from 'assets/icons/image 35(1).png';
 
 const SERVICES_DATA = [
@@ -21,63 +21,64 @@ const SERVICES_DATA = [
     icon: icon1,
     title: 'Healthcare',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      ' Medical software development helps create solutions to eliminate human error, streamline workflow, and manage medical data more effectively and efficiently.',
       path:'/data'
   },
   {
     icon: icon2,
    title:'Retail',
     text:
-     'Get your blood tests delivered at home collect a sample from the your blood tests.',
+     'Retailers can benefit from custom retail development software applications because it allows multiple services and streamlines the entire business in one place. ',
     
     },
   {
     icon: icon3,
     title: 'Education',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Technology provides students with easy-to-access information, accelerated learning, and fun opportunities to practice what they learn.',
   },
   {
     icon: icon4,
     title: 'Government',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'An emboldened level of citizen expectation for streamlined service delivery and transparency has pushed local governments to explore innovative solutions      to keep up with residents demands.'
   },
   {
     icon: icon5,
     title:'Fintech',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Fintech and mobile technology have made it possible to combine physical and digital payment methods into a single interface that consolidates various bank accounts or cards.',
   },
   {
     icon: icon6,
     title: 'Media & Entertainment',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      ' With the advances in technology we are enabled to complete more tasks in less time, and often times, with less effort and more productivity. ',
   },
   {
     icon: icon7,
     title: 'Agriculture',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Crop management suggests plant growth monitoring and prediction of yields. ERP allows collecting information regarding crop conditions, work of personnel, farming activities with further analysis and planning',
   },
   {
     icon: icon8,
     title: 'Real Estate',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Real estate software solutions enable you to become a pro in the market by catering to all your customer issues efficiently. Not only that, but you can even enhance your services and can automate all your tedious tasks with real estate apps and software solutions.',
   },
 ];
 
 const Services = (props) => {
   return (
     <Box sx={styles.services} id="services">
-      <Container>
-        <BlockTitle
+       <BlockTitle
           slogan="Who are our clients?"
-          title="Industries we work with"
+          title="Top industries that we provide our services"
           styles={styles.blockTitle}
         />
+      <Container>
+       
         <Grid sx={styles.grid}>
           {SERVICES_DATA.map((service, index) => (
             <Box
@@ -105,10 +106,10 @@ export default Services;
 
 const styles = {
   services: {
-    backgroundColor: '#F6F8FB',
+    
     overflow: 'hidden',
    
-    pt: ['80px', null, null, null, null, null, '140px'],
+    pt: ['80px', null, null, null, null, null, '180px'],
     pb: ['80px', null, null, null, null, null, '40px'],
     
   },
@@ -126,6 +127,7 @@ const styles = {
       null,
       '1fr 1fr 1fr 1fr',
     ],
+  marginTop:'60px'
   },
   icon: {
     display: 'flex',

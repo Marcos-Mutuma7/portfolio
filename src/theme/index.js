@@ -156,12 +156,15 @@ export default {
     },
   },
   blockTitle: {
-    marginBottom: [25, null, null, null, 40],
+    
+    marginBottom: [25, null, null, null, 10],
+  
     p: {
       color: 'primary',
       fontSize: [0, null, null, null, 3],
       lineHeight: 1,
-      marginBottom: [10, null, null, null, 10],
+      marginBottom: [10, null, null, null, 2],
+      marginTop: [10, null, null, null, 2],
     },
     h2: {
       color: 'primary',

@@ -3,30 +3,26 @@
 import { jsx, Box, Flex, Container } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Image from 'components/image';
-import privacy from 'assets/image 57.png';
-import privacy1 from 'assets/image 56.png'
+import privacy from 'assets/image 59.png';
+import privacy1 from 'assets/image 60.png'
 import BlockTitle from 'components/block-title';
 
 
-const BoostAgencies = () => {
+const BoostAgencies1 = () => {
   return (
     <section sx={styles.section} id="features">
       
 
       <Container>
-      <BlockTitle
-          slogan="Why choose TechPulse ?"
-          title="Our Software Development Process"
-          styles={styles.blockTitle}
-        />
+     
         <Box sx={styles.grid}>
           <Flex sx={styles.illustration}>
             <Image src={privacy1} alt="privacy" />
           </Flex>
           <SectionHeading
             sx={styles.heading}
-            title="Agile development"
-            description="Agile software development refers to a group of software development methodologies based on iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams."
+            title="Spiral development"
+            description="The spiral model is a systems development lifecycle (SDLC) method used for risk management that combines the iterative development process model with elements of the Waterfall model. The spiral model is favored for large, expensive and complicated projects."
             learnMore="Secure data storage"
           />
         </Box>
@@ -35,8 +31,8 @@ const BoostAgencies = () => {
           
           <SectionHeading
             sx={styles.heading}
-            title="Waterfall model"
-            description="The waterfall model is a breakdown of project activities into linear sequential phases, where each phase depends on the deliverables of the previous one and corresponds to a specialization of tasks."
+            title="Rapid application"
+            description="RAD is especially well suited for (although not limited to) developing software that is driven by user interface requirements. Graphical user interface builders are often called rapid application development tools."
             learnMore="Secure data storage"
           />
 
@@ -55,12 +51,12 @@ const BoostAgencies = () => {
   );
 };
 
-export default BoostAgencies;
+export default BoostAgencies1;
 
 const styles = {
   section: {
-    pt: [6, null, null, null, 1, 1],
-    pb: [0, null, null, 8, 10, 11],
+    pt: [0, null, null, null, 10, 10],
+    pb: [6, null, null, 8, 10, 11],
   },
   blockTitle:{
 textAlign:'center'

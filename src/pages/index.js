@@ -16,6 +16,7 @@ import CallToAction from 'sections/call-to-action';
 import BoostAgencies from 'sections/boost-agencies';
 import Count from 'sections/count';
 import Blog from 'sections/blog'
+import BoostAgencies1 from 'sections/boost-agencies1'
 
 export default function IndexPage() {
   return (
@@ -28,9 +29,10 @@ export default function IndexPage() {
           <Feature/>
           <FeatureOne/>
           <BoostAgencies/>
+          <BoostAgencies1/>
           <CallToAction/>
           <Services />
-          <Blog/>
+      
           <CallToAction />
         </Layout>
       </StickyProvider>

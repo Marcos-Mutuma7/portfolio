@@ -27,7 +27,7 @@ export default CallToAction;
 
 const styles = {
   wrapper: {
-    backgroundColor: '#F6F8FB',
+    
     overflow: 'hidden',
   },
   inner: {

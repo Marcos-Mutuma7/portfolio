@@ -28,21 +28,23 @@ const styles = {
     textAlign: 'center',
   },
   slogan: {
-    color: (theme) => theme.colors.primary,
+    color:'heading',
     fontSize: 18,
     fontWeight: 700,
     lineHeight: 2.22,
-    mb: ['12px'],
+    mb: ['4px'],
   },
   title: {
     fontSize: [21, , , 30],
     fontWeight: [500, 400],
     lineHeight: 1.68,
     letterSpacing: 'heading',
+  
   },
   description: {
     fontSize: 17,
     lineHeight: 2.07,
-    color: (theme) => theme.colors.text,
+    color: 'heading',
+    opacity:[.6],
   },
 };
