@@ -73,8 +73,7 @@ const styles = {
   section: {
     pt: [2, null, null, null, 1, 1],
     pb: [0, null, null, 8, 10, 11],
-    backgroundColor: '#F6F8FB',
-    overflow: 'hidden',
+    
   },
   blockTitle:{
 textAlign:'center'

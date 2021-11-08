@@ -70,7 +70,6 @@ const styles = {
       position: 'absolute',
       width: '73px',
       height: '26px',
-      backgroundImage: `url(${btnShape})`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       bottom: 'calc(100% + 10px)',

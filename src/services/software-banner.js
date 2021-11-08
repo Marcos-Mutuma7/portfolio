@@ -4,7 +4,7 @@ import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 
 
-import bannerImg from 'assets/image 43.png';
+import bannerImg from 'assets/image 74(1).png';
 
 const SoftwareBanner = () => {
   return (
@@ -13,7 +13,7 @@ const SoftwareBanner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-           Custom Development
+           The Software You Need
             </Heading>
             <Text as="p">
             Custom software development is the process of designing, creating, deploying and maintaining software for a specific set of users, functions or organization.
@@ -69,7 +69,7 @@ const styles = {
       mb: ['15px', null, null, null, '10px'],
       width: ['100%'],
       maxWidth: ['100%', null, null, '90%', '100%', '540px'],
-      fontSize: [6, null, null, '36px', null, '50px', '55px'],
+      fontSize: [6, null, null, '36px', null, '42px', '48px'],
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],

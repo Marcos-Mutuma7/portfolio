@@ -12,6 +12,7 @@ const SoftwareProcess = () => {
     <Box as="section" sx={styles.customerSupport}>
       <Container>
       <BlockTitle
+          slogan="Software with new dimensions"
           title="Why is Custom Software Development Important?"
           styles={styles.blockTitle}
         />
@@ -83,7 +84,7 @@ export default SoftwareProcess;
 const styles = {
   customerSupport: {
     overflow: 'hidden',
-    pt: ['75px', null, null, null, '0', '80px'],
+    pt: ['75px', null, null, null, '80px', '80px'],
     pb: ['75px', null, null, null, null, '120px', '210px'],
     backgroundColor: '#F6F8FB',
   

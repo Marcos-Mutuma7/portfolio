@@ -8,38 +8,38 @@ import image4 from 'assets/1.png'
 import image5 from 'assets/image 52.png'
 import image6 from 'assets/image 53.png'
 const FEATURES_DATA = {
-  title: 'Industries we serve',
-  text: '',
+  title: 'Industries that use customized softwares',
+  text: 'Inspiring the generation',
   posts: [
    
     {
-      image: image3,
-      title: 'Retail',
+      image: image1,
+      title: 'Healthcare',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'It reduces work pressure on the doctors and enables them to offer better quality care. Healthcare softwares help eliminate most of the paperwork by completely automating patient registration, form filling, record maintenance, file management, and data storage.',
     },
     {
       image: image2,
       title: 'Finance',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'A custom software enables your employees to save a lot of time in doing things manually and can get required information instantly. Sales and Marketing reports, data can be accomplished within minutes. This saves time and you can utilize your workforce to do other higher-priority work.',
     },
     {
-      image: image1,
-      title: 'Healthcare',
+      image: image3,
+      title: 'Retail',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Store owners/retailers can benefit from custom retail development software applications because it allows multiple services and streamlines the entire business in one place.The software helps you manage daily tasks such as customer checking, inventory managing and buying, and finance tracking.',
     }, {
       image: image4,
-      title: 'Real estate',
+      title: 'Education',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Custom software helps institutions create educational software solutions that cater to their specific needs because each organization is different and requires a unique approach. ... Institutions will become more flexible and adapt much faster to uncertain times.',
     },
     {
       image: image5,
-      title: 'Media & entertainment',
+      title: 'Manufacturing',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'But well-built customized software solutions can also bring profit more directly, by assisting in product quality assurance, speeding up production, and enhancing manufacturing productivity on all fronts. All this combined provides your business with a strong competitive advantage.',
     },
     {
       image: image6,
@@ -81,7 +81,7 @@ export default SoftwareIndustries;
 const styles = {
   section: {
     overflow: 'hidden',
-    pt: ['70px', null, null, '10px'],
+    pt: ['70px', null, null, '70px'],
     pb: ['40px', null, null, '70px'],
     backgroundColor: '#F6F8FB',
   
@@ -104,8 +104,8 @@ const styles = {
       mt: '15px',
     },
     p: {
-      color: 'secondary',
-      fontSize: '16px',
+      color: 'primary',
+      fontSize: '20px',
       lineHeight: 1.87,
     },
   },

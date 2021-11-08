@@ -16,36 +16,36 @@ const FEATURES_DATA = {
       image: image3,
       title: 'Retail',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Big Data analytics in retail sector is enabling companies to create customer recommendations based on their purchase history thereby resulting in personalized shopping experiences and improved customer service.',
     },
     {
       image: image2,
       title: 'Finance',
       text:
-        ' info tests delivered at home collect a sample from the your pogress tests.',
+        ' Data Science has become very important in the Finance Industry, which is mostly used for Better Risk Management and Risk Analysis. Better analysis leads to better decisions which lead to an increase in profit for financial institutions.',
     },
     {
       image: image1,
       title: 'Healthcare',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'In healthcare, big data uses specific statistics from a population or an individual to research new advancements, reduce costs, and even cure or prevent the onset of diseases.',
     }, {
       image: image4,
       title: 'Real estate',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'In the world of real estate, a growing number of deals rely on data analysis. From faster, more accurate appraisals to sophisticated forecasts, the use of analytics can lead to smarter decisions about property investments.',
     },
     {
       image: image5,
       title: 'Media & entertainment',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Data and analytics is helping entertainment and media companies unlock hidden insights in their data – from social media listening to predictive models to test advertising, pricing and sales forecasting.',
     },
     {
       image: image6,
       title: 'Agriculture',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Big data provides farmers granular data on rainfall patterns, water cycles, fertilizer requirements, and more. This enables them to make smart decisions, such as what crops to plant for better profitability and when to harvest',
     },
   ],
 };
@@ -119,7 +119,7 @@ const styles = {
     textAlign: ['center', null, null, 'left'],
     '>.image': {
       flexShrink: 0,
-      width: '70px',
+      width: '80px',
       height: '70px',
       mx: ['auto', null, null, '0'],
     },
