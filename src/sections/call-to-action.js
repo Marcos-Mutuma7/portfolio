@@ -31,7 +31,7 @@ const styles = {
   },
   inner: {
     padding: ['45px 30px 50px', null, null, '45px 50px', null, '45px 70px'],
-    mt: [3, null, null, null, '50px'],
+    mt: [2, null, null, null, '50px'],
     position: 'relative',
     zIndex: '10',
     backgroundColor: 'primary',

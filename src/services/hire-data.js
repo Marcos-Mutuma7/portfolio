@@ -8,11 +8,10 @@ const HireData = () => {
       <Container sx={styles.container}>
         <Box sx={styles.inner}>
           <Heading as="h3">
-            Optimus is hiring Data Analysts <br />
-            and scincentists
+            The Big Data Revoulution is here
           </Heading>
           <Box sx={styles.btnWrapper}>
-            <Button sx={styles.btn}>Apply Now</Button>
+            <Button sx={styles.btn}>START NOW</Button>
           </Box>
         </Box>
       </Container>

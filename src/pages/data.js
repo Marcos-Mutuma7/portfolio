@@ -26,7 +26,7 @@ export default function dataPage() {
           <DataProcess/>
           <DataIndustries/>
           <HireData/>
-          <Blog/>
+          
           
         </Layout>
       </StickyProvider>

@@ -13,7 +13,7 @@ const DataBanner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-           Big Data Analytics
+           Big Data Solutions
            </Heading>
             <Text as="p">
             We use advanced computing technologies on huge data sets to discover valuable correlations, patterns, trends and preferences for companies to make better decisions.
@@ -25,7 +25,7 @@ const DataBanner = () => {
               <Input
                 name="subscribe"
                 id="subscribe"
-                placeholder="Subscribe newsletter"
+                placeholder="Schedule a meeting"
                 sx={styles.form.input}
               />
               <Button type="submit" sx={styles.form.button}>
@@ -69,12 +69,12 @@ const styles = {
       mb: ['15px', null, null, null, '10px'],
       width: ['100%'],
       maxWidth: ['100%', null, null, '90%', '100%', '540px'],
-      fontSize: [6, null, null, '36px', null, '50px', '55px'],
+      fontSize: [6, null, null, '36px', null, '48px', '55px'],
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],
       lineHeight: ['26px', null, null, null, 1.73],
-      opacity:[.7],
+      opacity:[.6],
       color: 'heading',
       mb: ['20px', null, null, null, null, '20px'],
       width: ['100%'],

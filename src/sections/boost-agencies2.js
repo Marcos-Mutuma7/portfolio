@@ -48,7 +48,7 @@ export default BoostAgencies2;
 
 const styles = {
   section: {
-    pt: ['10px', null, null, null, '20px', '70px'],
+    pt: ['80px', null, null, null, '20px', '70px'],
     pb: [2, null, null, 8, 10, 11],
   },
   blockTitle:{

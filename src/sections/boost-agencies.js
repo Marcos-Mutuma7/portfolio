@@ -26,7 +26,7 @@ const BoostAgencies = () => {
           <SectionHeading
             sx={styles.heading}
             title="Agile development"
-            description="Agile software development refers to a group of software development methodologies based on iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams."
+            description="Agile is an iterative approach to project management and software development that helps teams deliver value to their customers faster and with fewer headaches. Instead of betting everything on a 'big bang' launch, an agile team delivers work in small, but consumable, increments."
             learnMore="Secure data storage"
           />
         </Box>
@@ -36,7 +36,7 @@ const BoostAgencies = () => {
           <SectionHeading
             sx={styles.heading}
             title="Waterfall model"
-            description="The waterfall model is a breakdown of project activities into linear sequential phases, where each phase depends on the deliverables of the previous one and corresponds to a specialization of tasks."
+            description="The waterfall model is a breakdown of project activities into linear sequential phases, where each phase depends on the deliverables of the previous one and corresponds to a specialization of tasks.It works well for smaller and low budget projects where requirements are very well understood"
             learnMore="Secure data storage"
           />
 

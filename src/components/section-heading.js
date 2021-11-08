@@ -39,14 +39,14 @@ const styles = {
     mb: ['4px'],
   },
   title: {
-    fontSize: [21, , , 30],
+    fontSize: [23, , , 35],
     fontWeight: [500, 400],
     lineHeight: 1.68,
     letterSpacing: 'heading',
   
   },
   description: {
-    fontSize: 17,
+    fontSize: 16,
     lineHeight: 2.07,
     color: 'heading',
     opacity:[.6],

@@ -12,6 +12,7 @@ const CloudService = () => {
     <Box sx={styles.boostAgencies}>
       <Container>
       <BlockTitle
+          slogan="Data analytics is the future"
           title="Our Data Analytics Services"
           styles={styles.blockTitle}
         />

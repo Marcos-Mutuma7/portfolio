@@ -32,7 +32,7 @@ const BoostAgencies1 = () => {
           <SectionHeading
             sx={styles.heading}
             title="Rapid application"
-            description="RAD is especially well suited for (although not limited to) developing software that is driven by user interface requirements. Graphical user interface builders are often called rapid application development tools."
+            description="RAD is especially well suited for (although not limited to) developing software that is driven by user interface requirements. Graphical user interface builders are often called rapid application development tools.RAD should be used when there is a need to create a system that can be modularized in 2-3 months of time"
             learnMore="Secure data storage"
           />
 
@@ -87,7 +87,7 @@ textAlign:'center'
       transform: 'scale(0.95)'
     },
     h3: {
-      fontSize: [2, null, null, 8, 10],
+      fontSize: [1, null, null, 8, 10],
       lineHeight: 1.53,
       color:'heading'
     },

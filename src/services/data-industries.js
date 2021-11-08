@@ -8,8 +8,8 @@ import image4 from 'assets/1.png'
 import image5 from 'assets/image 52.png'
 import image6 from 'assets/image 53.png'
 const FEATURES_DATA = {
-  title: 'Industries we serve',
-  text: '',
+  title: 'Industries we provide with Data services',
+  text: 'Big data , biggger problems',
   posts: [
    
     {
@@ -22,7 +22,7 @@ const FEATURES_DATA = {
       image: image2,
       title: 'Finance',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        ' info tests delivered at home collect a sample from the your pogress tests.',
     },
     {
       image: image1,
@@ -104,8 +104,8 @@ const styles = {
       mt: '15px',
     },
     p: {
-      color: 'secondary',
-      fontSize: '16px',
+      color: 'primary',
+      fontSize: '18px',
       lineHeight: 1.87,
     },
   },

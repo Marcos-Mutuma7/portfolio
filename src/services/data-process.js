@@ -12,6 +12,7 @@ const DataProcess = () => {
     <Box as="section" sx={styles.customerSupport}>
       <Container>
       <BlockTitle
+          slogan="Unleash the power of data"
           title="Our Data Analyst Consultation Process"
           styles={styles.blockTitle}
         />
