@@ -8,44 +8,44 @@ import image4 from 'assets/1.png'
 import image5 from 'assets/image 52.png'
 import image6 from 'assets/image 53.png'
 const FEATURES_DATA = {
-  title: 'Industries we serve',
-  text: '',
+  title: 'Industries that we serve Cloud services',
+  text: 'Cloud products for every business size',
   posts: [
    
     {
       image: image3,
-      title: 'Retail',
+      title: 'Education',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        ' Education constantly deals with tight funding situations, a problem that the cloud can directly alleviate. It’s important for schools to have access to the latest technology to provide the best education possible, and with RapidScale’s cloud, this can be done. Students can access the information they need all in one place. Teachers can distribute assignments with greater ease. ',
     },
     {
       image: image2,
       title: 'Finance',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'A huge concern for the financial industry when it comes to the cloud is security, but our solution allows you to experience encrypted information, Tier 3, Class 1 data centers and limited access credentials for that confidential data. And with this tight security in place, financial businesses can explore the ease of completing everyday tasks like customer billing or interaction. ',
     },
     {
       image: image1,
       title: 'Healthcare',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        ' Our Cloud Healthcare solution ensures that it’s an easy transition, and a reliable one. Our solutions are compliant with various healthcare regulations. We also provide additional benefits that healthcare providers rarely consider. Doctors can more easily stay connected with their patients, as well as improve collaboration with each other.',
     }, {
       image: image4,
-      title: 'Real estate',
+      title: 'Insurance',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Our cloud solutions allow you to connect with your clients in the most convenient way. When dealing with insurance sales, the cloud is the best resource because you can experience real-time collaboration. Communicate within channels and set up customer portals that will help you and your customers keep track of their accounts and statuses. ',
     },
     {
       image: image5,
-      title: 'Media & entertainment',
+      title: 'Production',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'When it comes to manufacturing, companies are constantly challenged with the need to manage diverse locations and supply chains that require large, intricate database applications. RapidScale’s cloud allows these companies to connect anywhere and provides the necessary infrastructure to power each location.',
     },
     {
       image: image6,
-      title: 'Agriculture',
+      title: 'Real Estate',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'It’s important to be constantly in-the-know if you work in the real estate industry. We make it easy for you to keep an eye on personal listings while being constantly aware of new ones. Whether you’re an agent, brokerage or title company, you will experience how easy it is to access information in the field when you need it. ',
     },
   ],
 };
@@ -81,7 +81,7 @@ export default CloudIndustries;
 const styles = {
   section: {
     overflow: 'hidden',
-    pt: ['70px', null, null, '10px'],
+    pt: ['70px', null, null, '70px'],
     pb: ['40px', null, null, '70px'],
     backgroundColor: '#F6F8FB',
   
@@ -104,8 +104,8 @@ const styles = {
       mt: '15px',
     },
     p: {
-      color: 'secondary',
-      fontSize: '16px',
+      color: 'primary',
+      fontSize: '18px',
       lineHeight: 1.87,
     },
   },

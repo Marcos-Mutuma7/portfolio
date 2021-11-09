@@ -43,9 +43,9 @@ const FEATURES_DATA = {
     },
     {
       image: image6,
-      title: 'Agriculture',
+      title: 'Government',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Any major managed IT professional company understands the required Federal Information Processing Standards or FIPS.Local government can have tax information, entire databases devoted to licensing, and have intense scheduling needs to keep their workers managing the constant workflow of a government position.',
     },
   ],
 };

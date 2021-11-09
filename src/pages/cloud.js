@@ -5,11 +5,11 @@ import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
 
-import DataBanner from 'services/data-banner'
-import DataService from 'services/data-service';
+import CloudBanner from 'services/cloud-banner'
+import CloudService from 'services/cloud-service';
 import DataProcess from 'services/data-process';
-import HireData from 'services/hire-data';
-import DataIndustries from 'services/data-industries'
+import HireCloud from 'services/hire-cloud';
+import CloudIndustries from 'services/cloud-industries'
 import Blog from 'services/data-blog'
 
 
@@ -19,13 +19,13 @@ export default function cloudPage() {
       <StickyProvider>
         <Layout>
           <SEO title="Startup Landing 006" />
-          <DataBanner/>
-          <DataService/>
-          <HireData/>
-          <DataProcess/>
-          <DataIndustries/>
-          <HireData/>
-          <Blog/>
+          <CloudBanner/>
+          <CloudService/>
+          <HireCloud/>
+        
+          <CloudIndustries/>
+          <HireCloud/>
+          
           
         </Layout>
       </StickyProvider>

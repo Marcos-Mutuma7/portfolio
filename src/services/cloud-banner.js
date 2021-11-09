@@ -4,7 +4,7 @@ import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 
 
-import bannerImg from 'assets/image 43.png';
+import bannerImg from 'assets/image 2.png';
 
 const CloudBanner = () => {
   return (
@@ -13,10 +13,10 @@ const CloudBanner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-            Cloud Computing
+            The Cloud of hope
             </Heading>
             <Text as="p">
-            is the use of off-site systems to help computers store, manage, process, and/or communicate information. These off-site systems are hosted on the cloud (or the internet) instead of on your computer or other local storage.
+            Cloud computing is a technology that uses the internet for storing and managing data on remote servers, and then access data via the internet
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
@@ -69,7 +69,7 @@ const styles = {
       mb: ['15px', null, null, null, '10px'],
       width: ['100%'],
       maxWidth: ['100%', null, null, '90%', '100%', '540px'],
-      fontSize: [6, null, null, '36px', null, '50px', '55px'],
+      fontSize: [6, null, null, '36px', null, '45px', '50px'],
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],
