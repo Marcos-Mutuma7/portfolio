@@ -1,188 +1,152 @@
-import React from 'react';
-import { Box, Container, Flex, Heading, Text } from 'theme-ui';
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { jsx, Box, Flex, Container } from 'theme-ui';
+import SectionHeading from 'components/section-heading';
 import Image from 'components/image';
-import { Link } from 'components/link';
-import { IoIosCheckmarkCircle } from 'react-icons/io';
-import BlockTitle from 'components/block-title'
-import { FaAngleRight } from 'react-icons/fa';
-import image1 from 'assets/boost-1-1.png';
+import privacy from 'assets/image 69.png';
+import privacy3 from 'assets/image 72.png'
+import privacy4 from 'assets/image 73.png'
+import privacy1 from 'assets/image 68.png'
+import privacy2 from 'assets/image 71.png'
+import BlockTitle from 'components/block-title';
+
 
 const MachineService = () => {
   return (
-    <Box sx={styles.boostAgencies}>
+    <section sx={styles.section} id="features">
+      
+
       <Container>
       <BlockTitle
-          title="Our Data Analytics Services"
+          slogan="Addressing world problems through Artificial Intelligence."
+          title="TechPulse Artificial Intellengence Services"
           styles={styles.blockTitle}
         />
-        <Box sx={styles.row}>
-          <Flex sx={styles.col}>
-            <Box sx={styles.content}>
-              <Box sx={styles.titleBox}>
-                <Heading as="h3">
-                  Digital Analytics
-                </Heading>
-                <Text as="p">
-                It is the process of analyzing digital data from various sources like mobile applications or websites. We provide digital analytics services to our clients to help them examine their customers’ behavior and translate it into actionable business data.
-                </Text>
-              </Box>
-              </Box>
+        <Box sx={styles.grid}>
+          <Flex sx={styles.illustration}>
+            <Image src={privacy1} alt="privacy" />
           </Flex>
-          <Flex sx={styles.col}>
-            <Box sx={styles.content}>
-              <Box sx={styles.titleBox}>
-                <Heading as="h3">
-                 Advanced Analytics
-                </Heading>
-                <Text as="p">
-                To help businesses make better decisions, we provide advanced analytics services. Advanced Analytics provides new insights into the data and uses data mining, data visualization, pattern matching, & predictive modeling tools to produce analyses.
-                </Text>
-              </Box>
-              </Box>
-          </Flex>
+          <SectionHeading
+            sx={styles.heading}
+            title="Ai for customer experience"
+            description="Chatbots, for example, use both machine learning algorithms and NLP to understand customer requests and respond appropriately. And they do that faster than human workers can and at lower costs.
 
-          <Flex sx={styles.col}>
-            <Box sx={styles.content}>
-              <Box sx={styles.titleBox}>
-                <Heading as="h3">
-                  Data Visualization
-                </Heading>
-                <Text as="p">
-                The process of collecting data and placing it into a visual context is a data visualization. Data visualization makes it easier to detect patterns and trends of the customers. With the help of our data visualization service, our customers can quickly understand complex patterns in data sets.
-                </Text>
-              </Box>
-              </Box>
-          </Flex>
-
-          <Flex sx={styles.col}>
-            <Box sx={styles.content}>
-              <Box sx={styles.titleBox}>
-                <Heading as="h3">
-                  Data Quality Assurance
-                </Heading>
-                <Text as="p">
-                We provide data quality assurance to help our customers keep them safe from calamitous effects that low-quality data can cause. Our team develops and implements data governance procedures to optimize data quality assurance.
-                </Text>
-              </Box>
-              </Box>
-          </Flex>
-
-          <Flex sx={styles.col}>
-            <Box sx={styles.content}>
-              <Box sx={styles.titleBox}>
-                <Heading as="h3">
-                  Business Intellegence
-                </Heading>
-                <Text as="p">
-                At Optimus, We help our clients to optimize their capabilities to leverage various types of data. Our business intelligence services include development and consulting, data visualization, and testing.
-                </Text>
-              </Box>
-              </Box>
-          </Flex>
-          <Flex sx={styles.col}>
-            <Box sx={styles.content}>
-              <Box sx={styles.titleBox}>
-                <Heading as="h3">
-                  Data Services
-                </Heading>
-                <Text as="p">
-                We help you to establish your data warehouse, examine complex data reports, and extract value from abundant data for making smart business decisions.
-                </Text>
-              </Box>
-              </Box>
-          </Flex>
-
+            AI also powers recommendation functions, which use customer data and predictive analytics to suggest products that customers are most likely to need or want and therefore buy."
+            learnMore="Secure data storage"
+          />
         </Box>
+
+        
+        <Box sx={styles.grid_1}>
+          
+          <SectionHeading
+            sx={styles.heading}
+            title="Ai for targeted marketing"
+            description="Online search providers, online retailers and other internet entities use intelligent systems to understand users and their buying patterns, so they can select advertisements for the specific products that they're most likely to want or need."
+            learnMore="Secure data storage"
+          />
+
+<Flex sx={styles.illustration}>
+            <Image src={privacy} alt="privacy" />
+        
+          </Flex>
+        </Box>
+
+        <Box sx={styles.grid}>
+          <Flex sx={styles.illustration}>
+            <Image src={privacy3} alt="privacy" />
+          </Flex>
+          <SectionHeading
+            sx={styles.heading}
+            title="Smart supply chains"
+            description="Organizations across industries are using AI to improve management of their supply chains. They're using machine learning algorithms to forecast what will be needed when as well as the optimal time to move supplies.
+
+            In this use case, AI helps business leaders create more efficient, cost-effective supply chains by minimizing and even possibly eliminating overstocking and the risk of running short on in-demand products."
+            learnMore="Secure data storage"
+          />
+        </Box>
+
+
+        <Box sx={styles.grid_1}>
+          
+          <SectionHeading
+            sx={styles.heading}
+            title="Smarter operations"
+            description="Meanwhile, retailers are using AI for intelligent store design, optimized product selection and in-store activities monitoring. Some are using AI to monitor inventory on shelves in various ways, including for the freshness of perishable goods.
+
+            AI is also impacting IT operations. For example, some intelligence software applications identify anomalies that indicate hacking activities and ransomware attacks, while other AI-infused solutions offer self-healing capabilities for infrastructure problems."
+            learnMore="Secure data storage"
+          />
+
+<Flex sx={styles.illustration}>
+            <Image src={privacy} alt="privacy" />
+        
+          </Flex>
+        </Box>
+
+        <Box sx={styles.grid}>
+          <Flex sx={styles.illustration}>
+            <Image src={privacy4} alt="privacy" />
+          </Flex>
+          <SectionHeading
+            sx={styles.heading}
+            title="Ai for Optimization"
+            description="Optimization is another use case for AI that stretches across industries and business functions. AI-based business applications can use algorithms and modeling to turn data into actionable insights on how organizations can optimize a range of functions and business processes -- from worker schedules to production product pricing."
+            learnMore="Secure data storage"
+          />
+        </Box>
+
+       
       </Container>
-    </Box>
+    </section>
   );
 };
 
 export default MachineService;
 
 const styles = {
-  boostAgencies: {
-    pt: ['1px', null, null, '80px', '120px', '2px', '2px'],
-    backgroundColor: '#F6F8FB',
-  },
-  row: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    flexDirection: ['column', null, null, 'row'],
-  },
-  col: {
-    flex: ['0 0 100%', null, null, '0 0 50%'],
+  section: {
+    pt: [2, null, null, null, 1, 1],
+    pb: [0, null, null, 8, 10, 11],
+    
   },
   blockTitle:{
-   textAlign:'center'
- },
-  image: {
-    mt: ['25px', null, null, '0'],
-    display: 'flex',
-    marginLeft: ['0', null, null, null, 'auto'],
-    marginRight: ['0', null, null, null, 'auto'],
-    height: ['385px', null, null, 'auto'],
-    position: 'relative',
-    top: [null, null, null, '-20px', '-45px', 'auto'],
+textAlign:'center'
   },
-  list: {
-    margin: 0,
-    padding: 0,
-    listStyle: 'none',
-    ml: ['25px', null, null, '0'],
-    mb: ['10px'],
-    mt: ['30px'],
-    li: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: ['flex-start', null, null, null, null, 'flex-start'],
-      fontSize: [1, null, 2, null, '18px'],
-      color: 'text_secondary',
-      lineHeight: [2.56],
-      svg: {
-        width: [17, null, null, 23],
-        height: [17, null, null, 23],
-        color: '#DADADA',
-        borderRadius: '50%',
-        marginRight: ['10px'],
-      },
-    },
+
+  grid: {
+    display: ['flex', null, null, 'grid'],
+    alignItems: 'center',
+    gap: [null, null, null, 6, 14],
+    flexDirection: ['column-reverse', null, null, 'unset'],
+    gridTemplateColumns: ['1fr', null, null, 'repeat(2, 1fr)', '1fr 470px'],
   },
-  titleBox: {
+  grid_1: {
+    display: ['flex', null, null, 'grid'],
+    alignItems: 'center',
+    gap: [null, null, null, 6, 14],
+    flexDirection: ['column', null, null, 'unset'],
+    gridTemplateColumns: ['1fr', null, null, 'repeat(2, 1fr)', '1fr 470px'],
+  },
+  heading: {
     textAlign: ['center', null, null, 'left'],
+    backgroundColor:'white',
+    borderRadius:'15px',
+    padding:'30px' ,
+    transition: '500ms',
+    '&:hover': {
+      boxShadow: '0px 15px 50px rgba(69, 88, 157, 0.1)',
+      transform: 'scale(0.95)'
+    },
     h3: {
-      color: 'heading',
-      fontSize: [5, null, null, '21px', '36px', '32px', 8],
-      lineHeight: [1.6, null, null, '1.5'],
-      fontWeight: 'bold',
-      letterSpacing: ['-0.5px', null, null, null, null, null, '-1.5px'],
-    },
-    p: {
-      fontSize: [0, null, 2, null, '16px'],
-      color: 'heading',
-      opacity: '.6',
-      lineHeight: ['26px', null, null, 1.8, null, 2.06],
-      padding: ['0 20px', null, null, '0'],
-      mt: ['15px'],
+      fontSize: [3, null, null, 8, 11],
+      lineHeight: 1.53,
+      color:'heading'
     },
   },
-  link: {
-    color: 'primary',
-    fontSize: [1, null, 2],
-    display: 'inline-block',
-    verticalAlign: 'middle',
-    fontWeight: 'bold',
-    pl: ['30px', null, null, '4px', null, '4px'],
-    mt: ['5px', null, null, null, '10px'],
-    svg: {
-      position: 'relative',
-      top: '3px',
-    },
+  illustration: {
+    alignItems: 'center',
+    mt: [0, null, 0],
   },
-  content: {
-    width: '100%',
-    textAlign: ['left', null, null, null, 'left'],
-    pt: [null, null, null, null, null, '1px'],
-    pl: [null, null, null, null, null, '60px', '140px'],
-  },
+  
 };

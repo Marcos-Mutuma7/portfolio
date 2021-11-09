@@ -8,44 +8,44 @@ import image4 from 'assets/1.png'
 import image5 from 'assets/image 52.png'
 import image6 from 'assets/image 53.png'
 const FEATURES_DATA = {
-  title: 'Industries we serve',
-  text: '',
+  title: 'Industries we provide Blockchain services',
+  text: 'The Future of Marketplaces Is Decentralized',
   posts: [
    
     {
       image: image3,
-      title: 'Retail',
+      title: 'Finance',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        ' Blockchain offers better capital optimisation, due to a, significant, reduction in operational costs for banks. In addition, when banks share a Blockchain, the total costs of that Blockchain and the surrounding ecosystem might be higher than individual costs of managing transactions at a bank.',
     },
     {
       image: image2,
-      title: 'Finance',
+      title: 'Government',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Blockchain can serve a unique role in preventing government corruption. Its technology offers a singular combination of permanent and tamper-evident record keeping, real-time transaction transparency and auditability, and automated smart contract functionality.',
     },
     {
       image: image1,
       title: 'Healthcare',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'The benefits of using blockchains, relative to traditional methods of healthcare database management systems, include decentralized management, unchangeable databases, data provenance, traceable data, robust data, availability of data to any authorized user.',
     }, {
       image: image4,
-      title: 'Real estate',
+      title: 'Insurance',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Cost savings is a major benefit that blockchain can provide. ... Blockchain has the ability to help automate claims functions by verifying coverage between companies and reinsurers. It will also automate payments between parties for claims and thus lower administrative costs for insurance companies.',
     },
     {
       image: image5,
-      title: 'Media & entertainment',
+      title: 'Retail',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Blockchain applications in a retail environment will deliver 4 main benefits; Reduced Costs, Faster Payments, Increased Transparency and Improved Security. These will be achieved through several core technologies, working in tandem and/or alongside each other.',
     },
     {
       image: image6,
-      title: 'Agriculture',
+      title: 'Media & Entertainment',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Blockchain in media and entertainment is allowing for disintermediation, streamlined royalty payments, micropayments and usage-based payments, all while placing the power back in the hands of content creators and providing a more customer-centric approach.',
     },
   ],
 };
@@ -81,7 +81,7 @@ export default BlockchainIndustries;
 const styles = {
   section: {
     overflow: 'hidden',
-    pt: ['70px', null, null, '10px'],
+    pt: ['70px', null, null, '70px'],
     pb: ['40px', null, null, '70px'],
     backgroundColor: '#F6F8FB',
   
@@ -104,8 +104,8 @@ const styles = {
       mt: '15px',
     },
     p: {
-      color: 'secondary',
-      fontSize: '16px',
+      color: 'primary',
+      fontSize: '18px',
       lineHeight: 1.87,
     },
   },

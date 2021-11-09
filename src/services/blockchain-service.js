@@ -5,7 +5,7 @@ import SectionHeading from 'components/section-heading';
 import Image from 'components/image';
 import privacy from 'assets/image 8.png';
 import privacy3 from 'assets/image 9.png'
-import privacy4 from 'assets/image 73.png'
+import privacy4 from 'assets/image 10.png'
 import privacy1 from 'assets/image 7.png'
 import privacy2 from 'assets/image 71.png'
 import BlockTitle from 'components/block-title';
@@ -39,7 +39,7 @@ const BlockchainService = () => {
           
           <SectionHeading
             sx={styles.heading}
-            title="Non-fungible tokens"
+            title="Non-fungible tokens (NFTs)"
             description="NFTs, or nonfungible tokens, are unique assets that can't be replaced with something else, and are verified and stored using blockchain technology. They can include everything from music to a website domain, but the current craze is really around digital artwork."
             learnMore="Secure data storage"
           />
@@ -67,28 +67,18 @@ const BlockchainService = () => {
           
           <SectionHeading
             sx={styles.heading}
-            title="Remote Dashboard"
-            description="Dashboard software is an information management tool that tracks, gathers, and displays business data in interactive and customizable visualizations that enable users to monitor the health of a business, analyze processes, and provide them with actionable insights."
+            title="Cryptocurrency consulting"
+            description="We have Cryptocurrency consultant  professionals who guides clients towards successful, compliant cryptocurrency transactions and practices across accounting and tax functions. They protect their clients from illegal and unethical crypto practices."
             learnMore="Secure data storage"
           />
 
 <Flex sx={styles.illustration}>
-            <Image src={privacy} alt="privacy" />
+            <Image src={privacy4} alt="privacy" />
         
           </Flex>
         </Box>
 
-        <Box sx={styles.grid}>
-          <Flex sx={styles.illustration}>
-            <Image src={privacy4} alt="privacy" />
-          </Flex>
-          <SectionHeading
-            sx={styles.heading}
-            title="Operations managements sofwares"
-            description="Operational software is computer software designed to improve and streamline the regular operations of a business.Examples of operational software include: Accounting and inventory management automation. Product fulfillment. Customer resource management (CRM) and sales applications."
-            learnMore="Secure data storage"
-          />
-        </Box>
+        
 
        
       </Container>

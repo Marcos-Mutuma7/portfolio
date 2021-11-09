@@ -4,7 +4,7 @@ import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 
 
-import bannerImg from 'assets/image 43.png';
+import bannerImg from 'assets/image 11.png';
 
 const MachineBanner = () => {
   return (
@@ -13,10 +13,10 @@ const MachineBanner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-           Artificial intellengence
+          The Path to AI
             </Heading>
             <Text as="p">
-            We use advanced computing technologies on huge data sets to discover valuable correlations, patterns, trends and preferences for companies to make better decisions.
+            Artificial intelligence in business simply involves the use of intelligent computer software with human-like capabilities to boost revenue, improve customer experience, increase productivity and efficiency, and drive business growth and transformation.
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
@@ -69,12 +69,12 @@ const styles = {
       mb: ['15px', null, null, null, '10px'],
       width: ['100%'],
       maxWidth: ['100%', null, null, '90%', '100%', '540px'],
-      fontSize: [6, null, null, '36px', null, '50px', '55px'],
+      fontSize: [5, null, null, '36px', null, '45px', '48px'],
     },
     p: {
-      fontSize: [1, null, null, 2, null, 3],
+      fontSize: [1, null, null, 2, null, 2],
       lineHeight: ['26px', null, null, null, 1.73],
-      opacity:[.7],
+      opacity:[.6],
       color: 'heading',
       mb: ['20px', null, null, null, null, '20px'],
       width: ['100%'],

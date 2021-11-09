@@ -22,10 +22,10 @@ export default function blockchainPage() {
           <BlockchainBanner/>
           <BlockchainService/>
           <HireBlockchain/>
-          <BlockchainProcess/>
           <BlockchainIndustries/>
+          
           <HireBlockchain/>
-          <Blog/>
+          
           
         </Layout>
       </StickyProvider>
