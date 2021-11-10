@@ -11,6 +11,7 @@ import DataProcess from 'services/data-process';
 import HireCloud from 'services/hire-cloud';
 import CloudIndustries from 'services/cloud-industries'
 import Blog from 'services/data-blog'
+import CloudLanguage from 'services/cloud-languag';
 
 
 export default function cloudPage() {
@@ -24,6 +25,7 @@ export default function cloudPage() {
           <HireCloud/>
         
           <CloudIndustries/>
+          <CloudLanguage/>
           <HireCloud/>
           
           

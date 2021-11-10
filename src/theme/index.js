@@ -161,7 +161,7 @@ export default {
   
     p: {
       color: 'primary',
-      fontSize: [0, null, null, null, 3],
+      fontSize: [0, null, null, null, 4],
       lineHeight: 1,
       marginBottom: [10, null, null, null, 2],
       marginTop: [10, null, null, null, 2],
@@ -169,7 +169,7 @@ export default {
     h2: {
       color: 'primary',
       fontWeight: 'bold',
-      fontSize: [5, null, null, null, '32px', '10', '14px',],
+      fontSize: [5, null, null, null, '32px', '37px', '42px',],
       lineHeight: [1.24, null, null, null, 1.83],
       letterSpacing: ['-1px', null, null, null, '-1.5px'],
     },

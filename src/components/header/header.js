@@ -35,9 +35,9 @@ export default function Header({ className }) {
           </Flex>
 
           <Link
-            path="/contacts"
+            path="/blog"
             ml={2}
-            label="Contact us"
+            label="Blog"
             sx={styles.headerBtn}
             variant="buttons.primary"
           />
@@ -52,14 +52,14 @@ export default function Header({ className }) {
 const styles = {
   headerBtn: {
     backgroundColor: 'rgba(0,0,0,0)',
-    fontSize: '16px',
+    fontSize: '19px',
     fontWeight: 'bold',
     letterSpacing: '-0.16px',
     borderRadius: '5px',
     border: '2px solid',
     borderColor: 'primary',
     color: 'primary',
-    padding: '8px 24px',
+    padding: '8px 40px',
     display: ['none', null, null, null, 'inline-block'],
     ml: ['0', null, null, 'auto', '0'],
     mr: ['0', null, null, '20px', '0'],

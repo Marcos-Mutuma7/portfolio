@@ -11,6 +11,7 @@ import SoftwareProcess from 'services/software-process';
 import SoftwareIndustries from 'services/software-industries'
 import Blog from 'services/software-blog'
 import HireSoftware from 'services/hire-software';
+import SoftwareLanguage from 'services/software-languages';
 
 
 export default function softwarePage() {
@@ -23,6 +24,7 @@ export default function softwarePage() {
           <SoftwareService/>
           <HireSoftware/>
           <SoftwareIndustries/>
+          <SoftwareLanguage/>
           <HireSoftware/>
           
           

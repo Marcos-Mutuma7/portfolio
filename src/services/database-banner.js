@@ -4,7 +4,7 @@ import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 
 
-import bannerImg from 'assets/image 43.png';
+import bannerImg from 'assets/image 20(2).png';
 
 const DatabaseBanner = () => {
   return (
@@ -13,10 +13,10 @@ const DatabaseBanner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-           Web & App Development
+           Fast, easy & affordable
             </Heading>
             <Text as="p">
-            We use advanced computing technologies on huge data sets to discover valuable correlations, patterns, trends and preferences for companies to make better decisions.
+            We are proud to create beautiful, practical software that helps businesses succeed.Go ahead and build your dreams, we’ll be here when you’re ready to launch
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
@@ -69,12 +69,12 @@ const styles = {
       mb: ['15px', null, null, null, '10px'],
       width: ['100%'],
       maxWidth: ['100%', null, null, '90%', '100%', '540px'],
-      fontSize: [6, null, null, '36px', null, '50px', '55px'],
+      fontSize: [5, null, null, '36px', null, '42px', '45px'],
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],
       lineHeight: ['26px', null, null, null, 1.73],
-      opacity:[.7],
+      opacity:[.6],
       color: 'heading',
       mb: ['20px', null, null, null, null, '20px'],
       width: ['100%'],

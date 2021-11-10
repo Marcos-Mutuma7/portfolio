@@ -12,6 +12,7 @@ import HireData from 'services/hire-data';
 import DataIndustries from 'services/data-industries'
 import Blog from 'services/data-blog'
 import Count from 'sections/count';
+import DataLanguage from 'services/data-language';
 
 
 export default function dataPage() {
@@ -23,8 +24,10 @@ export default function dataPage() {
           <DataBanner/>
           <DataService/>
           <HireData/>
-          <DataProcess/>
+          
+          
           <DataIndustries/>
+          <DataLanguage/>
           <HireData/>
           
           

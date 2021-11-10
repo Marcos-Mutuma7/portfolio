@@ -9,11 +9,10 @@ const HireDatabase = () => {
       <Container sx={styles.container}>
         <Box sx={styles.inner}>
           <Heading as="h3">
-            Optimus is hiring Data Analysts <br />
-            and scincentists
+          Let us help you put your ideas in motion
           </Heading>
           <Box sx={styles.btnWrapper}>
-            <Button sx={styles.btn}>Apply Now</Button>
+            <Button sx={styles.btn}>START NOW</Button>
           </Box>
         </Box>
       </Container>
@@ -72,7 +71,6 @@ const styles = {
       position: 'absolute',
       width: '73px',
       height: '26px',
-      backgroundImage: `url(${btnShape})`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       bottom: 'calc(100% + 10px)',

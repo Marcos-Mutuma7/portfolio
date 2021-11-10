@@ -12,6 +12,7 @@ import MachineService from 'services/machine-service';
 import MachineProcess from 'services/machine-process';
 import HireMachine from 'services/hire-machine';
 import MachineIndustries from 'services/machine-industries';
+import MachineLanguage from 'services/machine-language';
 
 
 export default function MachinePage() {
@@ -22,12 +23,12 @@ export default function MachinePage() {
           <SEO title="Startup Landing 006" />
           <MachineBanner/>
           <MachineService/>
-          <MachineProcess/>
+      
           <HireMachine/>
+          
           <MachineIndustries/>
+          <MachineLanguage/>
           <HireMachine/>
-
-          <Blog/>
           
         </Layout>
       </StickyProvider>

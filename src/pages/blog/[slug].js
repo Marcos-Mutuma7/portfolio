@@ -1,3 +1,4 @@
+import {Heading ,Text ,Container} from 'theme-ui'
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 import fs from 'fs'
@@ -6,6 +7,14 @@ import matter from 'gray-matter'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { docco } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 
+
+import { ThemeProvider } from 'theme-ui';
+import { StickyProvider } from 'contexts/app/app.provider';
+import theme from 'theme';
+import SEO from 'components/seo';
+import Layout from 'components/layout';
+
+
 import { Nav, Button } from '../../components'
 
 const components = { Nav, Button, SyntaxHighlighter }
@@ -13,11 +22,17 @@ const data = { docco }
 
 const PostPage = ({ frontMatter: { title, date }, mdxSource }) => {
   return (
-    <div className="mt-4">
-      <h1>{title}</h1>
+    <ThemeProvider theme={theme}>
+    
+          <Container sx={styles.container}>
+      <Heading>{title}</Heading>
       <MDXRemote {...mdxSource} components={components} scope={data}/>
-    </div>
+       </Container>
+    
+  
+  </ThemeProvider>
   )
+
 }
 
 const getStaticPaths = async () => {
@@ -53,3 +68,11 @@ const getStaticProps = async ({ params: { slug } }) => {
 
 export { getStaticProps, getStaticPaths }
 export default PostPage
+
+
+const styles ={
+  container:{
+    textAlign:'center',
+    padding:'80px'
+  }
+}

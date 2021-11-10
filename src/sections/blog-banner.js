@@ -4,33 +4,25 @@ import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 
 
-import bannerImg from 'assets/image 44.png';
+import bannerImg from 'assets/image 29.png';
 
-const Banner = () => {
+const BlogBanner = () => {
   return (
     <Box sx={styles.banner} id="banner">
       <Container sx={styles.container}>
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-           The Digital Revolution
+           Every content is special
             </Heading>
             <Text as="p">
-              Our mission is to make your business better through technology
+              We give importance to our audience and thrilling topics to look out for.We write content with ethusiasim.The blog you'll remember
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
                 subscribe
               </Box>
-              <Input
-                name="subscribe"
-                id="subscribe"
-                placeholder='Schedule a meeting'
-                sx={styles.form.input}
-              />
-              <Button type="submit" sx={styles.form.button}>
-              Contacts
-              </Button>
+              
             </Box>
             
           </Box>
@@ -43,7 +35,7 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default BlogBanner;
 
 const styles = {
   banner: {
@@ -69,7 +61,7 @@ const styles = {
       mb: ['15px', null, null, null, '10px'],
       width: ['100%'],
       maxWidth: ['100%', null, null, '90%', '100%', '540px'],
-      fontSize: [ '25px' ,6, null, null, '40px', null, '40px', '52px'],
+      fontSize: [ '25px' ,6, null, null, '40px', null, '42px', '52px'],
     },
     p: {
       fontSize: [1, null, null, 2, null, 3],

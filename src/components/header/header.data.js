@@ -3,11 +3,11 @@
 export default [
   {
     path: 'banner',
-    label: 'Blog',
+    label: 'Home',
   },
 
   {
-    path: 'feature',
+    path: 'news',
     label: 'Services',
   },
 
@@ -18,7 +18,7 @@ export default [
  
   {
     path: 'news',
-    label: 'Industries',
+    label: 'Clients',
   }, {
     path: 'blog',
     label: 'About',

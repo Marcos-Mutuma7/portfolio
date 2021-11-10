@@ -3,11 +3,11 @@
 import { jsx, Box, Flex, Container } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Image from 'components/image';
-import privacy from 'assets/image 69.png';
-import privacy3 from 'assets/image 72.png'
-import privacy4 from 'assets/image 73.png'
-import privacy1 from 'assets/image 68.png'
-import privacy2 from 'assets/image 71.png'
+import privacy from 'assets/image 13.png';
+import privacy3 from 'assets/image 14.png'
+import privacy4 from 'assets/image 15.png'
+import privacy1 from 'assets/image 12.png'
+import privacy2 from 'assets/image 16.png'
 import BlockTitle from 'components/block-title';
 
 
@@ -79,14 +79,14 @@ const MachineService = () => {
           />
 
 <Flex sx={styles.illustration}>
-            <Image src={privacy} alt="privacy" />
+            <Image src={privacy4} alt="privacy" />
         
           </Flex>
         </Box>
 
         <Box sx={styles.grid}>
           <Flex sx={styles.illustration}>
-            <Image src={privacy4} alt="privacy" />
+            <Image src={privacy2} alt="privacy" />
           </Flex>
           <SectionHeading
             sx={styles.heading}

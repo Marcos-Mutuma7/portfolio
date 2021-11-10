@@ -83,7 +83,7 @@ const styles = {
     overflow: 'hidden',
     pt: ['70px', null, null, '10px'],
     pb: ['40px', null, null, '70px'],
-    backgroundColor: '#F6F8FB',
+    
   
   },
   container: {},

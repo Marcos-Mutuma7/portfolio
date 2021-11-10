@@ -8,44 +8,44 @@ import image4 from 'assets/1.png'
 import image5 from 'assets/image 52.png'
 import image6 from 'assets/image 53.png'
 const FEATURES_DATA = {
-  title: 'Industries we serve',
-  text: '',
+  title: 'Industries we provide Ai services',
+  text: 'Let’s design the future of AI together ☝️🎁',
   posts: [
    
     {
       image: image3,
-      title: 'Retail',
+      title: 'Finance',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Artificial intelligence in finance is transforming the way we interact with money. AI is helping the financial industry to streamline and optimize processes ranging from credit decisions to quantitative trading and financial risk management.',
     },
     {
       image: image2,
-      title: 'Finance',
+      title: 'Advertising',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'AI enables marketers to personalize their communications on an individual level rather than the generic target groups that marketers relied on in the past. This technology works by predicting customer behavior based on intelligence learned from previous brand interactions.',
     },
     {
       image: image1,
       title: 'Healthcare',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Integrating AI into the healthcare ecosystem allows for a multitude of benefits, including automating tasks and analyzing big patient data sets to deliver better healthcare faster, and at a lower cost.AI has the ability to analyze big data sets – pulling together patient insights and leading to predictive analysis.',
     }, {
       image: image4,
       title: 'Real estate',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'AI can also help if you adopt a purchase and hold strategy and regularly manage asset management obligations. Just as an intelligent CRM system can help property agents manage their transactions and reduce the number of errors, it can also help with asset management and investment.',
     },
     {
       image: image5,
-      title: 'Media & entertainment',
+      title: 'Logistics',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'AI-powered supply chain management enables businesses to accurately predict demand spikes and adjust the routes and volumes of material flows. For instance, AI can be used to gather comprehensive data (weather patterns, GPS information and reroutes) that may affect delivery times'
     },
     {
       image: image6,
-      title: 'Agriculture',
+      title: 'Food tech',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'AI in the food industry is also capable of creating accurate forecasts to manage inventory and pricing. This kind of predictive analysis helps keep food businesses one step ahead, enabling them to avoid wastage and unnecessary costs.',
     },
   ],
 };
@@ -81,7 +81,7 @@ export default MachineIndustries;
 const styles = {
   section: {
     overflow: 'hidden',
-    pt: ['70px', null, null, '10px'],
+    pt: ['70px', null, null, '70px'],
     pb: ['40px', null, null, '70px'],
     backgroundColor: '#F6F8FB',
   
@@ -104,8 +104,8 @@ const styles = {
       mt: '15px',
     },
     p: {
-      color: 'secondary',
-      fontSize: '16px',
+      color: 'primary',
+      fontSize: '18px',
       lineHeight: 1.87,
     },
   },

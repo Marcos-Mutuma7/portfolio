@@ -8,44 +8,44 @@ import image4 from 'assets/1.png'
 import image5 from 'assets/image 52.png'
 import image6 from 'assets/image 53.png'
 const FEATURES_DATA = {
-  title: 'Industries we serve',
-  text: '',
+  title: 'Industries we provide our services',
+  text: 'We use tech to create, connect, and grow',
   posts: [
    
     {
       image: image3,
-      title: 'Retail',
+      title: 'Education',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'The social nature of Web applications have the potential to empower education. These applications provide a learning environment in which students can construct their learning, collaborate with others, generate ideas, edit and distribute their material, and more.',
     },
     {
       image: image2,
-      title: 'Finance',
+      title: 'Tourism',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Internet helps the tourism industry to expand and transfer its data which helps the industry to increase the turnover ratio and internet is the most suitable way to make direct relationship with customers. In the modern world travel agencies can use internet as a profitable medium of tourism promotion and sales.',
     },
     {
       image: image1,
       title: 'Healthcare',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Reliable online medical sources provide general, easily understandable information about symptoms, treatment options, and common outcomes. When used properly, your online research can help you proactively identify a health problem, treat it over-the-counter, and empower you to make good health-related decisions.',
     }, {
       image: image4,
-      title: 'Real estate',
+      title: 'Manufacturing',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'Manufacturing software systems make it easier for manufacturers to eliminate non-value added processes, remove unplanned downtimes, prevent bottlenecks in the production process, optimize scheduling and resource allocation regardless of the plant location, have complete visibility of the entire manufacturing process',
     },
     {
       image: image5,
-      title: 'Media & entertainment',
+      title: 'Finance',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'The impact of information technology on financial services also allows customers to be able to easily complete online transactions, which creates a better convince in finance, allowing for the development of information technology and initially create a more fast and efficient service',
     },
     {
       image: image6,
       title: 'Agriculture',
       text:
-        'Get your info tests delivered at home collect a sample from the your pogress tests.',
+        'se of ICT in agriculture is mainly to disseminate agriculture related information to the farmers and to trade their produce in India. Information is broadcasting online or offline. Internet is a major media for information flow. The ICT initiatives in India are based chiefly to disseminate information',
     },
   ],
 };
@@ -81,7 +81,7 @@ export default DatabaseIndustries;
 const styles = {
   section: {
     overflow: 'hidden',
-    pt: ['70px', null, null, '10px'],
+    pt: ['70px', null, null, '70px'],
     pb: ['40px', null, null, '70px'],
     backgroundColor: '#F6F8FB',
   
@@ -104,8 +104,8 @@ const styles = {
       mt: '15px',
     },
     p: {
-      color: 'secondary',
-      fontSize: '16px',
+      color: 'primary',
+      fontSize: '18px',
       lineHeight: 1.87,
     },
   },

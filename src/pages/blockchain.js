@@ -11,6 +11,7 @@ import BlockchainProcess from 'services/blockchain-process';
 import BlockchainIndustries from 'services/blockchain-industries'
 import Blog from 'services/blockchain-blog'
 import HireBlockchain from 'services/hire-blockchain';
+import BlockchainLanguage from 'services/blockchain-language'
 
 
 export default function blockchainPage() {
@@ -23,7 +24,7 @@ export default function blockchainPage() {
           <BlockchainService/>
           <HireBlockchain/>
           <BlockchainIndustries/>
-          
+          <BlockchainLanguage/>
           <HireBlockchain/>
           
           

@@ -11,6 +11,7 @@ import DatabaseProcess from 'services/database-process';
 import HireDatabase from 'services/hire-database';
 import DatabaseIndustries from 'services/database-industries'
 import Blog from 'services/data-blog'
+import DatabaseLanguage from 'services/database-languages'
 
 
 export default function databasePage() {
@@ -22,10 +23,10 @@ export default function databasePage() {
           <DatabaseBanner/>
           <DatabaseService/>
           <HireDatabase/>
-          <DatabaseProcess/>
           <DatabaseIndustries/>
+          <DatabaseLanguage/>
           <HireDatabase/>
-          <Blog/>
+          
           
         </Layout>
       </StickyProvider>
