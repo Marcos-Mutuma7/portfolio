@@ -59,7 +59,7 @@ const MobileDrawer = () => {
           <Logo src={LogoDark} />
           <Box sx={styles.menu}>
             {menuItems.map(({ path, label }, i) => (
-              <Link
+              <ScrollLink
                 activeClass="active"
                 to={path}
                 spy={true}
@@ -69,7 +69,7 @@ const MobileDrawer = () => {
                 key={i}
               >
                 {label}
-              </Link>
+              </ScrollLink>
             ))}
           </Box>
 
