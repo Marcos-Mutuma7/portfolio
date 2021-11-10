@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Image } from 'theme-ui';
 import { Link } from 'components/link';
-import logo from 'assets/Group 6(6).png';
+import logo from 'assets/Group 7(1).png';
 
 export default function Logo() {
   return (
