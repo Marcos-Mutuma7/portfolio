@@ -13,7 +13,7 @@ import LogoDark from 'assets/logo.svg';
 
 const social = [
   {
-    path: '/',
+    path: '/blog',
     icon: <Facebook />,
   },
   {
@@ -59,7 +59,7 @@ const MobileDrawer = () => {
           <Logo src={LogoDark} />
           <Box sx={styles.menu}>
             {menuItems.map(({ path, label }, i) => (
-              <ScrollLink
+              <Link
                 activeClass="active"
                 to={path}
                 spy={true}
@@ -69,14 +69,16 @@ const MobileDrawer = () => {
                 key={i}
               >
                 {label}
-              </ScrollLink>
+              </Link>
             ))}
           </Box>
 
           <Box sx={styles.menuFooter}>
+        <Link path="/blog">
             <Button variant="primary" sx={styles.button}>
               Blog
             </Button>
+          </Link>
           </Box>
         </Box>
       </Scrollbars>
