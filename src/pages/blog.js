@@ -37,7 +37,7 @@ export default function Blog({ posts }) {
                   />
                                 
                     <Box>
-                    <Heading>{post.frontMatter.title}</Heading>
+                    <Heading sx={styles.cursor}>{post.frontMatter.title}</Heading>
                     <Text>{post.frontMatter.description}</Text>
                     <Text>{post.frontMatter.date}</Text>
                     </Box>
@@ -93,6 +93,9 @@ const styles ={
 
   },
   blogWrapper: {
-  mt:'30px'
+  mt:'30px',
+  
+  },
+ 
+
   }
-}

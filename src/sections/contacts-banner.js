@@ -4,38 +4,41 @@ import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 
 
-import bannerImg from 'assets/image 44.png';
+import bannerImg from 'assets/image 31.png';
+import bannerImg1 from 'assets/image 32.png';
+import bannerImg2 from 'assets/image 33.png';
+import bannerImg3 from 'assets/image 34.png';
 
-const Banner = () => {
+
+
+const ContactBanner = () => {
   return (
     <Box sx={styles.banner} id="banner">
       <Container sx={styles.container}>
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-           Tech with Demands
+           Contact us
             </Heading>
             <Text as="p">
-              Our mission is to make your business better through technology
+            Your satisfaction is our #1 priority <br/>
+            We’re in the love business. What’s yours?
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
                 subscribe
               </Box>
-              <Input
-                name="subscribe"
-                id="subscribe"
-                placeholder='Schedule a meeting'
-                sx={styles.form.input}
-              />
-              <Button type="submit" sx={styles.form.button}>
-              Contacts
-              </Button>
+              
             </Box>
             
           </Box>
           <Box sx={styles.image}>
-            <Image src={bannerImg} alt="" />
+              <Box sx={styles.media}>
+          <Image src={bannerImg} alt="" />
+          <Image src={bannerImg1} alt="" />
+          <Image src={bannerImg2} alt="" />
+          <Image src={bannerImg3} alt="" />
+            </Box>
           </Box>
         </Grid>
       </Container>
@@ -43,7 +46,7 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default ContactBanner;
 
 const styles = {
   banner: {
@@ -107,13 +110,14 @@ const styles = {
       alignItems:'center'
     },
   },
-  image: {
-    img: {
+  image: {  
+      
+    image: {
       display: 'flex',
       mixBlendMode: 'darken',
       position: 'relative',
       top: ['0', null, null, null, null, '-40px'],
-      maxWidth: ['100%', null, null, null, null, null, 'none'],
+      maxWidth: ['100%', null, null, null, null, null, 'null'],
     },
   },
   partner: {

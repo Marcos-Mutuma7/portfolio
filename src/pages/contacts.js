@@ -5,7 +5,7 @@ import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
 
-import DataBanner from 'services/data-banner'
+import ContactBanner from 'sections/contacts-banner'
 
 
 
@@ -15,7 +15,7 @@ export default function dataPage() {
       <StickyProvider>
         <Layout>
           <SEO title="Top software development company" />
-          <DataBanner/>
+          <ContactBanner/>
         
           
         </Layout>

@@ -33,7 +33,7 @@ const styles = {
     },
   },
   value: {
-    color: 'heading',
+    color: 'primary',
     fontSize: ['30px', null, null, null, null, '52px'],
     display: 'flex',
     justifyContent: 'center',

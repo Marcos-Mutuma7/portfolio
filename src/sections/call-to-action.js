@@ -68,6 +68,8 @@ const styles = {
     position: 'relative',
     outline: 'none',
     webkitAppearance: 'none',
+    animation: 'beat .25s infinite alternate',
+	transformOrigin:'center',
     '&:before, &:after': {
       content: '""',
       position: 'absolute',

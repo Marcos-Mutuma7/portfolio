@@ -7,12 +7,12 @@ export default {
   colors: {
     text: '#343D48', // body color and primary color
     text_secondary: '#02073E', // secondary body color
-    heading: 'rgb(0,49,83)', // primary heading color
+    heading: 'rgb(rgba(1, 50, 67, 1))', // primary heading color
     heading_secondary: '#343D48', // heading color
     background: '#FFFFFF', // body background color
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E9EDF5', // border color
-    primary: 'rgb(0,0,57)', // primary button and link color
+    primary: 'rgba(36, 37, 42, 1)', // primary button and link color
     secondary: '#793677', // secondary color - can be used for hover states
     black: '#0F2137', // black color
     gray: '#F8FAFC',
