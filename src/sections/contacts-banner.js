@@ -34,7 +34,7 @@ const ContactBanner = () => {
           </Box>
           <Box sx={styles.image}>
               <Box sx={styles.media}>
-          <Image src={bannerImg} alt="" />
+          <Image  src={bannerImg} alt="" sx={styles.img} />
           <Image src={bannerImg1} alt="" />
           <Image src={bannerImg2} alt="" />
           <Image src={bannerImg3} alt="" />
@@ -111,7 +111,18 @@ const styles = {
     },
   },
   image: {  
-      
+    
+    img:{
+      transition: '500ms',
+  borderRadius: '10px',
+  cursor:'pointer',
+  '&:hover': {
+    boxShadow: '0px 15px 50px rgba(69, 88, 157, 0.1)',
+    transform: 'scale(0.95)'
+  },
+  
+    },
+    
     image: {
       display: 'flex',
       mixBlendMode: 'darken',

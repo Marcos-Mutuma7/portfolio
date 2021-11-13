@@ -14,7 +14,9 @@ class CustomDocument extends Document {
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"/>   
         </Head>
         <body>
-          <Main />
+
+
+                 <Main />
           <NextScript />
         </body>
       </Html>

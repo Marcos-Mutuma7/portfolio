@@ -74,11 +74,11 @@ const MobileDrawer = () => {
           </Box>
 
           <Box sx={styles.menuFooter}>
-        <Link path="/blog">
+        
             <Button variant="primary" sx={styles.button}>
               Blog
-            </Button>
-          </Link>
+        </Button>
+          
           </Box>
         </Box>
       </Scrollbars>

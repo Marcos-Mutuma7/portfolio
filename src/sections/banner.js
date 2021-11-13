@@ -13,10 +13,10 @@ const Banner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-           Tech with Demands
+           Your trusted software developers
             </Heading>
             <Text as="p">
-              Our mission is to make your business better through technology
+              Our mission is to make your business better through technology.Expanding possibilities of better tomorrow
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
@@ -104,7 +104,12 @@ const styles = {
       padding: ['0 16px'],
       ml: ['10px'],
       width: ['auto', null, null, null, '180px'],
-      alignItems:'center'
+      alignItems:'center',
+      transition: '500ms',
+  cursor:'pointer',
+  '&:hover': {
+    boxShadow: '0px 15px 50px rgba(69, 88, 157, 0.1)',
+    transform: 'scale(0.95)',
     },
   },
   image: {
@@ -138,4 +143,5 @@ const styles = {
       flex: ['0 0 100%', null, null, null, '0 0 auto'],
     },
   },
-};
+}
+}

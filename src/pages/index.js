@@ -19,6 +19,11 @@ import Blog from 'sections/blog'
 import BoostAgencies1 from 'sections/boost-agencies1'
 import BoostAgencies2 from 'sections/boost-agencies2'
 
+
+
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+ 
+
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
@@ -36,6 +41,12 @@ export default function IndexPage() {
           <VideoOne/>
           <BoostAgencies2/>
           <CallToAction />
+
+          <MessengerCustomerChat
+    pageId="<PAGE_ID>"
+    appId="<APP_ID>"
+    htmlRef="<REF_STRING>"
+  />
         </Layout>
       </StickyProvider>
     </ThemeProvider>

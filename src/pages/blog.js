@@ -37,7 +37,7 @@ export default function Blog({ posts }) {
                   />
                                 
                     <Box>
-                    <Heading sx={styles.cursor}>{post.frontMatter.title}</Heading>
+                    <Heading>{post.frontMatter.title}</Heading>
                     <Text>{post.frontMatter.description}</Text>
                     <Text>{post.frontMatter.date}</Text>
                     </Box>
@@ -93,7 +93,14 @@ const styles ={
 
   },
   blogWrapper: {
+    cursor:'pointer',
   mt:'30px',
+  transition: '500ms',
+  borderRadius: '10px',
+  '&:hover': {
+    boxShadow: '0px 15px 50px rgba(69, 88, 157, 0.1)',
+    transform: 'scale(0.95)'
+  },
   
   },
  

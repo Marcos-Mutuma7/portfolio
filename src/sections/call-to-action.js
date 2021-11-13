@@ -1,4 +1,5 @@
 import React from 'react';
+import { keyframes } from '@emotion/react'
 import { Box, Container, Heading, Button } from 'theme-ui';
 import { NavLink, Link } from 'components/link';
 import BgShape from 'assets/cta-shape-1.svg';
@@ -70,6 +71,10 @@ const styles = {
     webkitAppearance: 'none',
     animation: 'beat .25s infinite alternate',
 	transformOrigin:'center',
+  ransition: '500ms',
+  cursor:'pointer',
+  
+  
     '&:before, &:after': {
       content: '""',
       position: 'absolute',
@@ -89,6 +94,8 @@ const styles = {
     '&:hover': {
       backgroundColor: 'black',
       color: '#fff',
+      boxShadow: '0px 15px 50px rgba(69, 88, 157, 0.1)',
+    transform: 'scale(0.95)',
     },
   },
 };
