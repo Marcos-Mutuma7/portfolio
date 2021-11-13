@@ -29,6 +29,12 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
+
+
+        
+  
+
+    
           <SEO title="Top software development company" />
           <Banner />
           <Count/>
@@ -47,6 +53,14 @@ export default function IndexPage() {
     appId="<324362079060669>"
     htmlRef="<REF_STRING>"
   />
+
+<div class="fb-customerchat"
+ page_id="<ENTER-YOUR-FACEBOOK-ID-HERE>"
+ minimized="true">
+</div>
+
+FB.CustomerChat.show(shouldShowDialog: true)
+
         </Layout>
       </StickyProvider>
     </ThemeProvider>

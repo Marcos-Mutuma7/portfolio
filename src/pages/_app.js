@@ -5,6 +5,7 @@ import 'swiper/swiper-bundle.min.css';
 import 'rc-drawer/assets/index.css';
 import 'react-modal-video/css/modal-video.min.css';
 import 'typeface-dm-sans';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {
@@ -13,10 +14,10 @@ export default function CustomApp({ Component, pageProps }) {
     Router.events.on('routeChangeComplete', logPageView);
   }, []);
 
-  return (<Component {...pageProps} />
+  return  <Component {...pageProps}/>
     
     
+  
     
-        
-    );
+  
 }
