@@ -43,8 +43,8 @@ export default function IndexPage() {
           <CallToAction />
 
           <MessengerCustomerChat
-    pageId="<PAGE_ID>"
-    appId="<APP_ID>"
+    pageId="<112713557885532>"
+    appId="<324362079060669>"
     htmlRef="<REF_STRING>"
   />
         </Layout>
