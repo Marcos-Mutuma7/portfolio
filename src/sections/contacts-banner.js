@@ -3,11 +3,13 @@ import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 
 import Image from 'components/image';
 
-
+import { NavLink, Link } from 'components/link';
 import bannerImg from 'assets/image 31.png';
 import bannerImg1 from 'assets/image 32.png';
 import bannerImg2 from 'assets/image 33.png';
+
 import bannerImg3 from 'assets/image 34.png';
+import bannerImg4 from 'assets/image 77.png'
 
 
 
@@ -34,10 +36,16 @@ const ContactBanner = () => {
           </Box>
           <Box sx={styles.image}>
               <Box sx={styles.media}>
+                <Link path="/https://web.facebook.com/TechPulse-112713557885532">
           <Image  src={bannerImg} alt="" sx={styles.img} />
+              </Link>
+         
           <Image src={bannerImg1} alt="" />
           <Image src={bannerImg2} alt="" />
           <Image src={bannerImg3} alt="" />
+          <Image src={bannerImg4} alt="" />
+          
+          
             </Box>
           </Box>
         </Grid>

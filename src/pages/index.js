@@ -19,22 +19,23 @@ import Blog from 'sections/blog'
 import BoostAgencies1 from 'sections/boost-agencies1'
 import BoostAgencies2 from 'sections/boost-agencies2'
 
+import ContactBanner from 'sections/contacts-banner'
 
 
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+
+import { StickyContainer, Sticky } from 'react-sticky';
+
+
  
 
 export default function IndexPage() {
   return (
-    <ThemeProvider theme={theme}>
+    
+          <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-
-
         
-  
 
-    
           <SEO title="Top software development company" />
           <Banner />
           <Count/>
@@ -45,25 +46,18 @@ export default function IndexPage() {
           <CallToAction/>
           <Services />
           <VideoOne/>
+          
           <BoostAgencies2/>
           <CallToAction />
+          <ContactBanner/>
+        
 
-          <MessengerCustomerChat
-    pageId="<112713557885532>"
-    appId="<324362079060669>"
-    htmlRef="<REF_STRING>"
-  />
+  </Layout>
+  
+</StickyProvider>
 
-<div class="fb-customerchat"
- page_id="<ENTER-YOUR-FACEBOOK-ID-HERE>"
- minimized="true">
-</div>
-
-FB.CustomerChat.show(shouldShowDialog: true)
-
-        </Layout>
-      </StickyProvider>
     </ThemeProvider>
+   
   );
 }
 

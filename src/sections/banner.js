@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
+import Link from 'next/link'
 
 import Image from 'components/image';
 
@@ -16,7 +17,7 @@ const Banner = () => {
            Your trusted software developers
             </Heading>
             <Text as="p">
-              Our mission is to make your business better through technology.Expanding possibilities of better tomorrow
+              Our mission is to make your business better through technology.
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
@@ -28,10 +29,11 @@ const Banner = () => {
                 placeholder='Schedule a meeting'
                 sx={styles.form.input}
               />
+              
               <Button type="submit" sx={styles.form.button}>
               Contacts
               </Button>
-            </Box>
+                        </Box>
             
           </Box>
           <Box sx={styles.image}>

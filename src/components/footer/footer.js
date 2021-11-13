@@ -7,7 +7,8 @@ export default function Footer() {
     <footer
       sx={{
         variant: 'layout.footer',
-        backgroundColor: '#fff',
+        backgroundColor: '#F6F8FB',
+    overflow: 'hidden',
       }}
     >
       <Container
@@ -43,7 +44,7 @@ const styles = {
     display: 'flex',
     flexDirection: ['column', null, 'row'],
     alignItems: 'center',
-    p: {
+        p: {
       fontSize: [0, 1],
       color: 'black',
       opacity: 0.6,

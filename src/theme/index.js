@@ -64,7 +64,8 @@ export default {
     },
     main: {},
     footer: {
-      backgroundColor: 'background_secondary',
+    
+    
     },
   },
   text: {

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
+import { jsx ,Heading } from 'theme-ui';
 import React, { useCallback } from 'react';
 import Sticky from 'react-stickynode';
 import { useStickyState } from '../contexts/app/app.provider';
@@ -31,6 +31,8 @@ export default function Layout({ children }) {
     <React.Fragment>
       <Sticky enabled={isSticky} innerZ={1000}>
         <Header className={`${isSticky ? 'sticky' : 'unSticky'}`} />
+     
+
       </Sticky>
       <Waypoint
         onEnter={removeSticky}
@@ -43,6 +45,7 @@ export default function Layout({ children }) {
       >
         {children}
       </main>
+   
       <Footer />
     </React.Fragment>
   );
