@@ -15,7 +15,7 @@ import bannerImg4 from 'assets/image 77.png'
 
 const ContactBanner = () => {
   return (
-    <Box sx={styles.banner} id="banner">
+    <Box sx={styles.banner} id="banner" id="contacts">
       <Container sx={styles.container}>
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
@@ -73,7 +73,7 @@ const styles = {
   },
   content: {
     h3: {
-      color: 'heading',
+      color:'rgba(31, 58, 147, 1)',
       fontWeight: 'bold',
       lineHeight: [1.19],
       letterSpacing: ['-.7px', '-1.5px'],

@@ -74,7 +74,7 @@ const Services = (props) => {
     <Box sx={styles.services} id="services">
        <BlockTitle
           slogan="Tech With Demands"
-          title="Industries that we provide our services"
+          title="Industries that we offer our services"
           styles={styles.blockTitle}
         />
       <Container>

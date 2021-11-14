@@ -21,7 +21,7 @@ export default StatItem;
 const styles = {
   item: {
     textAlign: 'center',
-    boXShadow:'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+    boXShadow:'rgba(0, 0, 0, 0.95) 0px 5px 15px',
     backgroundColor:'white',
     borderRadius:'15px',
     padding:'20px' ,
@@ -33,17 +33,20 @@ const styles = {
     },
   },
   value: {
-    color: 'primary',
+    
+    
     fontSize: ['30px', null, null, null, null, '52px'],
     display: 'flex',
     justifyContent: 'center',
     lineHeight: 1.38,
+    color: rgba('#0F2137', 0.6),
     letterSpacing: ['-0.5px', null, null, '-1px'],
   },
   title: {
     fontSize: [1, null, null, '15px', 17],
     lineHeight: 1.77,
-    color: rgba('#0F2137', 0.6),
+    color: 'rgba(31, 58, 147, 1)',
+  
     mt: [1],
   },
 };

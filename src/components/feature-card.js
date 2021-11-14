@@ -66,7 +66,7 @@ const styles = {
       a: {
         transition: '500ms',
         '&:hover': {
-          color: 'primary',
+          color:'rgba(31, 58, 147, 1)',
         },
       },
     },

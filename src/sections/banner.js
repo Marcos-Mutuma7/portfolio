@@ -17,7 +17,7 @@ const Banner = () => {
            Your trusted software developers
             </Heading>
             <Text as="p">
-              Our mission is to make your business better through technology.
+              Our mission is to make your business better through technology
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
@@ -91,6 +91,7 @@ const styles = {
     display: ['flex'],
     input: {
       borderRadius: ['4px'],
+      color:'blue',
       backgroundColor: '#fff',
       width: ['240px', null, null, null, '315px', null, '375px'],
       height: ['45px', null, null, '55px', null, null, '65px'],
@@ -105,6 +106,7 @@ const styles = {
       borderRadius: ['4px'],
       padding: ['0 16px'],
       ml: ['10px'],
+      color:'rgba(31, 58, 147, 1)',
       width: ['auto', null, null, null, '180px'],
       alignItems:'center',
       transition: '500ms',

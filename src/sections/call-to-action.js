@@ -46,7 +46,7 @@ const styles = {
     flexDirection: ['column', null, null, 'row'],
     justifyContent: ['center', null, null, 'space-between'],
     h3: {
-      color: '#fff',
+      color:'rgba(31, 58, 147, 1)',
       fontWeight: 'bold',
       fontSize: [5, null, 4, null, null, 6, 7],
       lineHeight: [1.24, null, 1.53],
@@ -59,7 +59,7 @@ const styles = {
   },
   btn: {
     backgroundColor: '#fff',
-    color: 'primary',
+    color:'rgba(31, 58, 147, 1)',
     borderRadius: '5px',
     fontSize: [0, 1, null, null, null, null, '17px'],
     fontWeight: '700',

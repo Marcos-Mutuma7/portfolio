@@ -14,7 +14,7 @@ const VideoOne = () => {
     setVideoOpen(true);
   };
   return (
-    <Box as="section" sx={styles.video}>
+    <Box as="section" sx={styles.video} id="clients">
       <Container>
       <BlockTitle
           slogan="A Software with Trust"

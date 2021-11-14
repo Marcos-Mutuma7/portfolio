@@ -33,7 +33,7 @@ const styles = {
   },
   slogan: {
     color:'heading',
-    fontSize: 18,
+    fontSize: ['16', '18'],
     fontWeight: 700,
     lineHeight: 2.22,
     mb: ['4px'],

@@ -28,11 +28,11 @@ export default function Footer() {
           </Text>
         </Box>
         <Box sx={styles.right}>
-          <Link path="/" label="Home" />
-          <Link path="/" label="Services" />
-          <Link path="/" label="Development" />
-          <Link path="/" label="Industries" />
-          <Link path="/" label="About" />
+          <Link path="/data" label="Data" />
+          <Link path="/blockchain" label="Blockchain" />
+          <Link path="/machine" label="Ai" />
+          <Link path="/database" label="App" />
+          <Link path="/software" label="Software" />
         </Box>
       </Container>
     </footer>
@@ -46,7 +46,7 @@ const styles = {
     alignItems: 'center',
         p: {
       fontSize: [0, 1],
-      color: 'black',
+      color:'rgba(31, 58, 147, 1)',
       opacity: 0.6,
       mt: ['10px', null, '0'],
     },

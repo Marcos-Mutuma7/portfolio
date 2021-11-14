@@ -12,15 +12,15 @@ export default [
   },
 
   {
-    path: 'testimonials',
+    path: 'features',
     label: 'Development',
   },
  
   {
-    path: 'news',
+    path: 'clients',
     label: 'Clients',
   }, {
-    path: 'blog',
-    label: 'About',
+    path: 'contacts',
+    label: 'Contacts',
   },
 ];

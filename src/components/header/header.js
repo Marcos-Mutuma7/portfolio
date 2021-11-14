@@ -58,7 +58,7 @@ const styles = {
     borderRadius: '5px',
     border: '2px solid',
     borderColor: 'primary',
-    color: 'primary',
+    color: 'rgba(31, 58, 147, 1)',
     padding: '8px 40px',
     display: ['none', null, null, null, 'inline-block'],
     ml: ['0', null, null, 'auto', '0'],
@@ -110,7 +110,7 @@ const styles = {
         mr: '0',
       },
       '&:hover, &.active': {
-        color: 'primary',
+        color: 'rgba(31, 58, 147, 1)',
       },
     },
   },

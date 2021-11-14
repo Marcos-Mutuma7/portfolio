@@ -46,9 +46,8 @@ export default function IndexPage() {
           <CallToAction/>
           <Services />
           <VideoOne/>
-          
-          <BoostAgencies2/>
           <CallToAction />
+          <CustomerSupport/>
           <ContactBanner/>
         
 

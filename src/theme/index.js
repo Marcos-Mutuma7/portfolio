@@ -7,7 +7,7 @@ export default {
   colors: {
     text: '#343D48', // body color and primary color
     text_secondary: '#02073E', // secondary body color
-    heading: 'rgb(rgba(1, 50, 67, 1))', // primary heading color
+    heading: 'rgba(36, 37, 42, 1)', // primary heading color
     heading_secondary: '#343D48', // heading color
     background: '#FFFFFF', // body background color
     background_secondary: '#F9FBFD', // secondary background color
@@ -168,7 +168,7 @@ export default {
       marginTop: [10, null, null, null, 2],
     },
     h2: {
-      color: 'primary',
+      color:'rgba(31, 58, 147, 1)',
       fontWeight: 'bold',
       fontSize: [5, null, null, null, '32px', '37px', '42px',],
       lineHeight: [1.24, null, null, null, 1.83],
