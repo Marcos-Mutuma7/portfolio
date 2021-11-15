@@ -14,7 +14,7 @@ import LogoDark from 'assets/logo.svg';
 const social = [
   {
     path: '/blog',
-    icon: <Facebook />,
+    
   },
   {
     path: '/',
@@ -75,10 +75,11 @@ const MobileDrawer = () => {
 
           <Box sx={styles.menuFooter}>
         
-            <Button variant="primary" sx={styles.button}>
+        <Link path="/blog">
+                    <Button variant="primary" sx={styles.button}>
               Blog
         </Button>
-          
+          </Link>
           </Box>
         </Box>
       </Scrollbars>
@@ -158,9 +159,10 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    py: '0',
+    px: '50px',
     backgroundColor: 'primary',
     color: '#fff',
+    
   },
 };
 

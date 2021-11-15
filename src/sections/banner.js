@@ -17,7 +17,7 @@ const Banner = () => {
            Your trusted software developers
             </Heading>
             <Text as="p">
-              Our mission is to make your business better through technology
+              Our mission is to make your business better through technology. A software that belongs to you 
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
@@ -30,9 +30,11 @@ const Banner = () => {
                 sx={styles.form.input}
               />
               
+              <Link href="/contacts">
               <Button type="submit" sx={styles.form.button}>
               Contacts
               </Button>
+                    </Link>
                         </Box>
             
           </Box>

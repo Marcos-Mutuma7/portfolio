@@ -42,6 +42,7 @@ export default VideoOne;
 const styles = {
   video: {
     pt: [10, null, null, null, null, null, 'null'],
+    pb:'70px',
     textAlign: 'center',
     h3: {
       margin: 0,

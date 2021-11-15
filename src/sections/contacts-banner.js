@@ -3,7 +3,7 @@ import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 
 import Image from 'components/image';
 
-import { NavLink, Link } from 'components/link';
+import Link from 'next/link'
 import bannerImg from 'assets/image 31.png';
 import bannerImg1 from 'assets/image 32.png';
 import bannerImg2 from 'assets/image 33.png';
@@ -36,15 +36,25 @@ const ContactBanner = () => {
           </Box>
           <Box sx={styles.image}>
               <Box sx={styles.media}>
-                <Link path="/https://web.facebook.com/TechPulse-112713557885532">
+                <Link href="https://twitter.com/MaccosMutuma">
           <Image  src={bannerImg} alt="" sx={styles.img} />
               </Link>
          
+
+         <Link href="https://web.facebook.com/TechPulse-112713557885532">
           <Image src={bannerImg1} alt="" />
+          </Link>
+          <Link href="https://meet.google.com/">
           <Image src={bannerImg2} alt="" />
+          </Link>
+
+          <Link href="https://www.linkedin.com/company/77019210/admin/">
           <Image src={bannerImg3} alt="" />
+          </Link>
+
+          <Link>
           <Image src={bannerImg4} alt="" />
-          
+          </Link>
           
             </Box>
           </Box>

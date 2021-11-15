@@ -2,7 +2,7 @@
 
 export default [
   {
-    path: 'banner',
+    path: 'data',
     label: 'Home',
   },
 

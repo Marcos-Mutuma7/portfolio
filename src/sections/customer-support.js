@@ -17,13 +17,11 @@ const CustomerSupport = () => {
                 Who are TechPulse?
               </Heading>
               <Text as="p">
-                TechPulse is a Software development firm delivering IT solutions that enable you to work smarter.    We create IT solutions that are easy to use, easy to manage, and easy to trust
+               " TechPulse is a Software development firm delivering IT solutions that enable you to work smarter.    We create IT solutions that are easy to use, easy to manage, and easy to trust
     
     , we take pride in our work and enjoy the satisfaction of a job well done
   
-    .We are a team of experienced IT specialists, ready to solve your issues. Let`s talk
-    Always on, always connected, our cloud is ready.
-    All your IT support in one place.
+    .In a World of Technology, People Make the Difference .Committed to People, Committed to the Future."
     
               </Text>
               <Text as="p" sx={styles.specialText}>
