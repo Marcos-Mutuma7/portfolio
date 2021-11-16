@@ -58,7 +58,7 @@ const styles = {
     borderRadius: '5px',
     border: '2px solid',
     borderColor: 'primary',
-    color: 'rgba(31, 58, 147, 1)',
+    color: 'gold',
     padding: '8px 40px',
     display: ['none', null, null, null, 'inline-block'],
     ml: ['0', null, null, 'auto', '0'],

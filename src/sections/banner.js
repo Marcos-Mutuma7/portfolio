@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'components/image';
 
 
-import bannerImg from 'assets/image 44.png';
+import bannerImg from 'assets/image 6.png';
 
 const Banner = () => {
   return (
@@ -93,7 +93,7 @@ const styles = {
     display: ['flex'],
     input: {
       borderRadius: ['4px'],
-      color:'blue',
+      color:'gold',
       backgroundColor: '#fff',
       width: ['240px', null, null, null, '315px', null, '375px'],
       height: ['45px', null, null, '55px', null, null, '65px'],
@@ -108,7 +108,7 @@ const styles = {
       borderRadius: ['4px'],
       padding: ['0 16px'],
       ml: ['10px'],
-      color:'rgba(31, 58, 147, 1)',
+      color:'gold',
       width: ['auto', null, null, null, '180px'],
       alignItems:'center',
       transition: '500ms',

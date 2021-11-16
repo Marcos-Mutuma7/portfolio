@@ -1,4 +1,4 @@
-import {Heading ,Text ,Container} from 'theme-ui'
+import {Heading ,Text ,Container ,Image} from 'theme-ui'
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 import fs from 'fs'
@@ -20,13 +20,14 @@ import { Nav, Button } from '../../components'
 const components = { Nav, Button, SyntaxHighlighter }
 const data = { docco }
 
-const PostPage = ({ frontMatter: { title, date }, mdxSource }) => {
+const PostPage = ({ frontMatter: {}, mdxSource }) => {
   return (
     <ThemeProvider theme={theme}>
-    
           <Container sx={styles.container}>
-      <Heading>{title}</Heading>
+            
+      
       <MDXRemote {...mdxSource} components={components} scope={data}/>
+      
        </Container>
     
   
@@ -73,6 +74,14 @@ export default PostPage
 const styles ={
   container:{
     textAlign:'center',
-    padding:'80px'
-  }
+    justifyContent:'',
+    pt:'40px',
+    fontSize:'20px',
+    lineHeight:'40px',
+    maxWidth:'1000px',
+    fontFamily:'Raleway',
+    color:'rgba(36, 37, 42, 1)',
+    
+  },
+
 }

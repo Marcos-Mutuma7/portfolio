@@ -16,7 +16,7 @@ const BlogBanner = () => {
            Every content is special
             </Heading>
             <Text as="p">
-              We give importance to our audience and thrilling topics to look out for. The blog you'll remember
+              We give importance to our audience and thrilling topics to look out for
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">

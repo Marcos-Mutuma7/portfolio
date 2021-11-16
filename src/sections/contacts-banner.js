@@ -52,9 +52,9 @@ const ContactBanner = () => {
           <Image src={bannerImg3} alt="" />
           </Link>
 
-          <Link>
-          <Image src={bannerImg4} alt="" />
-          </Link>
+          
+          
+          
           
             </Box>
           </Box>

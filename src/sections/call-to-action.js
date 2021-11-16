@@ -58,8 +58,8 @@ const styles = {
     },
   },
   btn: {
-    backgroundColor: '#fff',
-    color:'rgba(31, 58, 147, 1)',
+    backgroundColor: 'gold',
+    color:'black',
     borderRadius: '5px',
     fontSize: [0, 1, null, null, null, null, '17px'],
     fontWeight: '700',
@@ -93,7 +93,7 @@ const styles = {
     },
     '&:hover': {
       backgroundColor: 'black',
-      color: '#fff',
+      color: 'gold',
       boxShadow: '0px 15px 50px rgba(69, 88, 157, 0.1)',
     transform: 'scale(0.95)',
     },

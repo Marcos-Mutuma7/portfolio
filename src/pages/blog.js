@@ -7,52 +7,48 @@ import Layout from 'components/layout';
 import BlogBanner from 'sections/blog-banner'
 
 
+
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import Image from 'next/image'
 import Link from 'next/link'
+import Image from 'next/image'
 
-export default function Blog({ posts }) {
-    return (
+const Home = ({ posts }) => {
+  return (
 
-    <ThemeProvider theme={theme} id="blog">
-      <StickyProvider>
-      <Layout>
-        <BlogBanner/>
-        <Box sx={styles.blog}>
-          {posts.map((post, index) => (
-          <Link href={'/blog/' + post.slug} passHref key={index}>
+    <div className="mt-5">
+      {posts.map((post, index) => (
+        <Link href={'/blog/' + post.slug} passHref key={index}>
+          <div className="card mb-3 pointer" style={{ maxWidth: '540px' }}>
+            <div className="row g-0">
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h5 className="card-title">{post.frontMatter.title}</h5>
+                  <p className="card-text">{post.frontMatter.description}</p>
+                  <p className="card-text">
+                    <small className="text-muted">{post.frontMatter.date}</small>
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-4 m-auto">
+                <Image
+                  src={post.frontMatter.thumbnailUrl}
+                  className="img-fluid mt-1 rounded-start"
+                  alt="thumbnail"
+                  width={500}
+                  height={400}
+                  objectFit="cover"
+                />
+              </div>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </div>
+  )
 
-           <Container>
-            <Box sx={styles.blogWrapper}>
-            
-            <Image
-                    src={post.frontMatter.thumbnailUrl}
-                    className="img-fluid mt-1 rounded-start"
-                    alt="thumbnail"
-                    width={500}
-                    height={400}
-                    objectFit="cover"
-                  />
-                                
-                    <Box>
-                    <Heading>{post.frontMatter.title}</Heading>
-                    <Text>{post.frontMatter.description}</Text>
-                    <Text>{post.frontMatter.date}</Text>
-                    </Box>
-                    
-            </Box>
-         </Container>
-          </Link>
-        ))}
-        </Box>
-      </Layout>
-      </StickyProvider>
-    </ThemeProvider>
-    )
-  }
-
+}
 
 export const getStaticProps = async () => {
   const files = fs.readdirSync(path.join('posts'))
@@ -74,35 +70,4 @@ export const getStaticProps = async () => {
   }
 }
 
-const styles ={
-
-  blog:{
-  
-    overflow: 'hidden',
-    gap: 25,
-    display: ['grid', 'grid', 'grid', 'block', 'grid'],
-    gridTemplateColumns: [
-      'repeat(1, 1fr)',
-      'repeat(1, 1fr)',
-      'repeat(2, 1fr)',
-      'repeat(2, 1fr)',
-      'repeat(3, 1fr)',
-    ],
-    m: [0, 0, 0, '0 -15px', 0],
- 
-
-  },
-  blogWrapper: {
-    cursor:'pointer',
-  mt:'30px',
-  transition: '500ms',
-  borderRadius: '10px',
-  '&:hover': {
-    boxShadow: '0px 15px 50px rgba(69, 88, 157, 0.1)',
-    transform: 'scale(0.95)'
-  },
-  
-  },
- 
-
-  }
+export default Home

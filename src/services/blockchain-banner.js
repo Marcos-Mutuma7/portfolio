@@ -4,7 +4,7 @@ import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 
 
-import bannerImg from 'assets/image 6.png';
+import bannerImg from 'assets/image 10.png';
 
 const BlockchainBanner = () => {
   return (

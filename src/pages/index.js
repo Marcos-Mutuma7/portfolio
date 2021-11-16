@@ -50,7 +50,8 @@ export default function IndexPage() {
           <CustomerSupport/>
           <ContactBanner/>
         
-
+  
+ 
   </Layout>
   
 </StickyProvider>

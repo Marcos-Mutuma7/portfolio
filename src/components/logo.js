@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Image } from 'theme-ui';
 import { Link } from 'components/link';
-import logo from 'assets/Group 7(1).png';
+import logo from 'assets/image 66.png';
 
 export default function Logo() {
   return (
@@ -17,7 +17,7 @@ export default function Logo() {
 }
 const styles ={
   logo :{
-    width:['50%' ,'null','null' ,'null', '150px']
+    width:['45px' ,'null','null' ,'null', '56px']
   }
 
 }
