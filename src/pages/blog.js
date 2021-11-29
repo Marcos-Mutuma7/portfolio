@@ -16,36 +16,41 @@ import Image from 'next/image'
 
 const Home = ({ posts }) => {
   return (
-
-    <div className="mt-5">
+<ThemeProvider theme={theme}>
+  <StickyProvider>
+  <Layout>
+    <SEO title="Top technology blogs and articles "/>
+      <BlogBanner/>
+    
+      <Container sx={styles.container}>
       {posts.map((post, index) => (
         <Link href={'/blog/' + post.slug} passHref key={index}>
-          <div className="card mb-3 pointer" style={{ maxWidth: '540px' }}>
-            <div className="row g-0">
-              <div className="col-md-8">
-                <div className="card-body">
-                  <h5 className="card-title">{post.frontMatter.title}</h5>
-                  <p className="card-text">{post.frontMatter.description}</p>
-                  <p className="card-text">
-                    <small className="text-muted">{post.frontMatter.date}</small>
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-4 m-auto">
+         
+         <Box sx={styles.card}>
+                  
+                  
+                  
+             
+                
                 <Image
                   src={post.frontMatter.thumbnailUrl}
-                  className="img-fluid mt-1 rounded-start"
                   alt="thumbnail"
-                  width={500}
-                  height={400}
+                  width={800}
+                  height={490}
                   objectFit="cover"
-                />
-              </div>
-            </div>
-          </div>
-        </Link>
+            />
+            <Heading>{post.frontMatter.title}</Heading>
+                  
+            
+            </Box>
+              </Link>  
+      
       ))}
-    </div>
+   </Container>
+    
+  </Layout>
+ </StickyProvider>
+  </ThemeProvider>
   )
 
 }
@@ -71,3 +76,24 @@ export const getStaticProps = async () => {
 }
 
 export default Home
+
+const styles = {
+    container:{
+      gap: 30,
+    display: ['grid', 'grid', 'grid', 'block', 'grid'],
+    gridTemplateColumns: [
+      'repeat(1, 1fr)',
+      'repeat(1, 1fr)',
+      'repeat(2, 1fr)',
+      'repeat(2, 1fr)',
+      'repeat(3, 1fr)',
+    ],
+    m: [0, 0, 0, '0 -15px', 0],
+    borderRadius:'30px'
+    },
+   card:{
+     paddingTop:'30px',
+     cursor:"pointer"
+    
+   }
+}

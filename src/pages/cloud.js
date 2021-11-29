@@ -19,7 +19,7 @@ export default function cloudPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 006" />
+          <SEO title="Top Cloud Consulting Company" />
           <CloudBanner/>
           <CloudService/>
           <HireCloud/>

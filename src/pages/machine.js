@@ -20,7 +20,7 @@ export default function MachinePage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 006" />
+          <SEO title="The Best Artificial Intellengence and Machine Learning engineers" />
           <MachineBanner/>
           <MachineService/>
       

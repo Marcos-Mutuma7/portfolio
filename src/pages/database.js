@@ -19,7 +19,7 @@ export default function databasePage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 006" />
+          <SEO title="The Best Website and App development services in the world" />
           <DatabaseBanner/>
           <DatabaseService/>
           <HireDatabase/>

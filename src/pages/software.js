@@ -19,7 +19,7 @@ export default function softwarePage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Top website and app development company" />
+          <SEO title="Top custom development services for your company" />
           <SoftwareBanner/>
           <SoftwareService/>
           <HireSoftware/>

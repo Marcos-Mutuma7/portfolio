@@ -20,7 +20,7 @@ export default function dataPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Top software development company" />
+          <SEO title="Top Data Analytics company" />
           <DataBanner/>
           <DataService/>
           <HireData/>

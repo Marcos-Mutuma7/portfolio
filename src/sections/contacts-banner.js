@@ -24,7 +24,9 @@ const ContactBanner = () => {
             </Heading>
             <Text as="p">
             Your satisfaction is our #1 priority <br/>
-            We’re in the love business. What’s yours?
+            We’re in the love business. What’s yours?<br/>
+             email : techpulseafrica@gmail.com<br/>
+            tel : +2547 5792 9917
             </Text>
             <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">

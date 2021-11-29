@@ -14,7 +14,7 @@ const Banner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-           Your trusted software developers
+           Tech with Demands
             </Heading>
             <Text as="p">
               Our mission is to make your business better through technology. A software that belongs to you 
